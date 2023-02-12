@@ -1,0 +1,96 @@
+
+\documentclass[10pt]{article}
+\newcommand\Solution[2][\\]{Solution: \Longunderstack[l]{\Question#1#2}}
+
+% TO PROVIDE BLANK SOLUTION
+%\renewcommand\Solution[2][\\]{Solution: \setbox0=\hbox{%
+%  \Longunderstack[l]{\Question#1#2}}\rule[-\dp0]{0pt}{\dimexpr\ht0+\dp0}}
+% TO PROVIDE NO SOLUTION
+\renewcommand\Solution[2][\\]{}
+
+\title{342 Assignment 3: NFA}
+\begin{document}
+\maketitle
+
+Total points: 30\\
+Due Date: Feb $20$ 2021\\
+
+The formal definition of a NFA specifies the following:\\
+\begin{enumerate}
+    \item Alphabet $\Sigma$
+    \item the set of states $Q$
+    \item the start state $S \in Q$
+    \item the accepting states $A \subseteq  Q$
+    \item the transition table $\delta$: a function from $Q \times \Sigma$ to $power(Q)$.
+    \item reject state: this is usually unspecified, but understood to be included; similar to a return statement at the end of a function.
+\end{enumerate}
+
+For every problem in this assignment, 
+\begin{enumerate}
+    \item $\Sigma = \{a,b,c\}$
+    \item $Q = \{S_0,S_1,S_2,S_3,S_4,S_5,S_6,S_7,S_8,S_9\}$
+    \item Start state = $S_0$ 
+\end{enumerate}
+If I am giving the NFA, I will give the accepting states $A$, and the transition table. If you are asked to give the DFA, you need to give $A$ and the transition table.\\ 
+For this assignment, give this as a table instead of a diagram. I will give an example in Q1.
+
+NOTE: it is important that you draw and work with diagrams - just translate them when you submit. diagrams give you an insight into  the machine that tables do not.
+\newpage
+\begin{enumerate}
+    \item (10 points) Let $M$ be the NFA with alphabet, set of states and start state as given above. The transition table of $M$ is :
+   \begin{center}
+      \begin{tabular}{ |c|c|c|c| } 
+        \hline
+ .  & `a' & `b' & `c' \\\hline \hline
+ $S_0$ & $\{S_0, S_1\}$ & $S_0$ & $S_0$\\ \hline
+ $S_1$ & - & $S_2$ & - \\ \hline
+ $S_2$ & - & - & $S_3$ \\ \hline
+ $S_3$ & $S_3$ & $S_3$ & $S_3$ \\ \hline
+ $S_4$ & - & - & - \\ \hline
+ $S_5$ & - & - & - \\ \hline
+ $S_6$ & - & - & - \\ \hline
+ $S_7$ & - & - & - \\ \hline
+ $S_8$ & - & - & - \\ \hline
+ $S_9$ & - & - & - \\ \hline
+\end{tabular}
+\end{center}
+Accepting states $A = \{S_3\}$
+
+For each of the following strings, give the trace (this is the sequence in which each element of the 
+\begin{enumerate}
+    \item $\epsilon$
+    \item  `abc'
+    \item `aabcc'
+    \item `abcabc'
+    \item `aabbcc'
+\end{enumerate}
+
+\newpage 
+\item (3 points) What is the language of the NFA $M$ from the previous question?, i.e., describe the set of strings accepted by it.
+Specifically, 
+\begin{center}
+L(M) = \{x $\|$ BLANK \}
+\end{center}
+
+What is :
+\begin{enumerate}
+    \item BLANK
+\end{enumerate} 
+
+
+\item (3 points
+)(Extra credit) Rename the states to have meaningful names of NFA $M$ from Q1
+ \newpage 
+ 
+\item (1+4+2+2+8) Construct a DFA for the  NFA in Q1.
+Fill in the ??? in the following. 
+When you are making the set of states, you may either give all possible states, and just not use the states that are never visited; or you may start constructing the DFA and list only the states that you are actually using. 
+\begin{enumerate}
+    \item Alphabet: ??? 
+    \item Set of states: ???
+    \item Start state: ???
+    \item Set of Accepting states: ??? 
+    \item transition table: rows are the set of states you gave; columns are the alphabet; entries are from the set of states you gave
+\end{enumerate}
+\end{enumerate}
+\end{document}

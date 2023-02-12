@@ -1,0 +1,7 @@
+Make command line arguments for:
+	Which function to run
+	What type of list to create
+	How big the n needs to be
+Maybe do this too:
+	Make output straight x and y for graph
+	Make n multiply over a for loop

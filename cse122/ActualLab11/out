@@ -1,0 +1,1333 @@
+==23111== Memcheck, a memory error detector
+==23111== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==23111== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==23111== Command: ./lab11 locations.txt
+==23111== Parent PID: 23087
+==23111== 
+--23111-- 
+--23111-- Valgrind options:
+--23111--    --show-reachable=yes
+--23111--    --leak-check=full
+--23111--    --log-file=out
+--23111--    -v
+--23111-- Contents of /proc/version:
+--23111--   Linux version 4.13.0-32-generic (buildd@lgw01-amd64-004) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.5)) #35~16.04.1-Ubuntu SMP Thu Jan 25 10:13:43 UTC 2018
+--23111-- 
+--23111-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-lzcnt-rdtscp-sse3-avx
+--23111-- Page sizes: currently 4096, max supported 4096
+--23111-- Valgrind library directory: /usr/lib/valgrind
+--23111-- Reading syms from /home/jagmjg/Dropbox/Cs/cse122/ActualLab11/lab11
+--23111-- Reading syms from /lib/x86_64-linux-gnu/ld-2.23.so
+--23111--   Considering /lib/x86_64-linux-gnu/ld-2.23.so ..
+--23111--   .. CRC mismatch (computed aa979a42 wanted 9019bbb7)
+--23111--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/ld-2.23.so ..
+--23111--   .. CRC is valid
+--23111-- Reading syms from /usr/lib/valgrind/memcheck-amd64-linux
+--23111--   Considering /usr/lib/valgrind/memcheck-amd64-linux ..
+--23111--   .. CRC mismatch (computed eea41ea9 wanted 2009db78)
+--23111--    object doesn't have a symbol table
+--23111--    object doesn't have a dynamic symbol table
+--23111-- Scheduler: using generic scheduler lock implementation.
+--23111-- Reading suppressions file: /usr/lib/valgrind/default.supp
+==23111== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-23111-by-jagmjg-on-???
+==23111== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-23111-by-jagmjg-on-???
+==23111== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-23111-by-jagmjg-on-???
+==23111== 
+==23111== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==23111== don't want to do, unless you know exactly what you're doing,
+==23111== or are doing some strange experiment):
+==23111==   /usr/lib/valgrind/../../bin/vgdb --pid=23111 ...command...
+==23111== 
+==23111== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==23111==   /path/to/gdb ./lab11
+==23111== and then give GDB the following command
+==23111==   target remote | /usr/lib/valgrind/../../bin/vgdb --pid=23111
+==23111== --pid is optional if only one valgrind process is running
+==23111== 
+--23111-- REDIR: 0x401cfd0 (ld-linux-x86-64.so.2:strlen) redirected to 0x3809e181 (???)
+--23111-- Reading syms from /usr/lib/valgrind/vgpreload_core-amd64-linux.so
+--23111--   Considering /usr/lib/valgrind/vgpreload_core-amd64-linux.so ..
+--23111--   .. CRC mismatch (computed 2567ccf6 wanted 49420590)
+--23111--    object doesn't have a symbol table
+--23111-- Reading syms from /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so
+--23111--   Considering /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so ..
+--23111--   .. CRC mismatch (computed 0e27c9a8 wanted ac585421)
+--23111--    object doesn't have a symbol table
+==23111== WARNING: new redirection conflicts with existing -- ignoring it
+--23111--     old: 0x0401cfd0 (strlen              ) R-> (0000.0) 0x3809e181 ???
+--23111--     new: 0x0401cfd0 (strlen              ) R-> (2007.0) 0x04c31020 strlen
+--23111-- REDIR: 0x401b920 (ld-linux-x86-64.so.2:index) redirected to 0x4c30bc0 (index)
+--23111-- REDIR: 0x401bb40 (ld-linux-x86-64.so.2:strcmp) redirected to 0x4c320d0 (strcmp)
+--23111-- REDIR: 0x401dd30 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4c35270 (mempcpy)
+--23111-- Reading syms from /lib/x86_64-linux-gnu/libm-2.23.so
+--23111--   Considering /lib/x86_64-linux-gnu/libm-2.23.so ..
+--23111--   .. CRC mismatch (computed e8c3647b wanted c3efddac)
+--23111--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libm-2.23.so ..
+--23111--   .. CRC is valid
+--23111-- Reading syms from /lib/x86_64-linux-gnu/libc-2.23.so
+--23111--   Considering /lib/x86_64-linux-gnu/libc-2.23.so ..
+--23111--   .. CRC mismatch (computed 7a8ee3e4 wanted a5190ac4)
+--23111--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libc-2.23.so ..
+--23111--   .. CRC is valid
+--23111-- REDIR: 0x51d2a00 (libc.so.6:strcasecmp) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--23111-- REDIR: 0x51ce280 (libc.so.6:strcspn) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--23111-- REDIR: 0x51d4cf0 (libc.so.6:strncasecmp) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--23111-- REDIR: 0x51d06f0 (libc.so.6:strpbrk) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--23111-- REDIR: 0x51d0a80 (libc.so.6:strspn) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--23111-- REDIR: 0x51d214b (libc.so.6:memcpy@GLIBC_2.2.5) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--23111-- REDIR: 0x51d0400 (libc.so.6:rindex) redirected to 0x4c308a0 (rindex)
+--23111-- REDIR: 0x51c7130 (libc.so.6:malloc) redirected to 0x4c2db20 (malloc)
+--23111-- REDIR: 0x51d1060 (libc.so.6:__GI_strstr) redirected to 0x4c354d0 (__strstr_sse2)
+--23111-- REDIR: 0x51ce720 (libc.so.6:strlen) redirected to 0x4c30f60 (strlen)
+--23111-- REDIR: 0x51d1860 (libc.so.6:memchr) redirected to 0x4c32170 (memchr)
+--23111-- REDIR: 0x51d7470 (libc.so.6:__GI_memcpy) redirected to 0x4c32b00 (__GI_memcpy)
+--23111-- REDIR: 0x51c76c0 (libc.so.6:realloc) redirected to 0x4c2fce0 (realloc)
+--23111-- REDIR: 0x51cca80 (libc.so.6:index) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--23111-- REDIR: 0x51ccab0 (libc.so.6:__GI_strchr) redirected to 0x4c30a00 (__GI_strchr)
+--23111-- REDIR: 0x51d03c0 (libc.so.6:strncpy) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--23111-- REDIR: 0x51e9000 (libc.so.6:__strncpy_sse2_unaligned) redirected to 0x4c31570 (__strncpy_sse2_unaligned)
+--23111-- REDIR: 0x51c74f0 (libc.so.6:free) redirected to 0x4c2ed80 (free)
+==23111== Conditional jump or move depends on uninitialised value(s)
+==23111==    at 0x4C2EDA1: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x4016CB: setcitystatecountry (kml.c:187)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Conditional jump or move depends on uninitialised value(s)
+==23111==    at 0x4C2EDA1: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x40169D: setcitystatecountry (kml.c:186)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Conditional jump or move depends on uninitialised value(s)
+==23111==    at 0x4C2EDA1: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x4016F9: setcitystatecountry (kml.c:188)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid read of size 4
+==23111==    at 0x401789: print_normal (kml.c:211)
+==23111==    by 0x400B2A: main (lab11.c:49)
+==23111==  Address 0x5516244 is 36 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid read of size 4
+==23111==    at 0x4017B4: print_normal (kml.c:210)
+==23111==    by 0x400B2A: main (lab11.c:49)
+==23111==  Address 0x5516240 is 32 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid read of size 4
+==23111==    at 0x4017DF: print_normal (kml.c:210)
+==23111==    by 0x400B2A: main (lab11.c:49)
+==23111==  Address 0x551623c is 28 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid read of size 4
+==23111==    at 0x40180A: print_normal (kml.c:210)
+==23111==    by 0x400B2A: main (lab11.c:49)
+==23111==  Address 0x5516238 is 24 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid read of size 8
+==23111==    at 0x401835: print_normal (kml.c:208)
+==23111==    by 0x400B2A: main (lab11.c:49)
+==23111==  Address 0x5516230 is 16 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid read of size 8
+==23111==    at 0x40185B: print_normal (kml.c:208)
+==23111==    by 0x400B2A: main (lab11.c:49)
+==23111==  Address 0x5516228 is 8 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid read of size 8
+==23111==    at 0x401881: print_normal (kml.c:208)
+==23111==    by 0x400B2A: main (lab11.c:49)
+==23111==  Address 0x5516220 is 0 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+--23111-- REDIR: 0x51d9760 (libc.so.6:strchrnul) redirected to 0x4c34da0 (strchrnul)
+==23111== Invalid read of size 1
+==23111==    at 0x5191CC0: vfprintf (vfprintf.c:1632)
+==23111==    by 0x51987F6: fprintf (fprintf.c:32)
+==23111==    by 0x40189C: print_normal (kml.c:208)
+==23111==    by 0x400B2A: main (lab11.c:49)
+==23111==  Address 0x550e6a0 is 0 bytes inside a block of size 80 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x40169D: setcitystatecountry (kml.c:186)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x4015C1: setcitystatecountry (kml.c:161)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+--23111-- REDIR: 0x51d23b0 (libc.so.6:__GI_mempcpy) redirected to 0x4c34fa0 (__GI_mempcpy)
+==23111== Invalid read of size 1
+==23111==    at 0x4C35030: __GI_mempcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x51BC241: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1319)
+==23111==    by 0x519150A: vfprintf (vfprintf.c:1632)
+==23111==    by 0x51987F6: fprintf (fprintf.c:32)
+==23111==    by 0x40189C: print_normal (kml.c:208)
+==23111==    by 0x400B2A: main (lab11.c:49)
+==23111==  Address 0x550e6a5 is 5 bytes inside a block of size 80 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x40169D: setcitystatecountry (kml.c:186)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x4015C1: setcitystatecountry (kml.c:161)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid read of size 1
+==23111==    at 0x4C35040: __GI_mempcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x51BC241: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1319)
+==23111==    by 0x519150A: vfprintf (vfprintf.c:1632)
+==23111==    by 0x51987F6: fprintf (fprintf.c:32)
+==23111==    by 0x40189C: print_normal (kml.c:208)
+==23111==    by 0x400B2A: main (lab11.c:49)
+==23111==  Address 0x550e6a3 is 3 bytes inside a block of size 80 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x40169D: setcitystatecountry (kml.c:186)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x4015C1: setcitystatecountry (kml.c:161)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid read of size 1
+==23111==    at 0x51BE676: _IO_default_xsputn (genops.c:450)
+==23111==    by 0x51BC2C6: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1352)
+==23111==    by 0x519150A: vfprintf (vfprintf.c:1632)
+==23111==    by 0x51987F6: fprintf (fprintf.c:32)
+==23111==    by 0x40189C: print_normal (kml.c:208)
+==23111==    by 0x400B2A: main (lab11.c:49)
+==23111==  Address 0x5514e82 is 2 bytes inside a block of size 104 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x4016F9: setcitystatecountry (kml.c:188)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x4014AF: setcitystatecountry (kml.c:151)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid read of size 1
+==23111==    at 0x51BE685: _IO_default_xsputn (genops.c:449)
+==23111==    by 0x51BC2C6: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1352)
+==23111==    by 0x519150A: vfprintf (vfprintf.c:1632)
+==23111==    by 0x51987F6: fprintf (fprintf.c:32)
+==23111==    by 0x40189C: print_normal (kml.c:208)
+==23111==    by 0x400B2A: main (lab11.c:49)
+==23111==  Address 0x5514e84 is 4 bytes inside a block of size 104 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x4016F9: setcitystatecountry (kml.c:188)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x4014AF: setcitystatecountry (kml.c:151)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid read of size 4
+==23111==    at 0x400DAC: kmlplacemark (kml.c:71)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x551623c is 28 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid write of size 4
+==23111==    at 0x400DB6: kmlplacemark (kml.c:71)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x551624c is 44 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid read of size 4
+==23111==    at 0x400E00: kmlplacemark (kml.c:72)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x551624c is 44 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid write of size 4
+==23111==    at 0x400E1B: kmlplacemark (kml.c:72)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516248 is 40 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid write of size 4
+==23111==    at 0x400E45: kmlplacemark (kml.c:73)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x551624c is 44 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid read of size 4
+==23111==    at 0x400E8E: kmlplacemark (kml.c:74)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516248 is 40 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid write of size 4
+==23111==    at 0x400E9F: kmlplacemark (kml.c:74)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516248 is 40 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid read of size 4
+==23111==    at 0x400EE8: kmlplacemark (kml.c:75)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x551623c is 28 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid read of size 4
+==23111==    at 0x400F0F: kmlplacemark (kml.c:75)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x551624c is 44 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid read of size 4
+==23111==    at 0x400F46: kmlplacemark (kml.c:75)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516248 is 40 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid write of size 4
+==23111==    at 0x400F5B: kmlplacemark (kml.c:75)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x551623c is 28 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid read of size 4
+==23111==    at 0x400FA4: kmlplacemark (kml.c:77)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516244 is 36 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid write of size 4
+==23111==    at 0x400FAE: kmlplacemark (kml.c:77)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516254 is 52 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid read of size 4
+==23111==    at 0x400FF8: kmlplacemark (kml.c:78)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516254 is 52 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid write of size 4
+==23111==    at 0x401013: kmlplacemark (kml.c:78)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516250 is 48 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid write of size 4
+==23111==    at 0x40103D: kmlplacemark (kml.c:79)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516254 is 52 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid read of size 4
+==23111==    at 0x401086: kmlplacemark (kml.c:80)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516250 is 48 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid write of size 4
+==23111==    at 0x401097: kmlplacemark (kml.c:80)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516250 is 48 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid read of size 4
+==23111==    at 0x4010E0: kmlplacemark (kml.c:81)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516244 is 36 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid read of size 4
+==23111==    at 0x401107: kmlplacemark (kml.c:81)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516254 is 52 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid read of size 4
+==23111==    at 0x40113E: kmlplacemark (kml.c:81)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516250 is 48 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid write of size 4
+==23111==    at 0x401153: kmlplacemark (kml.c:81)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516244 is 36 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid read of size 4
+==23111==    at 0x4011E8: kmlplacemark (kml.c:87)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516244 is 36 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid read of size 4
+==23111==    at 0x401213: kmlplacemark (kml.c:87)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x551623c is 28 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid read of size 8
+==23111==    at 0x400B83: main (lab11.c:55)
+==23111==  Address 0x5516220 is 0 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid free() / delete / delete[] / realloc()
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x400B8D: main (lab11.c:55)
+==23111==  Address 0x550e6a0 is 0 bytes inside a block of size 80 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x40169D: setcitystatecountry (kml.c:186)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x4015C1: setcitystatecountry (kml.c:161)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid read of size 8
+==23111==    at 0x400BB6: main (lab11.c:56)
+==23111==  Address 0x5516228 is 8 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid free() / delete / delete[] / realloc()
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x400BC1: main (lab11.c:56)
+==23111==  Address 0x550e590 is 0 bytes inside a block of size 32 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x4016CB: setcitystatecountry (kml.c:187)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x40143D: setcitystatecountry (kml.c:149)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid read of size 8
+==23111==    at 0x400BEA: main (lab11.c:57)
+==23111==  Address 0x5516230 is 16 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid free() / delete / delete[] / realloc()
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x400BF5: main (lab11.c:57)
+==23111==  Address 0x550e5f0 is 0 bytes inside a block of size 104 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x4016F9: setcitystatecountry (kml.c:188)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x4014AF: setcitystatecountry (kml.c:151)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== Invalid free() / delete / delete[] / realloc()
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x400C21: main (lab11.c:60)
+==23111==  Address 0x5516220 is 0 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== HEAP SUMMARY:
+==23111==     in use at exit: 0 bytes in 0 blocks
+==23111==   total heap usage: 191 allocs, 357 frees, 57,216 bytes allocated
+==23111== 
+==23111== All heap blocks were freed -- no leaks are possible
+==23111== 
+==23111== Use --track-origins=yes to see where uninitialised values come from
+==23111== ERROR SUMMARY: 5499 errors from 46 contexts (suppressed: 0 from 0)
+==23111== 
+==23111== 1 errors in context 1 of 46:
+==23111== Invalid free() / delete / delete[] / realloc()
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x400C21: main (lab11.c:60)
+==23111==  Address 0x5516220 is 0 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 5 errors in context 2 of 46:
+==23111== Invalid read of size 1
+==23111==    at 0x51BE685: _IO_default_xsputn (genops.c:449)
+==23111==    by 0x51BC2C6: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1352)
+==23111==    by 0x519150A: vfprintf (vfprintf.c:1632)
+==23111==    by 0x51987F6: fprintf (fprintf.c:32)
+==23111==    by 0x40189C: print_normal (kml.c:208)
+==23111==    by 0x400B2A: main (lab11.c:49)
+==23111==  Address 0x5514e84 is 4 bytes inside a block of size 104 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x4016F9: setcitystatecountry (kml.c:188)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x4014AF: setcitystatecountry (kml.c:151)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 6 errors in context 3 of 46:
+==23111== Invalid read of size 1
+==23111==    at 0x51BE676: _IO_default_xsputn (genops.c:450)
+==23111==    by 0x51BC2C6: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1352)
+==23111==    by 0x519150A: vfprintf (vfprintf.c:1632)
+==23111==    by 0x51987F6: fprintf (fprintf.c:32)
+==23111==    by 0x40189C: print_normal (kml.c:208)
+==23111==    by 0x400B2A: main (lab11.c:49)
+==23111==  Address 0x5514e82 is 2 bytes inside a block of size 104 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x4016F9: setcitystatecountry (kml.c:188)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x4014AF: setcitystatecountry (kml.c:151)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 47 errors in context 4 of 46:
+==23111== Invalid free() / delete / delete[] / realloc()
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x400BC1: main (lab11.c:56)
+==23111==  Address 0x550e590 is 0 bytes inside a block of size 32 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x4016CB: setcitystatecountry (kml.c:187)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x40143D: setcitystatecountry (kml.c:149)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 58 errors in context 5 of 46:
+==23111== Invalid read of size 8
+==23111==    at 0x401881: print_normal (kml.c:208)
+==23111==    by 0x400B2A: main (lab11.c:49)
+==23111==  Address 0x5516220 is 0 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 58 errors in context 6 of 46:
+==23111== Invalid read of size 8
+==23111==    at 0x40185B: print_normal (kml.c:208)
+==23111==    by 0x400B2A: main (lab11.c:49)
+==23111==  Address 0x5516228 is 8 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 58 errors in context 7 of 46:
+==23111== Invalid read of size 8
+==23111==    at 0x401835: print_normal (kml.c:208)
+==23111==    by 0x400B2A: main (lab11.c:49)
+==23111==  Address 0x5516230 is 16 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 58 errors in context 8 of 46:
+==23111== Invalid read of size 4
+==23111==    at 0x40180A: print_normal (kml.c:210)
+==23111==    by 0x400B2A: main (lab11.c:49)
+==23111==  Address 0x5516238 is 24 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 58 errors in context 9 of 46:
+==23111== Invalid read of size 4
+==23111==    at 0x4017DF: print_normal (kml.c:210)
+==23111==    by 0x400B2A: main (lab11.c:49)
+==23111==  Address 0x551623c is 28 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 58 errors in context 10 of 46:
+==23111== Invalid read of size 4
+==23111==    at 0x4017B4: print_normal (kml.c:210)
+==23111==    by 0x400B2A: main (lab11.c:49)
+==23111==  Address 0x5516240 is 32 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 58 errors in context 11 of 46:
+==23111== Invalid read of size 4
+==23111==    at 0x401789: print_normal (kml.c:211)
+==23111==    by 0x400B2A: main (lab11.c:49)
+==23111==  Address 0x5516244 is 36 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 59 errors in context 12 of 46:
+==23111== Invalid free() / delete / delete[] / realloc()
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x400BF5: main (lab11.c:57)
+==23111==  Address 0x550e5f0 is 0 bytes inside a block of size 104 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x4016F9: setcitystatecountry (kml.c:188)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x4014AF: setcitystatecountry (kml.c:151)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 59 errors in context 13 of 46:
+==23111== Invalid read of size 8
+==23111==    at 0x400BEA: main (lab11.c:57)
+==23111==  Address 0x5516230 is 16 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 59 errors in context 14 of 46:
+==23111== Invalid read of size 8
+==23111==    at 0x400BB6: main (lab11.c:56)
+==23111==  Address 0x5516228 is 8 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 59 errors in context 15 of 46:
+==23111== Invalid free() / delete / delete[] / realloc()
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x400B8D: main (lab11.c:55)
+==23111==  Address 0x550e6a0 is 0 bytes inside a block of size 80 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x40169D: setcitystatecountry (kml.c:186)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x4015C1: setcitystatecountry (kml.c:161)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 59 errors in context 16 of 46:
+==23111== Invalid read of size 8
+==23111==    at 0x400B83: main (lab11.c:55)
+==23111==  Address 0x5516220 is 0 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 59 errors in context 17 of 46:
+==23111== Invalid read of size 4
+==23111==    at 0x401213: kmlplacemark (kml.c:87)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x551623c is 28 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 59 errors in context 18 of 46:
+==23111== Invalid read of size 4
+==23111==    at 0x4011E8: kmlplacemark (kml.c:87)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516244 is 36 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 59 errors in context 19 of 46:
+==23111== Invalid write of size 4
+==23111==    at 0x401153: kmlplacemark (kml.c:81)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516244 is 36 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 59 errors in context 20 of 46:
+==23111== Invalid read of size 4
+==23111==    at 0x40113E: kmlplacemark (kml.c:81)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516250 is 48 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 59 errors in context 21 of 46:
+==23111== Invalid read of size 4
+==23111==    at 0x401107: kmlplacemark (kml.c:81)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516254 is 52 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 59 errors in context 22 of 46:
+==23111== Invalid read of size 4
+==23111==    at 0x4010E0: kmlplacemark (kml.c:81)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516244 is 36 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 59 errors in context 23 of 46:
+==23111== Invalid write of size 4
+==23111==    at 0x401097: kmlplacemark (kml.c:80)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516250 is 48 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 59 errors in context 24 of 46:
+==23111== Invalid read of size 4
+==23111==    at 0x401086: kmlplacemark (kml.c:80)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516250 is 48 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 59 errors in context 25 of 46:
+==23111== Invalid write of size 4
+==23111==    at 0x40103D: kmlplacemark (kml.c:79)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516254 is 52 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 59 errors in context 26 of 46:
+==23111== Invalid write of size 4
+==23111==    at 0x401013: kmlplacemark (kml.c:78)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516250 is 48 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 59 errors in context 27 of 46:
+==23111== Invalid read of size 4
+==23111==    at 0x400FF8: kmlplacemark (kml.c:78)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516254 is 52 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 59 errors in context 28 of 46:
+==23111== Invalid write of size 4
+==23111==    at 0x400FAE: kmlplacemark (kml.c:77)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516254 is 52 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 59 errors in context 29 of 46:
+==23111== Invalid read of size 4
+==23111==    at 0x400FA4: kmlplacemark (kml.c:77)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516244 is 36 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 59 errors in context 30 of 46:
+==23111== Invalid write of size 4
+==23111==    at 0x400F5B: kmlplacemark (kml.c:75)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x551623c is 28 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 59 errors in context 31 of 46:
+==23111== Invalid read of size 4
+==23111==    at 0x400F46: kmlplacemark (kml.c:75)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516248 is 40 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 59 errors in context 32 of 46:
+==23111== Invalid read of size 4
+==23111==    at 0x400F0F: kmlplacemark (kml.c:75)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x551624c is 44 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 59 errors in context 33 of 46:
+==23111== Invalid read of size 4
+==23111==    at 0x400EE8: kmlplacemark (kml.c:75)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x551623c is 28 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 59 errors in context 34 of 46:
+==23111== Invalid write of size 4
+==23111==    at 0x400E9F: kmlplacemark (kml.c:74)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516248 is 40 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 59 errors in context 35 of 46:
+==23111== Invalid read of size 4
+==23111==    at 0x400E8E: kmlplacemark (kml.c:74)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516248 is 40 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 59 errors in context 36 of 46:
+==23111== Invalid write of size 4
+==23111==    at 0x400E45: kmlplacemark (kml.c:73)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x551624c is 44 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 59 errors in context 37 of 46:
+==23111== Invalid write of size 4
+==23111==    at 0x400E1B: kmlplacemark (kml.c:72)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x5516248 is 40 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 59 errors in context 38 of 46:
+==23111== Invalid read of size 4
+==23111==    at 0x400E00: kmlplacemark (kml.c:72)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x551624c is 44 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 59 errors in context 39 of 46:
+==23111== Invalid write of size 4
+==23111==    at 0x400DB6: kmlplacemark (kml.c:71)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x551624c is 44 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 59 errors in context 40 of 46:
+==23111== Invalid read of size 4
+==23111==    at 0x400DAC: kmlplacemark (kml.c:71)
+==23111==    by 0x400D28: kmlbegin (kml.c:56)
+==23111==    by 0x400B41: main (lab11.c:50)
+==23111==  Address 0x551623c is 28 bytes inside a block of size 14,336 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401719: setcitystatecountry (kml.c:191)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2FD5F: realloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x401385: setcitystatecountry (kml.c:132)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 132 errors in context 41 of 46:
+==23111== Conditional jump or move depends on uninitialised value(s)
+==23111==    at 0x4C2EDA1: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x4016F9: setcitystatecountry (kml.c:188)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 132 errors in context 42 of 46:
+==23111== Conditional jump or move depends on uninitialised value(s)
+==23111==    at 0x4C2EDA1: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x40169D: setcitystatecountry (kml.c:186)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 149 errors in context 43 of 46:
+==23111== Conditional jump or move depends on uninitialised value(s)
+==23111==    at 0x4C2EDA1: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x4016CB: setcitystatecountry (kml.c:187)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 562 errors in context 44 of 46:
+==23111== Invalid read of size 1
+==23111==    at 0x4C35040: __GI_mempcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x51BC241: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1319)
+==23111==    by 0x519150A: vfprintf (vfprintf.c:1632)
+==23111==    by 0x51987F6: fprintf (fprintf.c:32)
+==23111==    by 0x40189C: print_normal (kml.c:208)
+==23111==    by 0x400B2A: main (lab11.c:49)
+==23111==  Address 0x550e6a3 is 3 bytes inside a block of size 80 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x40169D: setcitystatecountry (kml.c:186)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x4015C1: setcitystatecountry (kml.c:161)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 806 errors in context 45 of 46:
+==23111== Invalid read of size 1
+==23111==    at 0x4C35030: __GI_mempcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x51BC241: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1319)
+==23111==    by 0x519150A: vfprintf (vfprintf.c:1632)
+==23111==    by 0x51987F6: fprintf (fprintf.c:32)
+==23111==    by 0x40189C: print_normal (kml.c:208)
+==23111==    by 0x400B2A: main (lab11.c:49)
+==23111==  Address 0x550e6a5 is 5 bytes inside a block of size 80 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x40169D: setcitystatecountry (kml.c:186)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x4015C1: setcitystatecountry (kml.c:161)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== 
+==23111== 1542 errors in context 46 of 46:
+==23111== Invalid read of size 1
+==23111==    at 0x5191CC0: vfprintf (vfprintf.c:1632)
+==23111==    by 0x51987F6: fprintf (fprintf.c:32)
+==23111==    by 0x40189C: print_normal (kml.c:208)
+==23111==    by 0x400B2A: main (lab11.c:49)
+==23111==  Address 0x550e6a0 is 0 bytes inside a block of size 80 free'd
+==23111==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x40169D: setcitystatecountry (kml.c:186)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111==  Block was alloc'd at
+==23111==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==23111==    by 0x4015C1: setcitystatecountry (kml.c:161)
+==23111==    by 0x400B06: main (lab11.c:48)
+==23111== 
+==23111== ERROR SUMMARY: 5499 errors from 46 contexts (suppressed: 0 from 0)

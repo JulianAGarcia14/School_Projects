@@ -1,0 +1,32 @@
+Script started on Thu 06 Dec 2018 03:54:22 PM MST
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/GameOfLife[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/GameOfLife[00m$ make -k all
+gcc -Wall -g -I/usr/include/SDL2 -D_REENTRANT  gl.c sdl.o life.o -o life -L/usr/lib/x86_64-linux-gnu -lSDL2 -lm 
+[01m[Kgl.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kgl.c:33:6:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kn[m[K’ set but not used [-Wunused-but-set-variable]
+  int n;
+[01;32m[K      ^[m[K
+[01m[Kgl.c:32:6:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Km[m[K’ set but not used [-Wunused-but-set-variable]
+  int m;
+[01;32m[K      ^[m[K
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/GameOfLife[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/GameOfLife[00m$ ./life
+Program Name Is: ./life
+OpenGL Warning: Assertion failed: obj=0, file /mnt/tinderbox/add-5.1/src/VBox/Additions/common/crOpenGL/pack/packspu_glsl.c, line 210
+OpenGL Warning: Assertion failed: obj=0, file /mnt/tinderbox/add-5.1/src/VBox/Additions/common/crOpenGL/pack/packspu_glsl.c, line 210
+OpenGL Warning: Assertion failed: obj=0, file /mnt/tinderbox/add-5.1/src/VBox/Additions/common/crOpenGL/pack/packspu_glsl.c, line 210
+OpenGL Warning: Assertion failed: obj=0, file /mnt/tinderbox/add-5.1/src/VBox/Additions/common/crOpenGL/pack/packspu_glsl.c, line 210
+OpenGL Warning: Assertion failed: obj=0, file /mnt/tinderbox/add-5.1/src/VBox/Additions/common/crOpenGL/pack/packspu_glsl.c, line 210
+OpenGL Warning: Assertion failed: obj=0, file /mnt/tinderbox/add-5.1/src/VBox/Additions/common/crOpenGL/pack/packspu_glsl.c, line 210
+OpenGL Warning: Assertion failed: obj=0, file /mnt/tinderbox/add-5.1/src/VBox/Additions/common/crOpenGL/pack/packspu_glsl.c, line 210
+OpenGL Warning: Assertion failed: obj=0, file /mnt/tinderbox/add-5.1/src/VBox/Additions/common/crOpenGL/pack/packspu_glsl.c, line 210
+OpenGL Warning: Assertion failed: obj=0, file /mnt/tinderbox/add-5.1/src/VBox/Additions/common/crOpenGL/pack/packspu_glsl.c, line 210
+OpenGL Warning: Assertion failed: obj=0, file /mnt/tinderbox/add-5.1/src/VBox/Additions/common/crOpenGL/pack/packspu_glsl.c, line 210
+OpenGL Warning: Assertion failed: obj=0, file /mnt/tinderbox/add-5.1/src/VBox/Additions/common/crOpenGL/pack/packspu_glsl.c, line 210
+OpenGL Warning: Assertion failed: obj=0, file /mnt/tinderbox/add-5.1/src/VBox/Additions/common/crOpenGL/pack/packspu_glsl.c, line 210
+OpenGL Warning: Assertion failed: obj=0, file /mnt/tinderbox/add-5.1/src/VBox/Additions/common/crOpenGL/pack/packspu_glsl.c, line 210
+OpenGL Warning: Assertion failed: obj=0, file /mnt/tinderbox/add-5.1/src/VBox/Additions/common/crOpenGL/pack/packspu_glsl.c, line 210
+OpenGL Warning: Assertion failed: obj=0, file /mnt/tinderbox/add-5.1/src/VBox/Additions/common/crOpenGL/pack/packspu_glsl.c, line 210
+OpenGL Warning: Assertion failed: obj=0, file /mnt/tinderbox/add-5.1/src/VBox/Additions/common/crOpenGL/pack/packspu_glsl.c, line 210
+No Extra Command Line Argument Passed Other Than Program Name]0;jagmjg@jagmjg-VirtualBox: ~/cse113/GameOfLife[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/GameOfLife[00m$ ei[Kxit
+exit
+
+Script done on Thu 06 Dec 2018 03:54:48 PM MST

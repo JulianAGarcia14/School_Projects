@@ -1,0 +1,11 @@
+Julian Garcia
+10/12/18
+Lab4
+Script started on Fri 12 Oct 2018 10:04:41 AM MDT
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/Lab4[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/Lab4[00m$ gvv [K[K[Kcc -g -Wall lab4_q2.c -0[Ko lab4_q2
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/Lab4[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/Lab4[00m$ ./lab4_q2
+RED = 18, Orange = 19, YELLOW = 5, GREEN = 6, BLUE = 7, INDIGO = 14, VIOLET = 15
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/Lab4[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/Lab4[00m$ exit
+exit
+
+Script done on Fri 12 Oct 2018 10:05:03 AM MDT

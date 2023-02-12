@@ -1,0 +1,664 @@
+==10924== Memcheck, a memory error detector
+==10924== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==10924== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==10924== Command: ./lab11 locations.txt
+==10924== Parent PID: 3563
+==10924== 
+--10924-- 
+--10924-- Valgrind options:
+--10924--    --show-reachable=yes
+--10924--    --leak-check=full
+--10924--    --log-file=out
+--10924--    -v
+--10924-- Contents of /proc/version:
+--10924--   Linux version 4.13.0-32-generic (buildd@lgw01-amd64-004) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.5)) #35~16.04.1-Ubuntu SMP Thu Jan 25 10:13:43 UTC 2018
+--10924-- 
+--10924-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-lzcnt-rdtscp-sse3-avx
+--10924-- Page sizes: currently 4096, max supported 4096
+--10924-- Valgrind library directory: /usr/lib/valgrind
+--10924-- Reading syms from /home/jagmjg/Dropbox/Cs/cse122/newlab11/lab11
+--10924-- Reading syms from /lib/x86_64-linux-gnu/ld-2.23.so
+--10924--   Considering /lib/x86_64-linux-gnu/ld-2.23.so ..
+--10924--   .. CRC mismatch (computed aa979a42 wanted 9019bbb7)
+--10924--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/ld-2.23.so ..
+--10924--   .. CRC is valid
+--10924-- Reading syms from /usr/lib/valgrind/memcheck-amd64-linux
+--10924--   Considering /usr/lib/valgrind/memcheck-amd64-linux ..
+--10924--   .. CRC mismatch (computed eea41ea9 wanted 2009db78)
+--10924--    object doesn't have a symbol table
+--10924--    object doesn't have a dynamic symbol table
+--10924-- Scheduler: using generic scheduler lock implementation.
+--10924-- Reading suppressions file: /usr/lib/valgrind/default.supp
+==10924== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-10924-by-jagmjg-on-???
+==10924== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-10924-by-jagmjg-on-???
+==10924== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-10924-by-jagmjg-on-???
+==10924== 
+==10924== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==10924== don't want to do, unless you know exactly what you're doing,
+==10924== or are doing some strange experiment):
+==10924==   /usr/lib/valgrind/../../bin/vgdb --pid=10924 ...command...
+==10924== 
+==10924== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==10924==   /path/to/gdb ./lab11
+==10924== and then give GDB the following command
+==10924==   target remote | /usr/lib/valgrind/../../bin/vgdb --pid=10924
+==10924== --pid is optional if only one valgrind process is running
+==10924== 
+--10924-- REDIR: 0x401cfd0 (ld-linux-x86-64.so.2:strlen) redirected to 0x3809e181 (???)
+--10924-- Reading syms from /usr/lib/valgrind/vgpreload_core-amd64-linux.so
+--10924--   Considering /usr/lib/valgrind/vgpreload_core-amd64-linux.so ..
+--10924--   .. CRC mismatch (computed 2567ccf6 wanted 49420590)
+--10924--    object doesn't have a symbol table
+--10924-- Reading syms from /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so
+--10924--   Considering /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so ..
+--10924--   .. CRC mismatch (computed 0e27c9a8 wanted ac585421)
+--10924--    object doesn't have a symbol table
+==10924== WARNING: new redirection conflicts with existing -- ignoring it
+--10924--     old: 0x0401cfd0 (strlen              ) R-> (0000.0) 0x3809e181 ???
+--10924--     new: 0x0401cfd0 (strlen              ) R-> (2007.0) 0x04c31020 strlen
+--10924-- REDIR: 0x401b920 (ld-linux-x86-64.so.2:index) redirected to 0x4c30bc0 (index)
+--10924-- REDIR: 0x401bb40 (ld-linux-x86-64.so.2:strcmp) redirected to 0x4c320d0 (strcmp)
+--10924-- REDIR: 0x401dd30 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4c35270 (mempcpy)
+--10924-- Reading syms from /lib/x86_64-linux-gnu/libc-2.23.so
+--10924--   Considering /lib/x86_64-linux-gnu/libc-2.23.so ..
+--10924--   .. CRC mismatch (computed 7a8ee3e4 wanted a5190ac4)
+--10924--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libc-2.23.so ..
+--10924--   .. CRC is valid
+--10924-- REDIR: 0x4ec9a00 (libc.so.6:strcasecmp) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--10924-- REDIR: 0x4ec5280 (libc.so.6:strcspn) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--10924-- REDIR: 0x4ecbcf0 (libc.so.6:strncasecmp) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--10924-- REDIR: 0x4ec76f0 (libc.so.6:strpbrk) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--10924-- REDIR: 0x4ec7a80 (libc.so.6:strspn) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--10924-- REDIR: 0x4ec914b (libc.so.6:memcpy@GLIBC_2.2.5) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--10924-- REDIR: 0x4ec7400 (libc.so.6:rindex) redirected to 0x4c308a0 (rindex)
+--10924-- REDIR: 0x4ebe130 (libc.so.6:malloc) redirected to 0x4c2db20 (malloc)
+--10924-- REDIR: 0x4ec8060 (libc.so.6:__GI_strstr) redirected to 0x4c354d0 (__strstr_sse2)
+--10924-- REDIR: 0x4ec5720 (libc.so.6:strlen) redirected to 0x4c30f60 (strlen)
+--10924-- REDIR: 0x4ec8860 (libc.so.6:memchr) redirected to 0x4c32170 (memchr)
+--10924-- REDIR: 0x4ece470 (libc.so.6:__GI_memcpy) redirected to 0x4c32b00 (__GI_memcpy)
+--10924-- REDIR: 0x4ebe6c0 (libc.so.6:realloc) redirected to 0x4c2fce0 (realloc)
+--10924-- REDIR: 0x4ec3a80 (libc.so.6:index) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--10924-- REDIR: 0x4ec3ab0 (libc.so.6:__GI_strchr) redirected to 0x4c30a00 (__GI_strchr)
+--10924-- REDIR: 0x4ed0760 (libc.so.6:strchrnul) redirected to 0x4c34da0 (strchrnul)
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8A6C8: __printf_fp_l (printf_fp.c:381)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8A6E2: __printf_fp_l (printf_fp.c:395)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E84060: __mpn_extract_double (dbl2mpn.c:56)
+==10924==    by 0x4E8A711: __printf_fp_l (printf_fp.c:411)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E84065: __mpn_extract_double (dbl2mpn.c:60)
+==10924==    by 0x4E8A711: __printf_fp_l (printf_fp.c:411)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B3B8: __printf_fp_l (printf_fp.c:959)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B3DB: __printf_fp_l (printf_fp.c:962)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B80A: __printf_fp_l (printf_fp.c:972)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B81E: __printf_fp_l (printf_fp.c:972)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8BA8B: round_away (rounding-mode.h:52)
+==10924==    by 0x4E8BA8B: __printf_fp_l (printf_fp.c:979)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B55F: __printf_fp_l (printf_fp.c:1147)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B836: __printf_fp_l (printf_fp.c:1154)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+--10924-- REDIR: 0x4ec93b0 (libc.so.6:__GI_mempcpy) redirected to 0x4c34fa0 (__GI_mempcpy)
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B9F1: __printf_fp_l (printf_fp.c:1210)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B9D3: __printf_fp_l (printf_fp.c:1212)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4EB475D: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:850)
+==10924==    by 0x4E8C666: __printf_fp_l (printf_fp.c:1236)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4EB478A: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:858)
+==10924==    by 0x4E8C666: __printf_fp_l (printf_fp.c:1236)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8C66A: __printf_fp_l (printf_fp.c:1236)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== Syscall param write(buf) points to uninitialised byte(s)
+==10924==    at 0x4F312C0: __write_nocancel (syscall-template.S:84)
+==10924==    by 0x4EB2BFE: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1263)
+==10924==    by 0x4EB4408: new_do_write (fileops.c:518)
+==10924==    by 0x4EB4408: _IO_do_write@@GLIBC_2.2.5 (fileops.c:494)
+==10924==    by 0x4EB347C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==10924==    by 0x4E8792C: vfprintf (vfprintf.c:1663)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924==  Address 0x5205692 is 2 bytes inside a block of size 1,024 alloc'd
+==10924==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10924==    by 0x4EA71D4: _IO_file_doallocate (filedoalloc.c:127)
+==10924==    by 0x4EB5593: _IO_doallocbuf (genops.c:398)
+==10924==    by 0x4EB48F7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+==10924==    by 0x4E8C666: __printf_fp_l (printf_fp.c:1236)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+--10924-- REDIR: 0x4ec73c0 (libc.so.6:strncpy) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--10924-- REDIR: 0x4ee0000 (libc.so.6:__strncpy_sse2_unaligned) redirected to 0x4c31570 (__strncpy_sse2_unaligned)
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E88CC0: vfprintf (vfprintf.c:1632)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E892DB: vfprintf (vfprintf.c:1632)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8A6C8: __printf_fp_l (printf_fp.c:381)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8A6E2: __printf_fp_l (printf_fp.c:395)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E84060: __mpn_extract_double (dbl2mpn.c:56)
+==10924==    by 0x4E8A711: __printf_fp_l (printf_fp.c:411)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E84065: __mpn_extract_double (dbl2mpn.c:60)
+==10924==    by 0x4E8A711: __printf_fp_l (printf_fp.c:411)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B3B8: __printf_fp_l (printf_fp.c:959)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B3DB: __printf_fp_l (printf_fp.c:962)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B80A: __printf_fp_l (printf_fp.c:972)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B81E: __printf_fp_l (printf_fp.c:972)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8BA8B: round_away (rounding-mode.h:52)
+==10924==    by 0x4E8BA8B: __printf_fp_l (printf_fp.c:979)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B55F: __printf_fp_l (printf_fp.c:1147)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B836: __printf_fp_l (printf_fp.c:1154)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B9F1: __printf_fp_l (printf_fp.c:1210)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B9D3: __printf_fp_l (printf_fp.c:1212)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+--10924-- REDIR: 0x4ebe4f0 (libc.so.6:free) redirected to 0x4c2ed80 (free)
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4C2EDA1: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10924==    by 0x4010FC: main (lab11.c:131)
+==10924== 
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4C2EDA1: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10924==    by 0x401123: main (lab11.c:132)
+==10924== 
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4C2EDA1: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10924==    by 0x40114A: main (lab11.c:133)
+==10924== 
+==10924== Invalid free() / delete / delete[] / realloc()
+==10924==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10924==    by 0x4011A3: main (lab11.c:138)
+==10924==  Address 0xffefffcd0 is on thread 1's stack
+==10924==  in frame #1, created by main (lab11.c:31)
+==10924== 
+==10924== Syscall param write(buf) points to uninitialised byte(s)
+==10924==    at 0x4F312C0: __write_nocancel (syscall-template.S:84)
+==10924==    by 0x4EB2BFE: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1263)
+==10924==    by 0x4EB4408: new_do_write (fileops.c:518)
+==10924==    by 0x4EB4408: _IO_do_write@@GLIBC_2.2.5 (fileops.c:494)
+==10924==    by 0x4EB39AF: _IO_file_close_it@@GLIBC_2.2.5 (fileops.c:165)
+==10924==    by 0x4EA73EE: fclose@@GLIBC_2.2.5 (iofclose.c:58)
+==10924==    by 0x4011C1: main (lab11.c:140)
+==10924==  Address 0x5210b5b is 1,931 bytes inside a block of size 4,096 alloc'd
+==10924==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10924==    by 0x4EA71D4: _IO_file_doallocate (filedoalloc.c:127)
+==10924==    by 0x4EB5593: _IO_doallocbuf (genops.c:398)
+==10924==    by 0x4EB48F7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+==10924==    by 0x4EB328C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==10924==    by 0x4E87240: vfprintf (vfprintf.c:1320)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== 
+==10924== HEAP SUMMARY:
+==10924==     in use at exit: 0 bytes in 0 blocks
+==10924==   total heap usage: 190 allocs, 191 frees, 41,328 bytes allocated
+==10924== 
+==10924== All heap blocks were freed -- no leaks are possible
+==10924== 
+==10924== Use --track-origins=yes to see where uninitialised values come from
+==10924== ERROR SUMMARY: 7174 errors from 37 contexts (suppressed: 0 from 0)
+==10924== 
+==10924== 1 errors in context 1 of 37:
+==10924== Syscall param write(buf) points to uninitialised byte(s)
+==10924==    at 0x4F312C0: __write_nocancel (syscall-template.S:84)
+==10924==    by 0x4EB2BFE: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1263)
+==10924==    by 0x4EB4408: new_do_write (fileops.c:518)
+==10924==    by 0x4EB4408: _IO_do_write@@GLIBC_2.2.5 (fileops.c:494)
+==10924==    by 0x4EB39AF: _IO_file_close_it@@GLIBC_2.2.5 (fileops.c:165)
+==10924==    by 0x4EA73EE: fclose@@GLIBC_2.2.5 (iofclose.c:58)
+==10924==    by 0x4011C1: main (lab11.c:140)
+==10924==  Address 0x5210b5b is 1,931 bytes inside a block of size 4,096 alloc'd
+==10924==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10924==    by 0x4EA71D4: _IO_file_doallocate (filedoalloc.c:127)
+==10924==    by 0x4EB5593: _IO_doallocbuf (genops.c:398)
+==10924==    by 0x4EB48F7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+==10924==    by 0x4EB328C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==10924==    by 0x4E87240: vfprintf (vfprintf.c:1320)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== 
+==10924== 1 errors in context 2 of 37:
+==10924== Invalid free() / delete / delete[] / realloc()
+==10924==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10924==    by 0x4011A3: main (lab11.c:138)
+==10924==  Address 0xffefffcd0 is on thread 1's stack
+==10924==  in frame #1, created by main (lab11.c:31)
+==10924== 
+==10924== 
+==10924== 17 errors in context 3 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B836: __printf_fp_l (printf_fp.c:1154)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== 
+==10924== 17 errors in context 4 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B55F: __printf_fp_l (printf_fp.c:1147)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== 
+==10924== 17 errors in context 5 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8BA8B: round_away (rounding-mode.h:52)
+==10924==    by 0x4E8BA8B: __printf_fp_l (printf_fp.c:979)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== 
+==10924== 17 errors in context 6 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B81E: __printf_fp_l (printf_fp.c:972)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== 
+==10924== 17 errors in context 7 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B80A: __printf_fp_l (printf_fp.c:972)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== 
+==10924== 17 errors in context 8 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B3DB: __printf_fp_l (printf_fp.c:962)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== 
+==10924== 17 errors in context 9 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B3B8: __printf_fp_l (printf_fp.c:959)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== 
+==10924== 17 errors in context 10 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E84065: __mpn_extract_double (dbl2mpn.c:60)
+==10924==    by 0x4E8A711: __printf_fp_l (printf_fp.c:411)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== 
+==10924== 17 errors in context 11 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E84060: __mpn_extract_double (dbl2mpn.c:56)
+==10924==    by 0x4E8A711: __printf_fp_l (printf_fp.c:411)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== 
+==10924== 17 errors in context 12 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8A6E2: __printf_fp_l (printf_fp.c:395)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== 
+==10924== 17 errors in context 13 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8A6C8: __printf_fp_l (printf_fp.c:381)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== 
+==10924== 17 errors in context 14 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E892DB: vfprintf (vfprintf.c:1632)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== 
+==10924== 102 errors in context 15 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B9D3: __printf_fp_l (printf_fp.c:1212)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== 
+==10924== 102 errors in context 16 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B9F1: __printf_fp_l (printf_fp.c:1210)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== 
+==10924== 111 errors in context 17 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E88CC0: vfprintf (vfprintf.c:1632)
+==10924==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==10924==    by 0x4010A4: main (lab11.c:123)
+==10924== 
+==10924== 
+==10924== 131 errors in context 18 of 37:
+==10924== Syscall param write(buf) points to uninitialised byte(s)
+==10924==    at 0x4F312C0: __write_nocancel (syscall-template.S:84)
+==10924==    by 0x4EB2BFE: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1263)
+==10924==    by 0x4EB4408: new_do_write (fileops.c:518)
+==10924==    by 0x4EB4408: _IO_do_write@@GLIBC_2.2.5 (fileops.c:494)
+==10924==    by 0x4EB347C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==10924==    by 0x4E8792C: vfprintf (vfprintf.c:1663)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924==  Address 0x5205692 is 2 bytes inside a block of size 1,024 alloc'd
+==10924==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10924==    by 0x4EA71D4: _IO_file_doallocate (filedoalloc.c:127)
+==10924==    by 0x4EB5593: _IO_doallocbuf (genops.c:398)
+==10924==    by 0x4EB48F7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+==10924==    by 0x4E8C666: __printf_fp_l (printf_fp.c:1236)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== 
+==10924== 132 errors in context 19 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4C2EDA1: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10924==    by 0x40114A: main (lab11.c:133)
+==10924== 
+==10924== 
+==10924== 132 errors in context 20 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4C2EDA1: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10924==    by 0x4010FC: main (lab11.c:131)
+==10924== 
+==10924== 
+==10924== 149 errors in context 21 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4C2EDA1: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10924==    by 0x401123: main (lab11.c:132)
+==10924== 
+==10924== 
+==10924== 149 errors in context 22 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B836: __printf_fp_l (printf_fp.c:1154)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== 
+==10924== 149 errors in context 23 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B55F: __printf_fp_l (printf_fp.c:1147)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== 
+==10924== 149 errors in context 24 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8BA8B: round_away (rounding-mode.h:52)
+==10924==    by 0x4E8BA8B: __printf_fp_l (printf_fp.c:979)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== 
+==10924== 149 errors in context 25 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B81E: __printf_fp_l (printf_fp.c:972)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== 
+==10924== 149 errors in context 26 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B80A: __printf_fp_l (printf_fp.c:972)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== 
+==10924== 149 errors in context 27 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B3DB: __printf_fp_l (printf_fp.c:962)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== 
+==10924== 149 errors in context 28 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B3B8: __printf_fp_l (printf_fp.c:959)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== 
+==10924== 149 errors in context 29 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E84065: __mpn_extract_double (dbl2mpn.c:60)
+==10924==    by 0x4E8A711: __printf_fp_l (printf_fp.c:411)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== 
+==10924== 149 errors in context 30 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E84060: __mpn_extract_double (dbl2mpn.c:56)
+==10924==    by 0x4E8A711: __printf_fp_l (printf_fp.c:411)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== 
+==10924== 149 errors in context 31 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8A6E2: __printf_fp_l (printf_fp.c:395)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== 
+==10924== 149 errors in context 32 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8A6C8: __printf_fp_l (printf_fp.c:381)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== 
+==10924== 894 errors in context 33 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8C66A: __printf_fp_l (printf_fp.c:1236)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== 
+==10924== 894 errors in context 34 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4EB478A: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:858)
+==10924==    by 0x4E8C666: __printf_fp_l (printf_fp.c:1236)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== 
+==10924== 894 errors in context 35 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4EB475D: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:850)
+==10924==    by 0x4E8C666: __printf_fp_l (printf_fp.c:1236)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== 
+==10924== 894 errors in context 36 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B9D3: __printf_fp_l (printf_fp.c:1212)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== 
+==10924== 894 errors in context 37 of 37:
+==10924== Conditional jump or move depends on uninitialised value(s)
+==10924==    at 0x4E8B9F1: __printf_fp_l (printf_fp.c:1210)
+==10924==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==10924==    by 0x4E8F898: printf (printf.c:33)
+==10924==    by 0x400F8D: main (lab11.c:109)
+==10924== 
+==10924== ERROR SUMMARY: 7174 errors from 37 contexts (suppressed: 0 from 0)

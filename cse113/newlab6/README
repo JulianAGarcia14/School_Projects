@@ -1,0 +1,120 @@
+Julian Garcia
+10/24/18
+Lab 6
+CSE 113
+
+PART 1:
+Man GDB
+
+•
+file
+Used to choose which file to load into GDB, you can also do this when launching gdb by typing the name of the file after the gdp command.
+•
+backtrace
+Examines the current call stack, bt is the shorthand for this command.
+bt full shows the values of used variables.
+•
+run
+Runs the program, r is the shorthand for this command.
+•
+list
+Command to show 10 lines of the source code, l is the shorthand for this command. Enter line number after command to make start point, place a "," before line number to make end point. Name function after command to display a certain function. Re-enter command to view next 10 lines.
+•
+help
+Displays commands and uses of gdb, h is the shorthand for this. Entering a certain command after "help" displays information pertaining to that command.
+•
+break
+Sets a breakpoint (stops the execution of the program) at a certain line in the source code, b is the shorthand for this command.
+•
+continue
+Runs the program until it reaches the next breakpoint or exits, c is the shorthand for this command.
+•
+step
+Runs one line of code, s is the shorthand for this command. To skip a certain amount of lines simply enter the number of lines you want to skip after the command.
+•
+info locals
+Prints all local variables.
+•
+print
+print current value of variables, p is the shorthand for this.
+ptype or pt shows the type of variable being printed.
+Can also set values for variables.
+•
+frame
+Displays current frame or specified frame.
+•
+kill
+Resets debugging process and keeps breakpoints.
+•
+next
+Command like skip, in that it moves line by line, but it skips over functions.
+•
+info breakpoints
+Prints list of breakpoints, shorthand is info b.
+•
+disable/enable
+Disables or enables a breakpoint.
+•
+delete
+Deletes a certain breakpoint, clear also serves this purpose.
+•
+watch
+Stops the program whenever a specified variable changes.
+•
+Conditional breakpoints are breakpoints set to only occur if a certain requirement is met. You would use this to essentially save time while debugging, as they're automatic checks for known possible errors.
+
+..........................................................
+PART 2:
+Corrections:
+
+1....................
+bad.c
+The first correction I made was changing the declaration of i in the function print_scrambled:
+//corrected Julian Garcia 10/28/2018
+int i = 0;
+//int i = 3;
+The second correction I made was adding the line
+message = msg;
+to the main function.
+
+2....................
+product.c
+So far all I've done is stop the program from endlessly looping adding this section to the else part of the loop:
+if (a == mid) {
+       return a;
+}
+This produces 35 though, which is the wrong answer.
+
+3....................
+Pointer.c
+
+//corrected Julian Garcia 10/28/2018
+p = &a;
+//p = a;
+printf("%d\n", *p);
+
+//corrected Julian Garcia 10/28/2018
+p = &b;
+//b = &p;
+
+4....................
+sort_easy.c
+The way I corrected this code probably isn't the best possible way, I essentially assumed that the code was going through too many increments and added this code to accommodate
+//corrected Julian Garcia 10/28/2018
+if(n % 2 == 0){
+	break;
+}
+To the lowest index loop, the if statement is there because this sorting error didn't occur for some non-even arrays.
+I also removed j = cur + 1 from the for statement since that seemed to fix other non-given arrays I was testing:
+//corrected Julian Garcia 10/28/2018
+lowest_index = cur;
+j = cur + 1;
+for (; j < n; j++) {
+//	for (j = cur + 1; j < n; j++) {
+
+As the code is it's able to sort out every given array accurately, but I'm unsure whether or not it will sort every array, I'm certain the error had to do with the loop incrementing incorrectly.
+5....................
+insert_sort.c
+The only correction I added to this was including some libraries:
+#include<stdio.h>
+#include<stdlib.h>

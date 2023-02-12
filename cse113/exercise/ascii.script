@@ -1,0 +1,32 @@
+Script started on Wed 29 Aug 2018 01:16:07 PM MDT
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/exercise[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/exercise[00m$ gcc ascii.c -o ascii
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/exercise[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/exercise[00m$ ./ascii
+                                   @@@@@@@                                     
+                l               @@@@@@@@@@@@                   l               
+               ll          @@@   ___________  @@@              ll              
+               ll        @    ~`   :::#::: `~      @           ll              
+              lll      @    ~`    :::###:::  `~     @@         lll             
+              lll      @  ~`    ::::#####::::  `~   @           lll            
+             lll      @  ``    ::::#######::::  ``   @          llll           
+             llll      @@ ``  ::#############:::: `' @@@        llll           
+             llll       @@ `~ ::::#########::::  ~` @@@          llll          
+              llll      @@@ `~ ::::######:::: ~`  @@@          llll            
+              lllll       @@  `~ :::#####::: ~`  @@            llll            
+              llllll        @@@   :::###::: ~`@@@            lllll             
+               lllll          @@@   ::#::   @@@            lllll               
+                llll               @@@@@@@                  lllllll            
+                llllll               @@@                  lllllll              
+                  lllllll                             lllllllll                
+                  llllllllll                      lllllllllllllll              
+                llllllllllllll                   lllllllllllllllll             
+                 lllllllllllllll                lllllllllllllllll              
+                 lllllllllllllllll           lllllllllllllllllll               
+                lllllllllllllllllllll       llllllllllllllll                   
+                lllllllllllllllllllllll   lllllllllllllllllllllll              
+               llllllllllllllllllllllllllllllllllllllllllllllllll              
+               llllllllllllllllllllllllllllllllllllllllllllllllllll            
+              lllllllllllllllllllllllllllllllllllllllllllllllllllllll          
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/exercise[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/exercise[00m$ exit
+exit
+
+Script done on Wed 29 Aug 2018 01:16:21 PM MDT

@@ -1,0 +1,22 @@
+Script started on Wed 06 Sep 2017 08:32:07 PM MDT
+]0;jagmjg@jagmjg-VirtualBox: ~[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~[00m$ cd manipulation[K[Kg[Kng_files
+]0;jagmjg@jagmjg-VirtualBox: ~/manipulating_files[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/manipulating_files[00m$ touch toug[Kched.txt
+]0;jagmjg@jagmjg-VirtualBox: ~/manipulating_files[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/manipulating_files[00m$ gedit touched.txt
+]0;jagmjg@jagmjg-VirtualBox: ~/manipulating_files[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/manipulating_files[00m$ cat touched.txt
+Please don't remove me!!!:DDD
+]0;jagmjg@jagmjg-VirtualBox: ~/manipulating_files[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/manipulating_files[00m$ t[Krm touched.txt
+]0;jagmjg@jagmjg-VirtualBox: ~/manipulating_files[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/manipulating_files[00m$ ls empty_directory
+]0;jagmjg@jagmjg-VirtualBox: ~/manipulating_files[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/manipulating_files[00m$ rmdir empty_directory
+]0;jagmjg@jagmjg-VirtualBox: ~/manipulating_files[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/manipulating_files[00m$ ls full_directory
+file0   file14  file2   file25  file30  file36  file41  file47  file7
+file1   file15  file20  file26  file31  file37  file42  file48  file8
+file10  file16  file21  file27  file32  file38  file43  file49  file9
+file11  file17  file22  file28  file33  file39  file44  file5
+file12  file18  file23  file29  file34  file4   file45  file50
+file13  file19  file24  file3   file35  file40  file46  file6
+]0;jagmjg@jagmjg-VirtualBox: ~/manipulating_files[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/manipulating_files[00m$ rm -R full_di[Kirectory
+]0;jagmjg@jagmjg-VirtualBox: ~/manipulating_files[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/manipulating_files[00m$ ls
+]0;jagmjg@jagmjg-VirtualBox: ~/manipulating_files[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/manipulating_files[00m$ exit
+exit
+
+Script done on Wed 06 Sep 2017 08:34:56 PM MDT

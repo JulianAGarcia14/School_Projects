@@ -1,0 +1,6 @@
+City, State or Country or D.C.
+Latitude (DD MM)
+Longitude (DD MM)
+Albany, NY
+42 40 N
+73 45 W

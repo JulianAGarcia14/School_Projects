@@ -1,0 +1,49 @@
+Julian Garcia
+10/12/18
+Lab4
+Script started on Fri 12 Oct 2018 10:05:29 AM MDT
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/Lab4[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/Lab4[00m$ gcc -g -Wall lab4_q3.c -o lab4_q3
+/tmp/cc2n8A5T.o: In function `Eu_distance':
+/home/jagmjg/cse113/Lab4/lab4_q3.c:67: undefined reference to `pow'
+/home/jagmjg/cse113/Lab4/lab4_q3.c:67: undefined reference to `pow'
+/home/jagmjg/cse113/Lab4/lab4_q3.c:67: undefined reference to `sqrt'
+collect2: error: ld returned 1 exit status
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/Lab4[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/Lab4[00m$ gcc -g -Wall lab4_q3.c -o lab4_q3-lab4_q3[Clab4_q3mlab4_q3[1Plab4_q3[1Pab4_q3[1Plab4_q3[1Plab4_q3[1Plab4_q3[Clab4_q3mlab4_q3 lab4_q3-lab4_q3olab4_q3 lab4_q3
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/Lab4[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/Lab4[00m$ ./lab4_q3
+Enter x1;3
+Enter x2;4
+Enter y1;3
+Enter y2;4
+Choose calculation:
+1 for Euclidean distance
+2 for Manhattan Distance
+3 for both
+1
+Euclidean distance is 1.414214
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/Lab4[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/Lab4[00m$ ./lab4_q3
+Enter x1;3
+Enter x2;4
+Enter y1;3
+Enter y2;4
+Choose calculation:
+1 for Euclidean distance
+2 for Manhattan Distance
+3 for both
+2
+Manhattan distance is 2.000000
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/Lab4[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/Lab4[00m$ ./lab4_q3
+Enter x1;3
+Enter x2;4
+Enter y1;3
+Enter y2;4
+Choose calculation:
+1 for Euclidean distance
+2 for Manhattan Distance
+3 for both
+3
+Euclidean distance is 1.414214
+Manhattan distance is 2.000000
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/Lab4[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/Lab4[00m$ exit
+exit
+
+Script done on Fri 12 Oct 2018 10:06:33 AM MDT

@@ -1,0 +1,25 @@
+Julian Garcia
+Prelab2
+9/13/18
+Script started on Thu 13 Sep 2018 11:11:05 PM MDT
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/prelab2[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/prelab2[00m$ gcc -g -Wall prelab2_q2.c -o prelab2.[K
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/prelab2[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/prelab2[00m$ ./prelab2
+Enter an integer:
+1
+My friend, one is weak number, always lose to two.
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/prelab2[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/prelab2[00m$ ./prelab2
+Enter an integer:
+3
+Three is strong number, always beat two.
+ ]0;jagmjg@jagmjg-VirtualBox: ~/cse113/prelab2[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/prelab2[00m$ ./prelab2
+Enter an integer:
+7
+7? Are you some sort of blue blooded сука блять (dont translate that).
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/prelab2[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/prelab2[00m$ ./prelab2
+Enter an integer:
+2
+2? Are you some sort of blue blooded сука блять (dont translate that).
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/prelab2[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/prelab2[00m$ exit
+exit
+
+Script done on Thu 13 Sep 2018 11:11:43 PM MDT

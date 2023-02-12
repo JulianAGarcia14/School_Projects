@@ -1,0 +1,135 @@
+==27315== Memcheck, a memory error detector
+==27315== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==27315== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==27315== Command: ./permutation
+==27315== Parent PID: 4910
+==27315== 
+--27315-- 
+--27315-- Valgrind options:
+--27315--    --show-reachable=yes
+--27315--    --leak-check=full
+--27315--    --log-file=out
+--27315--    --track-origins=yes
+--27315--    -v
+--27315-- Contents of /proc/version:
+--27315--   Linux version 4.13.0-32-generic (buildd@lgw01-amd64-004) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.5)) #35~16.04.1-Ubuntu SMP Thu Jan 25 10:13:43 UTC 2018
+--27315-- 
+--27315-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-lzcnt-rdtscp-sse3-avx
+--27315-- Page sizes: currently 4096, max supported 4096
+--27315-- Valgrind library directory: /usr/lib/valgrind
+--27315-- Reading syms from /home/jagmjg/Dropbox/Cs/cse122/Hw4/permutation
+--27315-- Reading syms from /lib/x86_64-linux-gnu/ld-2.23.so
+--27315--   Considering /lib/x86_64-linux-gnu/ld-2.23.so ..
+--27315--   .. CRC mismatch (computed aa979a42 wanted 9019bbb7)
+--27315--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/ld-2.23.so ..
+--27315--   .. CRC is valid
+--27315-- Reading syms from /usr/lib/valgrind/memcheck-amd64-linux
+--27315--   Considering /usr/lib/valgrind/memcheck-amd64-linux ..
+--27315--   .. CRC mismatch (computed eea41ea9 wanted 2009db78)
+--27315--    object doesn't have a symbol table
+--27315--    object doesn't have a dynamic symbol table
+--27315-- Scheduler: using generic scheduler lock implementation.
+--27315-- Reading suppressions file: /usr/lib/valgrind/default.supp
+==27315== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-27315-by-jagmjg-on-???
+==27315== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-27315-by-jagmjg-on-???
+==27315== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-27315-by-jagmjg-on-???
+==27315== 
+==27315== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==27315== don't want to do, unless you know exactly what you're doing,
+==27315== or are doing some strange experiment):
+==27315==   /usr/lib/valgrind/../../bin/vgdb --pid=27315 ...command...
+==27315== 
+==27315== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==27315==   /path/to/gdb ./permutation
+==27315== and then give GDB the following command
+==27315==   target remote | /usr/lib/valgrind/../../bin/vgdb --pid=27315
+==27315== --pid is optional if only one valgrind process is running
+==27315== 
+--27315-- REDIR: 0x401cfd0 (ld-linux-x86-64.so.2:strlen) redirected to 0x3809e181 (???)
+--27315-- Reading syms from /usr/lib/valgrind/vgpreload_core-amd64-linux.so
+--27315--   Considering /usr/lib/valgrind/vgpreload_core-amd64-linux.so ..
+--27315--   .. CRC mismatch (computed 2567ccf6 wanted 49420590)
+--27315--    object doesn't have a symbol table
+--27315-- Reading syms from /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so
+--27315--   Considering /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so ..
+--27315--   .. CRC mismatch (computed 0e27c9a8 wanted ac585421)
+--27315--    object doesn't have a symbol table
+==27315== WARNING: new redirection conflicts with existing -- ignoring it
+--27315--     old: 0x0401cfd0 (strlen              ) R-> (0000.0) 0x3809e181 ???
+--27315--     new: 0x0401cfd0 (strlen              ) R-> (2007.0) 0x04c31020 strlen
+--27315-- REDIR: 0x401b920 (ld-linux-x86-64.so.2:index) redirected to 0x4c30bc0 (index)
+--27315-- REDIR: 0x401bb40 (ld-linux-x86-64.so.2:strcmp) redirected to 0x4c320d0 (strcmp)
+--27315-- REDIR: 0x401dd30 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4c35270 (mempcpy)
+--27315-- Reading syms from /lib/x86_64-linux-gnu/libc-2.23.so
+--27315--   Considering /lib/x86_64-linux-gnu/libc-2.23.so ..
+--27315--   .. CRC mismatch (computed 7a8ee3e4 wanted a5190ac4)
+--27315--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libc-2.23.so ..
+--27315--   .. CRC is valid
+--27315-- REDIR: 0x4ec9a00 (libc.so.6:strcasecmp) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--27315-- REDIR: 0x4ec5280 (libc.so.6:strcspn) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--27315-- REDIR: 0x4ecbcf0 (libc.so.6:strncasecmp) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--27315-- REDIR: 0x4ec76f0 (libc.so.6:strpbrk) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--27315-- REDIR: 0x4ec7a80 (libc.so.6:strspn) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--27315-- REDIR: 0x4ec914b (libc.so.6:memcpy@GLIBC_2.2.5) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--27315-- REDIR: 0x4ec7400 (libc.so.6:rindex) redirected to 0x4c308a0 (rindex)
+--27315-- REDIR: 0x4ec5720 (libc.so.6:strlen) redirected to 0x4c30f60 (strlen)
+--27315-- REDIR: 0x4ebe130 (libc.so.6:malloc) redirected to 0x4c2db20 (malloc)
+--27315-- REDIR: 0x4ec93b0 (libc.so.6:__GI_mempcpy) redirected to 0x4c34fa0 (__GI_mempcpy)
+--27315-- REDIR: 0x4ed0760 (libc.so.6:strchrnul) redirected to 0x4c34da0 (strchrnul)
+--27315-- REDIR: 0x4ebe4f0 (libc.so.6:free) redirected to 0x4c2ed80 (free)
+==27315== Conditional jump or move depends on uninitialised value(s)
+==27315==    at 0x400D9A: used (permutation.c:182)
+==27315==    by 0x40099F: main (permutation.c:93)
+==27315==  Uninitialised value was created by a heap allocation
+==27315==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==27315==    by 0x400D0D: used (permutation.c:173)
+==27315==    by 0x40099F: main (permutation.c:93)
+==27315== 
+--27315-- REDIR: 0x4ece470 (libc.so.6:__GI_memcpy) redirected to 0x4c32b00 (__GI_memcpy)
+==27315== 
+==27315== HEAP SUMMARY:
+==27315==     in use at exit: 103,065,248 bytes in 156 blocks
+==27315==   total heap usage: 231 allocs, 75 frees, 127,105,936 bytes allocated
+==27315== 
+==27315== Searching for pointers to 156 not-freed blocks
+==27315== Checked 10,302,304 bytes
+==27315== 
+==27315== 284,312 bytes in 39 blocks are definitely lost in loss record 1 of 4
+==27315==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==27315==    by 0x400C1D: lucky (permutation.c:148)
+==27315==    by 0x400831: main (permutation.c:66)
+==27315== 
+==27315== 10,240,024 bytes in 3 blocks are possibly lost in loss record 2 of 4
+==27315==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==27315==    by 0x400E16: knuth (permutation.c:200)
+==27315==    by 0x400B05: main (permutation.c:121)
+==27315== 
+==27315== 11,340,432 bytes in 54 blocks are definitely lost in loss record 3 of 4
+==27315==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==27315==    by 0x400CF5: used (permutation.c:172)
+==27315==    by 0x40099F: main (permutation.c:93)
+==27315== 
+==27315== 81,200,480 bytes in 60 blocks are definitely lost in loss record 4 of 4
+==27315==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==27315==    by 0x400E16: knuth (permutation.c:200)
+==27315==    by 0x400B05: main (permutation.c:121)
+==27315== 
+==27315== LEAK SUMMARY:
+==27315==    definitely lost: 92,825,224 bytes in 153 blocks
+==27315==    indirectly lost: 0 bytes in 0 blocks
+==27315==      possibly lost: 10,240,024 bytes in 3 blocks
+==27315==    still reachable: 0 bytes in 0 blocks
+==27315==         suppressed: 0 bytes in 0 blocks
+==27315== 
+==27315== ERROR SUMMARY: 1575004 errors from 5 contexts (suppressed: 0 from 0)
+==27315== 
+==27315== 1575000 errors in context 1 of 5:
+==27315== Conditional jump or move depends on uninitialised value(s)
+==27315==    at 0x400D9A: used (permutation.c:182)
+==27315==    by 0x40099F: main (permutation.c:93)
+==27315==  Uninitialised value was created by a heap allocation
+==27315==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==27315==    by 0x400D0D: used (permutation.c:173)
+==27315==    by 0x40099F: main (permutation.c:93)
+==27315== 
+==27315== ERROR SUMMARY: 1575004 errors from 5 contexts (suppressed: 0 from 0)

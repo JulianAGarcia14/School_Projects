@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bbe7408c-d8c7-4eea-b614-d6393315d0e6" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1r2PgsYD2ljM2RekfpegxSlP8KY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Homework 9" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\JAGMJ\Dropbox\Cs\cse213\Homework 8\src\oop\jgarcia\hw8\two" />
+      <recent name="C:\Users\JAGMJ\Dropbox\Cs\cse213\Homework 8\src\oop\jgarcia\hw8\one" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.GomokuFrame">
+    <configuration name="ClockFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="oop.jgarcia.hw8.one.ClockFrame" />
+      <module name="Homework 8" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="oop.jgarcia.hw8.one.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GomokuFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="oop.jgarcia.hw8.two.GomokuFrame" />
+      <module name="Homework 8" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="oop.jgarcia.hw8.two.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GomokuFrame" />
+        <item itemvalue="Application.ClockFrame" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bbe7408c-d8c7-4eea-b614-d6393315d0e6" name="Default Changelist" comment="" />
+      <created>1618171325512</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618171325512</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="101" key="FileChooserDialogImpl" timestamp="1619110359152">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state x="421" y="101" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1619110359152" />
+    <state width="1238" height="56" key="GridCell.Tab.0.bottom" timestamp="1618283221376">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state width="1238" height="56" key="GridCell.Tab.0.bottom/0.0.1280.690@0.0.1280.690" timestamp="1618283221376" />
+    <state width="1238" height="56" key="GridCell.Tab.0.center" timestamp="1618283221376">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state width="1238" height="56" key="GridCell.Tab.0.center/0.0.1280.690@0.0.1280.690" timestamp="1618283221376" />
+    <state width="1238" height="56" key="GridCell.Tab.0.left" timestamp="1618283221374">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state width="1238" height="56" key="GridCell.Tab.0.left/0.0.1280.690@0.0.1280.690" timestamp="1618283221374" />
+    <state width="1238" height="56" key="GridCell.Tab.0.right" timestamp="1618283221376">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state width="1238" height="56" key="GridCell.Tab.0.right/0.0.1280.690@0.0.1280.690" timestamp="1618283221376" />
+    <state x="336" y="170" key="com.intellij.ide.util.TipDialog" timestamp="1619103531527">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state x="336" y="170" key="com.intellij.ide.util.TipDialog/0.0.1280.690@0.0.1280.690" timestamp="1619103531527" />
+    <state x="65" y="0" key="new project wizard" timestamp="1619707617901">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state x="65" y="0" key="new project wizard/0.0.1280.690@0.0.1280.690" timestamp="1619707617901" />
+    <state x="303" y="12" width="672" height="678" key="search.everywhere.popup" timestamp="1618248857623">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state x="303" y="12" width="672" height="678" key="search.everywhere.popup/0.0.1280.690@0.0.1280.690" timestamp="1618248857623" />
+  </component>
+</project>

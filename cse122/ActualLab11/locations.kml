@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+<Document>
+<name>Mystery Locations</name>
+<Placemark>
+<name>Location 1</name>
+<Point>
+<coordinates>-80.000000,0.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 2</name>
+<Point>
+<coordinates>-10.000000,0.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 3</name>
+<Point>
+<coordinates>-22.000000,90.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 4</name>
+<Point>
+<coordinates>-26.000000,78.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 5</name>
+<Point>
+<coordinates>-90.000000,100.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 6</name>
+<Point>
+<coordinates>-32.000000,108.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 7</name>
+<Point>
+<coordinates>-36.000000,46.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 8</name>
+<Point>
+<coordinates>-46.000000,88.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 9</name>
+<Point>
+<coordinates>-110.000000,76.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 10</name>
+<Point>
+<coordinates>-60.000000,0.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 11</name>
+<Point>
+<coordinates>-60.000000,0.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 12</name>
+<Point>
+<coordinates>-96.000000,0.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 13</name>
+<Point>
+<coordinates>-72.000000,58.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 14</name>
+<Point>
+<coordinates>-42.000000,0.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 15</name>
+<Point>
+<coordinates>-110.000000,100.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 16</name>
+<Point>
+<coordinates>-52.000000,94.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 17</name>
+<Point>
+<coordinates>-94.000000,26.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 18</name>
+<Point>
+<coordinates>-18.000000,10.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 19</name>
+<Point>
+<coordinates>-100.000000,100.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 20</name>
+<Point>
+<coordinates>-16.000000,30.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 21</name>
+<Point>
+<coordinates>-92.000000,112.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 22</name>
+<Point>
+<coordinates>-90.000000,104.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 23</name>
+<Point>
+<coordinates>-40.000000,74.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 24</name>
+<Point>
+<coordinates>-26.000000,60.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 25</name>
+<Point>
+<coordinates>-70.000000,92.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 26</name>
+<Point>
+<coordinates>-36.000000,0.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 27</name>
+<Point>
+<coordinates>-12.000000,6.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 28</name>
+<Point>
+<coordinates>-66.000000,82.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 29</name>
+<Point>
+<coordinates>-20.000000,4.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 30</name>
+<Point>
+<coordinates>-6.000000,100.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 31</name>
+<Point>
+<coordinates>-18.000000,70.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 32</name>
+<Point>
+<coordinates>-90.000000,96.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 33</name>
+<Point>
+<coordinates>-92.000000,24.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 34</name>
+<Point>
+<coordinates>-4.000000,30.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 35</name>
+<Point>
+<coordinates>-118.000000,6.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 36</name>
+<Point>
+<coordinates>-84.000000,0.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 37</name>
+<Point>
+<coordinates>-42.000000,0.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 38</name>
+<Point>
+<coordinates>-20.000000,0.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 39</name>
+<Point>
+<coordinates>-94.000000,0.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 40</name>
+<Point>
+<coordinates>-52.000000,0.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 41</name>
+<Point>
+<coordinates>-114.000000,24.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 42</name>
+<Point>
+<coordinates>-58.000000,110.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 43</name>
+<Point>
+<coordinates>-54.000000,28.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 44</name>
+<Point>
+<coordinates>-92.000000,6.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 45</name>
+<Point>
+<coordinates>-84.000000,36.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 46</name>
+<Point>
+<coordinates>-94.000000,94.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 47</name>
+<Point>
+<coordinates>-60.000000,116.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 48</name>
+<Point>
+<coordinates>-82.000000,56.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 49</name>
+<Point>
+<coordinates>-74.000000,20.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 50</name>
+<Point>
+<coordinates>-96.000000,8.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 51</name>
+<Point>
+<coordinates>-114.000000,114.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 52</name>
+<Point>
+<coordinates>-26.000000,108.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 53</name>
+<Point>
+<coordinates>-106.000000,20.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 54</name>
+<Point>
+<coordinates>-86.000000,52.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 55</name>
+<Point>
+<coordinates>-116.000000,20.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 56</name>
+<Point>
+<coordinates>-0.000000,114.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 57</name>
+<Point>
+<coordinates>-100.000000,40.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 58</name>
+<Point>
+<coordinates>-60.000000,76.000000,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Location 59</name>
+<Point>
+<coordinates>-0.000000,54.000000,0</coordinates>
+</Point>
+</Placemark>
+</Document>
+</kml>

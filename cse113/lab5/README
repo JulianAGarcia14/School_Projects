@@ -1,0 +1,16 @@
+Julian Garcia
+10/22/2018
+Lab 5
+
+Purpose: To use structures and enumerations to solve a data recording problem
+
+Conclusions:
+
+Things I learned:
+I learned how to use sscanf and fgets to record user input. I also learned about how stdin holds input. Using these methods for recording input, I learned how char arrays store input and how enumerations can be used as ways to hold data.
+
+Issues Found:
+The biggest problem found was with actually implementing sscanf and fgets. On multiple occasions my code would skip over inputs due to the /n being left behind after recording previous inputs. Eventually I learned to use getchar to flush those out.
+
+Future Improvements:
+I would like to change the way I implemented user input in this program, as I'm not sure if using getchar was the best way to go about flushing out the /n.

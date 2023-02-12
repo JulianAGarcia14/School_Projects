@@ -1,0 +1,63 @@
+Julian Garcia
+10/24/18
+Lab 6
+CSE 113
+
+Man GDB
+
+•
+file
+Used to choose which file to load into GDB, you can also do this when launching gdb by typing the name of the file after the gdp command.
+•
+backtrace
+Examines the current call stack, bt is the shorthand for this command.
+bt full shows the values of used variables.
+•
+run
+Runs the program, r is the shorthand for this command.
+•
+list
+Command to show 10 lines of the source code, l is the shorthand for this command. Enter line number after command to make start point, place a "," before line number to make end point. Name function after command to display a certain function. Re-enter command to view next 10 lines.
+•
+help
+Displays commands and uses of gdb, h is the shorthand for this. Entering a certain command after "help" displays information pertaining to that command.
+•
+break
+Sets a breakpoint (stops the execution of the program) at a certain line in the source code, b is the shorthand for this command.
+•
+continue
+Runs the program until it reaches the next breakpoint or exits, c is the shorthand for this command.
+•
+step
+Runs one line of code, s is the shorthand for this command. To skip a certain amount of lines simply enter the number of lines you want to skip after the command.
+•
+info locals
+Prints all local variables.
+•
+print
+print current value of variables, p is the shorthand for this.
+ptype or pt shows the type of variable being printed.
+Can also set values for variables.
+•
+frame
+Displays current frame or specified frame.
+•
+kill
+Resets debugging process and keeps breakpoints.
+•
+next
+Command like skip, in that it moves line by line, but it skips over functions.
+•
+info breakpoints
+Prints list of breakpoints, shorthand is info b.
+•
+disable/enable
+Disables or enables a breakpoint.
+•
+delete
+Deletes a certain breakpoint, clear also serves this purpose.
+•
+watch
+Stops the program whenever a specified variable changes.
+•
+Conditional breakpoints are breakpoints set to only occur if a certain requirement is met. You would use this to essentially save time while debugging, as they're automatic checks for known possible errors.

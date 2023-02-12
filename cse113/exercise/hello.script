@@ -1,0 +1,16 @@
+Script started on Mon 27 Aug 2018 09:52:56 AM MDT
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/exercise[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/exercise[00m$ ls
+[0m[01;32ma.out[0m  [01;32mhello[0m  hello.c  hello.o  hello.s  hello.script  [01;32mwelcome[0m  welcome.c
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/exercise[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/exercise[00m$ ./hello
+Hello World
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/exercise[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/exercise[00m$ hexdump -c he[K[K[K[KC hello.c
+00000000  23 69 6e 63 6c 75 64 65  20 3c 73 74 64 69 6f 2e  |#include <stdio.|
+00000010  68 3e 0a 0a 69 6e 74 20  6d 61 69 6e 28 76 6f 69  |h>..int main(voi|
+00000020  64 29 0a 7b 0a 09 70 72  69 6e 74 66 28 22 48 65  |d).{..printf("He|
+00000030  6c 6c 6f 20 57 6f 72 6c  64 5c 6e 22 29 3b 0a 09  |llo World\n");..|
+00000040  72 65 74 75 72 6e 20 30  3b 0a 0a 7d 0a           |return 0;..}.|
+0000004d
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/exercise[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/exercise[00m$ exit
+exit
+
+Script done on Mon 27 Aug 2018 09:54:13 AM MDT

@@ -1,0 +1,33 @@
+Script started on Sat 01 Dec 2018 07:45:32 PM MST
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/lab9[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/lab9[00m$ gcc -g -Wall lab9.c -o lab9
+[01m[Klab9.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Klab9.c:75:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kn3[m[K’ [-Wunused-variable]
+  char *s, *n1, *n2, *n3;
+[01;32m[K                      ^[m[K
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/lab9[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/lab9[00m$ ./lab9
+enter word size:
+4
+unsigned values [0 for no, 1 for yes]:
+0
+enter binary expression, use space to seperate two terms:
+1001 1001
+Segmentation fault (core dumped)
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/lab9[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/lab9[00m$ ./lab9
+enter word size:
+1
+unsigned values [0 for no, 1 for yes]:
+1
+enter binary expression, use space to seperate two terms:
+1001 1001
+Segmentation fault (core dumped)
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/lab9[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/lab9[00m$ ./lab9
+enter word size:
+64
+unsigned values [0 for no, 1 for yes]:
+1
+enter binary expression, use space to seperate two terms:
+Segmentation fault (core dumped)
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/lab9[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/lab9[00m$ exit
+exit
+
+Script done on Sat 01 Dec 2018 07:46:56 PM MST

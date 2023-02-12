@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="clientframe:jar2" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="961e2df4-69cb-4bf0-a46e-14368cf76390" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="final" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1rqdail07Oc4JQ4fezXebZeFOjJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Homework 9" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\JAGMJ\Dropbox\Cs\cse213\final\out\artifacts\clientframe_jar2" />
+      <recent name="C:\Users\JAGMJ\Dropbox\Cs\cse213\final\src\oop\jgarcia\resources" />
+      <recent name="C:\Users\JAGMJ\Dropbox\Cs\cse213\final\src\oop\jgarcia\final\one" />
+      <recent name="C:\Users\JAGMJ\Dropbox\Cs\cse213\final\src\oop\jgarcia\final" />
+      <recent name="C:\Users\JAGMJ\Dropbox\Cs\cse213\final" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JAR Application.clientframe.jar">
+    <configuration name="GomokuFrame" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="oop.jgarcia.GomokuFrame" />
+      <module name="final" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="oop.jgarcia.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="clientframe.jar" type="JarApplication" singleton="false" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/clientframe_jar2/clientframe.jar" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2" />
+    </configuration>
+    <configuration name="final.jar (1)" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/server_jar/final.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="final.jar (2)" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/clientframe_jar2/final.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="server.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/server_jar/server.jar" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.GomokuFrame" />
+      <item itemvalue="JAR Application.clientframe.jar" />
+      <item itemvalue="JAR Application.final.jar (1)" />
+      <item itemvalue="JAR Application.final.jar (2)" />
+      <item itemvalue="JAR Application.server.jar" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JAR Application.clientframe.jar" />
+        <item itemvalue="JAR Application.server.jar" />
+        <item itemvalue="JAR Application.final.jar (2)" />
+        <item itemvalue="Application.GomokuFrame" />
+        <item itemvalue="JAR Application.final.jar (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="961e2df4-69cb-4bf0-a46e-14368cf76390" name="Default Changelist" comment="" />
+      <created>1619707618129</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619707618129</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="233" y="4" key="#Project_Structure" timestamp="1619753333683">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state x="233" y="4" key="#Project_Structure/0.0.1280.690@0.0.1280.690" timestamp="1619753333683" />
+    <state x="96" y="1" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619754643270">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state x="96" y="1" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.690@0.0.1280.690" timestamp="1619754643270" />
+    <state x="238" y="261" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1619753123416">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state x="238" y="261" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1280.690@0.0.1280.690" timestamp="1619753123416" />
+    <state x="421" y="101" key="FileChooserDialogImpl" timestamp="1619910387269">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state x="421" y="101" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1619910387269" />
+    <state width="1238" height="167" key="GridCell.Tab.0.bottom" timestamp="1619797575468">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state width="1238" height="167" key="GridCell.Tab.0.bottom/0.0.1280.690@0.0.1280.690" timestamp="1619797575468" />
+    <state width="1238" height="167" key="GridCell.Tab.0.center" timestamp="1619797575468">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state width="1238" height="167" key="GridCell.Tab.0.center/0.0.1280.690@0.0.1280.690" timestamp="1619797575468" />
+    <state width="1238" height="167" key="GridCell.Tab.0.left" timestamp="1619797575468">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state width="1238" height="167" key="GridCell.Tab.0.left/0.0.1280.690@0.0.1280.690" timestamp="1619797575468" />
+    <state width="1238" height="167" key="GridCell.Tab.0.right" timestamp="1619797575468">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state width="1238" height="167" key="GridCell.Tab.0.right/0.0.1280.690@0.0.1280.690" timestamp="1619797575468" />
+    <state x="213" y="0" key="SettingsEditor" timestamp="1619754626033">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state x="213" y="0" key="SettingsEditor/0.0.1280.690@0.0.1280.690" timestamp="1619754626033" />
+    <state x="336" y="170" key="com.intellij.ide.util.TipDialog" timestamp="1619910367354">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state x="336" y="170" key="com.intellij.ide.util.TipDialog/0.0.1280.690@0.0.1280.690" timestamp="1619910367354" />
+  </component>
+</project>

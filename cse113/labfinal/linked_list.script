@@ -1,0 +1,16 @@
+Script started on Wed 05 Dec 2018 10:33:46 AM MST
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labfinal[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labfinal[00m$ gcc-g[K[K - [Kg -Wall linked_list.c -o linked _list
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labfinal[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labfinal[00m$ ./linked_list
+List 1:
+1 2 3 4 5 124 3 2 1 
+List 2:
+8 2 4 6 8 5 2 117 5 2 1 72 1 
+
+The length of list one is 9.
+
+The length of list two is 13.
+Segmentation fault (core dumped)
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labfinal[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labfinal[00m$ exit
+exit
+
+Script done on Wed 05 Dec 2018 10:34:11 AM MST

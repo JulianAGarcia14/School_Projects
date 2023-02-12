@@ -1,0 +1,143 @@
+
+
+\documentclass[10pt]{article}
+\newcommand\Solution[2][\\]{Solution: \Longunderstack[l]{\Question#1#2}}
+
+% TO PROVIDE BLANK SOLUTION
+%\renewcommand\Solution[2][\\]{Solution: \setbox0=\hbox{%
+%  \Longunderstack[l]{\Question#1#2}}\rule[-\dp0]{0pt}{\dimexpr\ht0+\dp0}}
+% TO PROVIDE NO SOLUTION
+\renewcommand\Solution[2][\\]{}
+
+\title{342 Assignment 4: e-NFA, Rex}
+
+\begin{document}
+\maketitle
+
+Total points: 50\\
+Due Date: Mar  $3$ 2021\\
+
+The formal definition of a e-NFA specifies the following:\\
+\begin{enumerate}
+    \item Alphabet $\Sigma$
+    \item the set of states $Q$
+    \item the start state $S \in Q$
+    \item the accepting states $A \subseteq  Q$
+    \item the transition table $\delta$: a function from $Q \times \Sigma \cup \{\epsilon\}$ to $power(Q)$.
+    \item reject state: this is usually unspecified, but understood to be included; similar to a return statement at the end of a function.
+\end{enumerate}
+
+For every problem in this assignment, 
+\begin{enumerate}
+    \item $\Sigma = \{a,b\}$
+    \itme $Q = \{S_0,S_1,S_2,S_3,S_4,S_5,S_6,S_7,S_8,S_9\}$
+    \item Start state = $S_0$ 
+\end{enumerate}
+If I am giving the NFA, I will give the accepting states $A$, and the transition table. If you are asked to give the DFA, you need to give $A$ and the transition table.\\ 
+For this assignment, give this as a table instead of a diagram. I will give an example in Q1.
+
+NOTE: it is important that you draw and work with diagrams - just translate them when you submit. diagrams give you an insight into  the machine that tables do not.
+\newpage
+\begin{enumerate}
+    \item (10 points) Let $M$ be the NFA with alphabet, set of states and start state as given above. The transition table of $M$ is :
+   \begin{center}
+      \begin{tabular}{ |c|c|c|c| } 
+        \hline
+ .  & `a' & `b' & `\epsilon' \\\hline \hline
+ $S_0$ & - & - & $\{S_1, S_2\}$\\ \hline
+ $S_1$ & \{$S_3$\} & - & $\{S_3\}$ \\ \hline
+ $S_2$ & - & $\{S_4\}$ & - \\ \hline
+ $S_3$ & - & - & $\{S_1, S_5\}$ \\ \hline
+ $S_4$ & - & - & $\{S_2, S_5\}$ \\ \hline
+ $S_5$ & - & - & - \\ \hline
+ $S_6$ & - & - & - \\ \hline
+ $S_7$ & - & - & - \\ \hline
+ $S_8$ & - & - & - \\ \hline
+ $S_9$ & - & - & - \\ \hline
+\end{tabular}
+\end{center}
+
+
+Accepting states $A = \{S_5\}$
+
+For each of the following strings, state whether or not the string would be accepted
+\begin{enumerate}
+    \item $\epsilon$
+    \item  `aba'
+    \item `aabbb'
+    \item `abaaba'
+    \item `aabb'
+\end{enumerate}
+
+\item (10 points)  For the eNFA in the previous question, give the epsilon closures of the following states
+This is the set of states reachable from a given state using only epsilon transitions.(remember, epsilon closure of a state $S$ is a set of state that always includes $S$).
+\begin{enumerate}
+    \item $S_0$
+    \item $S_1$
+    \item (1/2 pt) $S_2$
+    \item $S_3$
+    \item $S_4$
+    \item (1/2 pt) $S_5$
+\end{enumerate}
+
+
+\item (10 points) convert the eNFA in the question 1, to an NFA without epsilon transitions.
+reminder:  for any pair of states $S$, $T$, there is a transition from $S$ to $T$ on the character "a" iff one the following equivalent conditions hold:
+\begin{enumerate}
+    \item there is a path from $S$ to $T$ that contains exactly one "a" and all other edges are marked $\epsilon$
+    \item there is a path of the form $\epsilon\epsilon\cdot\cdot\cdot\epsilon a\epsilon\epsilon\cdot\cdot\cdot\epsilon$ from $S$ to $T$
+    \item for some states $P$ and $Q$, we have $P \in \epsilon-closure(S)$, there is a transition on "a" from $P$ to $Q$ and $T \in \epsilon-closure(Q)$ 
+\end{enumerate}
+find this out for each character in the alphabet. start state is the old start state. \\
+
+NOTE: accepting state is the set of states whose epsilon-closures contain an accepting state (i.e., any state that can go to an accepting state using only epsilons essentially behaves as an accepting state)
+
+answer:
+\begin{itemize}
+    \item (1/2 pt) alphabet = ???
+    \item (1 pt) set of states = ???
+    \item (1/2 pt)start state = ???
+    \item (2 pts) accepting states = ???
+    \item (6 points) transition table:
+       \begin{center}
+      \begin{tabular}{ |c|c|c|c| } 
+        \hline
+ .  & `a' & `b' & `\epsilon' \\\hline \hline
+ $S_0$ & - & - & $\{S_1, S_2\}$\\ \hline
+ $S_1$ & \{$S_3$\} & - & $\{S_3\}$ \\ \hline
+ $S_2$ & - & $\{S_4\}$ & - \\ \hline
+ $S_3$ & - & - & $\{S_1, S_5\}$ \\ \hline
+ $S_4$ & - & - & $\{S_2, S_5\}$ \\ \hline
+ $S_5$ & - & - & - \\ \hline
+ $S_6$ & - & - & - \\ \hline
+ $S_7$ & - & - & - \\ \hline
+ $S_8$ & - & - & - \\ \hline
+ $S_9$ & - & - & - \\ \hline
+\end{tabular}
+\end{center}
+
+\end{itemize} 
+
+\item (10 points) Will the regular expression $(a.a^*|b.b^*)^*$ accept the following?
+\begin{enumerate}
+    \item $\epsilon$
+    \item  `aba'
+    \item `aabbb'
+    \item `abaaba'
+    \item `aabb'
+\end{enumerate}
+
+\item (10 points) Write the  regular expression over $\{a,b\}$ for the following languages
+\begin{enumerate}
+    \item (1 pt) L = \{x|x has the prefix "aab"\}
+    \item (1 pt) L = \{x| x has the suffix "aab"\}
+    \item (1 pt) L = \{x| x has the substring "aab"\}
+    \item (1 pt) L = \{x| x has the subsequence "aab"\}
+    \item (2 pt) L = \{x | x either has prefix "a" or suffix "b"\}
+    \item (2 pt) L = \{x| x has an odd number of b's \}
+    \item (2 pt) L = \{x | length(x) \leq 2\}
+\end{enumerate}
+\end{enumerate}
+
+\end{document}
+ 

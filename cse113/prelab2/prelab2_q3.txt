@@ -1,0 +1,1 @@
+The two programs perform the same function, they print a message depending on the integer the user provides. The second version of the script with the switch function is easier to understand, to me at least, as there's less to write and it's better tailored to this kind of program.

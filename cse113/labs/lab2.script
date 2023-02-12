@@ -1,0 +1,739 @@
+Julian Garcia
+Lab2
+February 9th 2018
+Script started on Fri 09 Feb 2018 11:32:01 PM MST
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ gcc -g -Wall lab1.c -o lab2 -lm
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./lab2
+
+!!!!!!!!!!!!!!!!!!!!!WELCOME TO MY MATH CAVE!!!!!!!!!!!!!!!!!!!!
+
+Indicate which type of operation you wish to perform
+P regular polygon operations
+T for triangle operations
+C for circle operations
+R for rectangle operations
+p
+----------------- Regular Polygon Calculations ------------------
+Indicate the operation you want to perform
+A for the area
+I for the interior angle
+E for the exterior angle
+a
+
+For the area of a regular polygon----------------------
+
+Enter the number of sides of the regular polygon (interger)
+4
+Enter the size of one side of the regular polygon
+5
+The area of a regular polygon 4 sides of 5.000000 length is 25.000004
+-------------------------------------------------------
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./lab2
+
+!!!!!!!!!!!!!!!!!!!!!WELCOME TO MY MATH CAVE!!!!!!!!!!!!!!!!!!!!
+
+Indicate which type of operation you wish to perform
+P regular polygon operations
+T for triangle operations
+C for circle operations
+R for rectangle operations
+p
+----------------- Regular Polygon Calculations ------------------
+Indicate the operation you want to perform
+A for the area
+I for the interior angle
+E for the exterior angle
+i
+
+
+For the interior angle of a regular polygon------------
+
+Enter the number of sides (interger) of the polygon
+4
+
+The interior angle of a regular polygon with 4 sides is 360.000000
+-------------------------------------------------------
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./lab2
+
+!!!!!!!!!!!!!!!!!!!!!WELCOME TO MY MATH CAVE!!!!!!!!!!!!!!!!!!!!
+
+Indicate which type of operation you wish to perform
+P regular polygon operations
+T for triangle operations
+C for circle operations
+R for rectangle operations
+p
+----------------- Regular Polygon Calculations ------------------
+Indicate the operation you want to perform
+A for the area
+I for the interior angle
+E for the exterior angle
+e
+
+For the exterior angle of a regular polygon------------
+
+Enter the number of sides(int) of the polygon
+5
+The eterior angle of a regular polygon with 5 sides is 72.000000
+
+----------------------------------------------------------------
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./lab2
+
+!!!!!!!!!!!!!!!!!!!!!WELCOME TO MY MATH CAVE!!!!!!!!!!!!!!!!!!!!
+
+Indicate which type of operation you wish to perform
+P regular polygon operations
+T for triangle operations
+C for circle operations
+R for rectangle operations
+t
+
+-------------------- Triangle Calculations ----------------------
+
+Indicate the operation you want to perform
+P for the perimeter
+H for the hypotenuse
+A for the area
+
+p
+
+For the perimeter of a triangle-----------------------
+
+Enter the height of the triangle
+4
+Enter the base of the triangle
+6
+The perimeter of a triangle with 4.000000 height and 6.000000 base is 17.211103
+------------------------------------------------------
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./lab2
+
+!!!!!!!!!!!!!!!!!!!!!WELCOME TO MY MATH CAVE!!!!!!!!!!!!!!!!!!!!
+
+Indicate which type of operation you wish to perform
+P regular polygon operations
+T for triangle operations
+C for circle operations
+R for rectangle operations
+t
+
+-------------------- Triangle Calculations ----------------------
+
+Indicate the operation you want to perform
+P for the perimeter
+H for the hypotenuse
+A for the area
+
+h
+
+For the hypotenuse of a triangle-------------------
+
+Enter the height of the triangle:
+3
+Enter the base of the triangle
+4
+The hypotenuse of a triangle with 3.000000 height and 4.000000 base is 5.000000
+---------------------------------------------------
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./lab2
+
+!!!!!!!!!!!!!!!!!!!!!WELCOME TO MY MATH CAVE!!!!!!!!!!!!!!!!!!!!
+
+Indicate which type of operation you wish to perform
+P regular polygon operations
+T for triangle operations
+C for circle operations
+R for rectangle operations
+t
+
+-------------------- Triangle Calculations ----------------------
+
+Indicate the operation you want to perform
+P for the perimeter
+H for the hypotenuse
+A for the area
+
+a
+
+For the area of a triangle-------------------------
+
+Enter the height of the triangle:
+4
+Enter the size of the base:
+6
+The area of a triangle with 4.000000 height and 6.000000 base is 12.000000
+
+-----------------------------------------------------------------
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./lab2
+
+!!!!!!!!!!!!!!!!!!!!!WELCOME TO MY MATH CAVE!!!!!!!!!!!!!!!!!!!!
+
+Indicate which type of operation you wish to perform
+P regular polygon operations
+T for triangle operations
+C for circle operations
+R for rectangle operations
+c
+
+------------------------ Circle Calculations --------------------
+Indicate the calculation you want
+C for circumference
+A for area
+
+c
+
+For the circumference of a circle------------------
+
+Enter the radius of the circle:
+4
+The circumference of a circle with 4.000000 radius is 25.132744
+---------------------------------------------------
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./lab2
+
+!!!!!!!!!!!!!!!!!!!!!WELCOME TO MY MATH CAVE!!!!!!!!!!!!!!!!!!!!
+
+Indicate which type of operation you wish to perform
+P regular polygon operations
+T for triangle operations
+C for circle operations
+R for rectangle operations
+c
+
+------------------------ Circle Calculations --------------------
+Indicate the calculation you want
+C for circumference
+A for area
+
+a
+
+For the area of a circle---------------------------
+
+Enter the radius of the circle:
+6
+The area of a circle with radius 6.000000 is 113.097348
+
+-----------------------------------------------------------------
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./lab2
+
+!!!!!!!!!!!!!!!!!!!!!WELCOME TO MY MATH CAVE!!!!!!!!!!!!!!!!!!!!
+
+Indicate which type of operation you wish to perform
+P regular polygon operations
+T for triangle operations
+C for circle operations
+R for rectangle operations
+r
+
+-------------------- Rectangle Calculations ---------------------
+Indicate the calculation you want to perform
+D for diagonal
+P for perimeter
+A for area
+
+d
+
+For the diagonal of a rectangle--------------------
+
+Enter the length of the rectangle:
+3
+Enter the width of the rectangle
+6
+The diagonal of a rectangle of 6.000000 width and 3.000000 length is 6.708204
+---------------------------------------------------
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./lab2
+
+!!!!!!!!!!!!!!!!!!!!!WELCOME TO MY MATH CAVE!!!!!!!!!!!!!!!!!!!!
+
+Indicate which type of operation you wish to perform
+P regular polygon operations
+T for triangle operations
+C for circle operations
+R for rectangle operations
+r
+
+-------------------- Rectangle Calculations ---------------------
+Indicate the calculation you want to perform
+D for diagonal
+P for perimeter
+A for area
+
+p
+
+For the perimeter of a rectangle-------------------
+
+Enter the length of the rectangle:
+4
+Enter the width of the rectangle:
+7
+The perimeter of a rectangle of 4.000000 length and 7.000000 width is 22.000000
+----------------------------------------------------
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./lab2
+
+!!!!!!!!!!!!!!!!!!!!!WELCOME TO MY MATH CAVE!!!!!!!!!!!!!!!!!!!!
+
+Indicate which type of operation you wish to perform
+P regular polygon operations
+T for triangle operations
+C for circle operations
+R for rectangle operations
+r
+
+-------------------- Rectangle Calculations ---------------------
+Indicate the calculation you want to perform
+D for diagonal
+P for perimeter
+A for area
+
+a
+
+For the area of a rectangle-------------------------
+
+Enter the length of the rectangle:
+4
+Enter the width of the rectangle:
+7
+The area of a rectangle of 4.000000 lenght and 7.000000 with is 28.000000
+
+-----------------------------------------------------------------
+
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./lab2
+
+!!!!!!!!!!!!!!!!!!!!!WELCOME TO MY MATH CAVE!!!!!!!!!!!!!!!!!!!!
+
+Indicate which type of operation you wish to perform
+P regular polygon operations
+T for triangle operations
+C for circle operations
+R for rectangle operations
+p
+----------------- Regular Polygon Calculations ------------------
+Indicate the operation you want to perform
+A for the area
+I for the interior angle
+E for the exterior angle
+a
+
+For the area of a regular polygon----------------------
+
+Enter the number of sides of the regular polygon (interger)
+-2
+Enter the size of one side of the regular polygon
+-3
+Error: Sides and length cannot be negative
+(•_•)
+( •_•)>⌐■-■
+(⌐■_■)
+Later nerd 
+
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./lab2
+
+!!!!!!!!!!!!!!!!!!!!!WELCOME TO MY MATH CAVE!!!!!!!!!!!!!!!!!!!!
+
+Indicate which type of operation you wish to perform
+P regular polygon operations
+T for triangle operations
+C for circle operations
+R for rectangle operations
+p
+----------------- Regular Polygon Calculations ------------------
+Indicate the operation you want to perform
+A for the area
+I for the interior angle
+E for the exterior angle
+i
+
+
+For the interior angle of a regular polygon------------
+
+Enter the number of sides (interger) of the polygon
+-3
+Error: Number of sides cannot be negative
+(•_•)
+( •_•)>⌐■-■
+(⌐■_■)
+Later nerd 
+
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./lab2
+
+!!!!!!!!!!!!!!!!!!!!!WELCOME TO MY MATH CAVE!!!!!!!!!!!!!!!!!!!!
+
+Indicate which type of operation you wish to perform
+P regular polygon operations
+T for triangle operations
+C for circle operations
+R for rectangle operations
+p
+----------------- Regular Polygon Calculations ------------------
+Indicate the operation you want to perform
+A for the area
+I for the interior angle
+E for the exterior angle
+e
+
+For the exterior angle of a regular polygon------------
+
+Enter the number of sides(int) of the polygon
+-4
+Error: The number of sides cannot be negative
+(•_•)
+( •_•)>⌐■-■
+(⌐■_■)
+Later nerd 
+
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./lab2
+
+!!!!!!!!!!!!!!!!!!!!!WELCOME TO MY MATH CAVE!!!!!!!!!!!!!!!!!!!!
+
+Indicate which type of operation you wish to perform
+P regular polygon operations
+T for triangle operations
+C for circle operations
+R for rectangle operations
+t
+
+-------------------- Triangle Calculations ----------------------
+
+Indicate the operation you want to perform
+P for the perimeter
+H for the hypotenuse
+A for the area
+
+p
+
+For the perimeter of a triangle-----------------------
+
+Enter the height of the triangle
+-4
+Enter the base of the triangle
+-5
+Error: Height and Base cannot be negative
+(•_•)
+( •_•)>⌐■-■
+(⌐■_■)
+Later nerd 
+
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./lab2
+
+!!!!!!!!!!!!!!!!!!!!!WELCOME TO MY MATH CAVE!!!!!!!!!!!!!!!!!!!!
+
+Indicate which type of operation you wish to perform
+P regular polygon operations
+T for triangle operations
+C for circle operations
+R for rectangle operations
+t
+
+-------------------- Triangle Calculations ----------------------
+
+Indicate the operation you want to perform
+P for the perimeter
+H for the hypotenuse
+A for the area
+
+h
+
+For the hypotenuse of a triangle-------------------
+
+Enter the height of the triangle:
+-3
+Enter the base of the triangle
+2
+Error: Height and base cannot be negative
+(•_•)
+( •_•)>⌐■-■
+(⌐■_■)
+Later nerd 
+
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./lab2
+
+!!!!!!!!!!!!!!!!!!!!!WELCOME TO MY MATH CAVE!!!!!!!!!!!!!!!!!!!!
+
+Indicate which type of operation you wish to perform
+P regular polygon operations
+T for triangle operations
+C for circle operations
+R for rectangle operations
+t
+
+-------------------- Triangle Calculations ----------------------
+
+Indicate the operation you want to perform
+P for the perimeter
+H for the hypotenuse
+A for the area
+
+a
+
+For the area of a triangle-------------------------
+
+Enter the height of the triangle:
+-3
+Enter the size of the base:
+-4
+Error: Height and Base cannot be negative
+(•_•)
+( •_•)>⌐■-■
+(⌐■_■)
+Later nerd 
+
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./lab2
+
+!!!!!!!!!!!!!!!!!!!!!WELCOME TO MY MATH CAVE!!!!!!!!!!!!!!!!!!!!
+
+Indicate which type of operation you wish to perform
+P regular polygon operations
+T for triangle operations
+C for circle operations
+R for rectangle operations
+c
+
+------------------------ Circle Calculations --------------------
+Indicate the calculation you want
+C for circumference
+A for area
+
+c
+
+For the circumference of a circle------------------
+
+Enter the radius of the circle:
+-4
+Error: Radius cannot be negative
+(•_•)
+( •_•)>⌐■-■
+(⌐■_■)
+Later nerd 
+
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./lab2
+
+!!!!!!!!!!!!!!!!!!!!!WELCOME TO MY MATH CAVE!!!!!!!!!!!!!!!!!!!!
+
+Indicate which type of operation you wish to perform
+P regular polygon operations
+T for triangle operations
+C for circle operations
+R for rectangle operations
+c
+
+------------------------ Circle Calculations --------------------
+Indicate the calculation you want
+C for circumference
+A for area
+
+a
+
+For the area of a circle---------------------------
+
+Enter the radius of the circle:
+-6
+The area of a circle with radius -6.000000 is 113.097348
+
+-----------------------------------------------------------------
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./lab2
+
+!!!!!!!!!!!!!!!!!!!!!WELCOME TO MY MATH CAVE!!!!!!!!!!!!!!!!!!!!
+
+Indicate which type of operation you wish to perform
+P regular polygon operations
+T for triangle operations
+C for circle operations
+R for rectangle operations
+c r
+
+-------------------- Rectangle Calculations ---------------------
+Indicate the calculation you want to perform
+D for diagonal
+P for perimeter
+A for area
+
+d
+
+For the diagonal of a rectangle--------------------
+
+Enter the length of the rectangle:
+-2
+Enter the width of the rectangle
+-3
+Error: Length and width cannot be negative
+(•_•)
+( •_•)>⌐■-■
+(⌐■_■)
+Later nerd 
+
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./lab2
+
+!!!!!!!!!!!!!!!!!!!!!WELCOME TO MY MATH CAVE!!!!!!!!!!!!!!!!!!!!
+
+Indicate which type of operation you wish to perform
+P regular polygon operations
+T for triangle operations
+C for circle operations
+R for rectangle operations
+r
+
+-------------------- Rectangle Calculations ---------------------
+Indicate the calculation you want to perform
+D for diagonal
+P for perimeter
+A for area
+
+p
+
+For the perimeter of a rectangle-------------------
+
+Enter the length of the rectangle:
+-4
+Enter the width of the rectangle:
+5
+Error: Length and width cannot be negative
+(•_•)
+( •_•)>⌐■-■
+(⌐■_■)
+Later nerd 
+
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./lab2
+
+!!!!!!!!!!!!!!!!!!!!!WELCOME TO MY MATH CAVE!!!!!!!!!!!!!!!!!!!!
+
+Indicate which type of operation you wish to perform
+P regular polygon operations
+T for triangle operations
+C for circle operations
+R for rectangle operations
+r
+
+-------------------- Rectangle Calculations ---------------------
+Indicate the calculation you want to perform
+D for diagonal
+P for perimeter
+A for area
+
+a
+
+For the area of a rectangle-------------------------
+
+Enter the length of the rectangle:
+-2
+Enter the width of the rectangle:
+-4
+Error: Length and width cannot be negative
+(•_•)
+( •_•)>⌐■-■
+(⌐■_■)
+Later nerd 
+
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./lab2
+
+!!!!!!!!!!!!!!!!!!!!!WELCOME TO MY MATH CAVE!!!!!!!!!!!!!!!!!!!!
+
+Indicate which type of operation you wish to perform
+P regular polygon operations
+T for triangle operations
+C for circle operations
+R for rectangle operations
+u
+u is not an option
+(•_•)
+( •_•)>⌐■-■
+(⌐■_■)
+Laters nerd 
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./lab2
+
+!!!!!!!!!!!!!!!!!!!!!WELCOME TO MY MATH CAVE!!!!!!!!!!!!!!!!!!!!
+
+Indicate which type of operation you wish to perform
+P regular polygon operations
+T for triangle operations
+C for circle operations
+R for rectangle operations
+p
+----------------- Regular Polygon Calculations ------------------
+Indicate the operation you want to perform
+A for the area
+I for the interior angle
+E for the exterior angle
+k
+
+k is not an option.
+(•_•)
+( •_•)>⌐■-■
+(⌐■_■)
+Later nerd 
+
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./lab2
+
+!!!!!!!!!!!!!!!!!!!!!WELCOME TO MY MATH CAVE!!!!!!!!!!!!!!!!!!!!
+
+Indicate which type of operation you wish to perform
+P regular polygon operations
+T for triangle operations
+C for circle operations
+R for rectangle operations
+t
+
+-------------------- Triangle Calculations ----------------------
+
+Indicate the operation you want to perform
+P for the perimeter
+H for the hypotenuse
+A for the area
+
+l
+
+l is not an option.
+(•_•)
+( •_•)>⌐■-■
+(⌐■_■)
+Later nerd 
+
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./lab2
+
+!!!!!!!!!!!!!!!!!!!!!WELCOME TO MY MATH CAVE!!!!!!!!!!!!!!!!!!!!
+
+Indicate which type of operation you wish to perform
+P regular polygon operations
+T for triangle operations
+C for circle operations
+R for rectangle operations
+c
+
+------------------------ Circle Calculations --------------------
+Indicate the calculation you want
+C for circumference
+A for area
+
+k
+
+k is not an option.
+(•_•)
+( •_•)>⌐■-■
+(⌐■_■)
+Later nerd 
+
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./lab2
+
+!!!!!!!!!!!!!!!!!!!!!WELCOME TO MY MATH CAVE!!!!!!!!!!!!!!!!!!!!
+
+Indicate which type of operation you wish to perform
+P regular polygon operations
+T for triangle operations
+C for circle operations
+R for rectangle operations
+r
+
+-------------------- Rectangle Calculations ---------------------
+Indicate the calculation you want to perform
+D for diagonal
+P for perimeter
+A for area
+
+u
+
+u is not an option.
+(•_•)
+( •_•)>⌐■-■
+(⌐■_■)
+Later nerd 
+
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ exit
+exit
+
+Script done on Fri 09 Feb 2018 11:36:19 PM MST

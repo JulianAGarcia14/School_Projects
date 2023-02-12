@@ -1,0 +1,11 @@
+The only thing my interpreter really accomplishes is math operations.
+
+To run this code compile as follows:
+g++ -std=c++0x lisp.cpp -o lisp
+
+I couldn't manage to get a makefile operational as the -std=c++0x flag wouldn't
+cooperate however I chose to include it. Without that flag you may run into a 
+"'stod' was not declared" error
+
+Included are two predefined variables 'a' and 'b'
+My progress ended with trying to define new variables

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c83b934a-f32a-4e3b-bed5-2d426811cc48" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1YV7HU7rXSCTsTLeVFu5vHqTdhr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Homework 3" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="oop.jgarcia.hw4.one" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.PlaySong">
+    <configuration name="PlaySong" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="oop.jgarcia.hw4.one.PlaySong" />
+      <module name="Homework 4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="oop.jgarcia.hw4.one.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BeatTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Homework 4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="oop.jgarcia.hw4.one.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="oop.jgarcia.hw4.one" />
+      <option name="MAIN_CLASS_NAME" value="oop.jgarcia.hw4.one.BeatTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Homework 4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="oop.jgarcia.hw4.one.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="oop.jgarcia.hw4.one" />
+      <option name="MAIN_CLASS_NAME" value="oop.jgarcia.hw4.one.NoteTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PitchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Homework 4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="oop.jgarcia.hw4.one.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="oop.jgarcia.hw4.one" />
+      <option name="MAIN_CLASS_NAME" value="oop.jgarcia.hw4.one.PitchTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PlaySong" />
+        <item itemvalue="JUnit.PitchTest" />
+        <item itemvalue="JUnit.NoteTest" />
+        <item itemvalue="JUnit.BeatTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c83b934a-f32a-4e3b-bed5-2d426811cc48" name="Default Changelist" comment="" />
+      <created>1583015819267</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583015819267</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="101" key="FileChooserDialogImpl" timestamp="1615839114453">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state x="421" y="101" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1615839114453" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1611245439587">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.690@0.0.1280.690" timestamp="1611245439587" />
+    <state x="336" y="170" key="com.intellij.ide.util.TipDialog" timestamp="1615839103967">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state x="336" y="170" key="com.intellij.ide.util.TipDialog/0.0.1280.690@0.0.1280.690" timestamp="1615839103967" />
+  </component>
+</project>

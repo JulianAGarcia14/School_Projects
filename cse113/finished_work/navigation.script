@@ -1,0 +1,304 @@
+Script started on Wed 06 Sep 2017 08:35:29 PM MDT
+]0;jagmjg@jagmjg-VirtualBox: ~[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~[00m$ cd filesystem_navigation
+]0;jagmjg@jagmjg-VirtualBox: ~/filesystem_navigation[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/filesystem_navigation[00m$ ls
+[0m[01;34mbank[0m  found_treasure  [01;34mmaze[0m
+]0;jagmjg@jagmjg-VirtualBox: ~/filesystem_navigation[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/filesystem_navigation[00m$ cat found_treasure
+_____________________________________
+!\/        !        \/         ./
+!/\        !        |\       ./
+!  \       !       /  \    ./
+!   \______!______|    \ ,/
+!   /\     !    ./\    ,/
+! /   \    !    |  \ ,/
+!/     \___!____|  ,/
+!     / \ _!__ *\,/
+!    !  | \! ./,/
+!----------|/,/
+!    ! ,!/\||/
+!   / \ /*\||
+!/\    / *,||
+!  \  /   !||
+!   \/____;||
+!   /     \||
+!  /       ||
+! /  _ /\  ||  /\ _
+!/  / x  \.--./  x \
+   /_/ \/`    `\/ \_\
+  /|(`-/\_/)(\_/\-`)|\
+ ( |` (_(.oooo.)_) `| )
+ ` |  `//\(XX)/\\`  | `
+   (  // ()  () \\  )
+   `  ()  `   ` ()  `
+       \        /
+       `       `          
+]0;jagmjg@jagmjg-VirtualBox: ~/filesystem_navigation[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/filesystem_navigation[00m$ ls _[K-R maze
+maze:
+[0m[01;34mcenter[0m  [01;34mleft[0m  [01;34mright[0m
+
+maze/center:
+[01;34mcenter[0m  [01;34mleft[0m  [01;34mright[0m
+
+maze/center/center:
+
+maze/center/left:
+
+maze/center/right:
+
+maze/left:
+[01;34mcenter[0m  [01;34mleft[0m  [01;34mright[0m
+
+maze/left/center:
+
+maze/left/left:
+
+maze/left/right:
+
+maze/right:
+[01;34mcenter[0m  [01;34mleft[0m  [01;34mright[0m
+
+maze/right/center:
+[01;34mcenter[0m  [01;34mleft[0m  [01;34mright[0m
+
+maze/right/center/center:
+[01;34mleft[0m  [01;34mright[0m
+
+maze/right/center/center/left:
+[01;34mcenter[0m  [01;34mleft[0m  [01;34mright[0m
+
+maze/right/center/center/left/center:
+[01;34mcenter[0m
+
+maze/right/center/center/left/center/center:
+[01;34mcenter[0m  [01;34mleft[0m  [01;34mright[0m
+
+maze/right/center/center/left/center/center/center:
+
+maze/right/center/center/left/center/center/left:
+
+maze/right/center/center/left/center/center/right:
+
+maze/right/center/center/left/left:
+[01;34mcenter[0m
+
+maze/right/center/center/left/left/center:
+[01;34mcenter[0m  [01;34mleft[0m  [01;34mright[0m
+
+maze/right/center/center/left/left/center/center:
+
+maze/right/center/center/left/left/center/left:
+
+maze/right/center/center/left/left/center/right:
+
+maze/right/center/center/left/right:
+[01;34mcenter[0m
+
+maze/right/center/center/left/right/center:
+[01;34mcenter[0m  [01;34mleft[0m  [01;34mright[0m
+
+maze/right/center/center/left/right/center/center:
+
+maze/right/center/center/left/right/center/left:
+
+maze/right/center/center/left/right/center/right:
+
+maze/right/center/center/right:
+[01;34mcenter[0m  [01;34mleft[0m  [01;34mright[0m
+
+maze/right/center/center/right/center:
+
+maze/right/center/center/right/left:
+
+maze/right/center/center/right/right:
+
+maze/right/center/left:
+[01;34mcenter[0m  [01;34mleft[0m  [01;34mright[0m
+
+maze/right/center/left/center:
+[01;34mleft[0m
+
+maze/right/center/left/center/left:
+
+maze/right/center/left/left:
+[01;34mcenter[0m  [01;34mleft[0m  [01;34mright[0m
+
+maze/right/center/left/left/center:
+[01;34mcenter[0m
+
+maze/right/center/left/left/center/center:
+[01;34mcenter[0m  [01;34mleft[0m  [01;34mright[0m
+
+maze/right/center/left/left/center/center/center:
+
+maze/right/center/left/left/center/center/left:
+
+maze/right/center/left/left/center/center/right:
+
+maze/right/center/left/left/left:
+[01;34mcenter[0m
+
+maze/right/center/left/left/left/center:
+[01;34mcenter[0m  [01;34mleft[0m  [01;34mright[0m
+
+maze/right/center/left/left/left/center/center:
+
+maze/right/center/left/left/left/center/left:
+
+maze/right/center/left/left/left/center/right:
+
+maze/right/center/left/left/right:
+[01;34mcenter[0m
+
+maze/right/center/left/left/right/center:
+[01;34mcenter[0m  [01;34mleft[0m  [01;34mright[0m
+
+maze/right/center/left/left/right/center/center:
+
+maze/right/center/left/left/right/center/left:
+
+maze/right/center/left/left/right/center/right:
+
+maze/right/center/left/right:
+[01;34mcenter[0m  [01;34mleft[0m  [01;34mright[0m
+
+maze/right/center/left/right/center:
+
+maze/right/center/left/right/left:
+
+maze/right/center/left/right/right:
+
+maze/right/center/right:
+[01;34mleft[0m  [01;34mright[0m
+
+maze/right/center/right/left:
+[01;34mcenter[0m  [01;34mleft[0m  [01;34mright[0m
+
+maze/right/center/right/left/center:
+[01;34mcenter[0m
+
+maze/right/center/right/left/center/center:
+[01;34mcenter[0m  [01;34mleft[0m  [01;34mright[0m
+
+maze/right/center/right/left/center/center/center:
+
+maze/right/center/right/left/center/center/left:
+
+maze/right/center/right/left/center/center/right:
+
+maze/right/center/right/left/left:
+[01;34mcenter[0m
+
+maze/right/center/right/left/left/center:
+[01;34mcenter[0m  [01;34mleft[0m  [01;34mright[0m
+
+maze/right/center/right/left/left/center/center:
+
+maze/right/center/right/left/left/center/left:
+
+maze/right/center/right/left/left/center/right:
+
+maze/right/center/right/left/right:
+[01;34mcenter[0m
+
+maze/right/center/right/left/right/center:
+[01;34mcenter[0m  [01;34mleft[0m  [01;34mright[0m
+
+maze/right/center/right/left/right/center/center:
+
+maze/right/center/right/left/right/center/left:
+
+maze/right/center/right/left/right/center/right:
+
+maze/right/center/right/right:
+[01;34mcenter[0m  [01;34mleft[0m  [01;34mright[0m
+
+maze/right/center/right/right/center:
+
+maze/right/center/right/right/left:
+
+maze/right/center/right/right/right:
+
+maze/right/left:
+[01;34mcenter[0m  [01;34mleft[0m  [01;34mright[0m
+
+maze/right/left/center:
+[01;34mcenter[0m
+
+maze/right/left/center/center:
+[01;34mcenter[0m  [01;34mleft[0m  [01;34mright[0m
+
+maze/right/left/center/center/center:
+
+maze/right/left/center/center/left:
+
+maze/right/left/center/center/right:
+
+maze/right/left/left:
+[01;34mcenter[0m
+
+maze/right/left/left/center:
+[01;34mcenter[0m  [01;34mleft[0m  [01;34mright[0m
+
+maze/right/left/left/center/center:
+
+maze/right/left/left/center/left:
+
+maze/right/left/left/center/right:
+
+maze/right/left/right:
+[01;34mcenter[0m
+
+maze/right/left/right/center:
+[01;34mcenter[0m  [01;34mleft[0m  [01;34mright[0m
+
+maze/right/left/right/center/center:
+[01;34mleft[0m
+
+maze/right/left/right/center/center/left:
+[01;34mcenter[0m  [01;34mleft[0m  [01;34mright[0m
+
+maze/right/left/right/center/center/left/center:
+
+maze/right/left/right/center/center/left/left:
+
+maze/right/left/right/center/center/left/right:
+hidden_treasure
+
+maze/right/left/right/center/left:
+
+maze/right/left/right/center/right:
+
+maze/right/right:
+[01;34mcenter[0m  [01;34mleft[0m  [01;34mright[0m
+
+maze/right/right/center:
+
+maze/right/right/left:
+
+maze/right/right/right:
+]0;jagmjg@jagmjg-VirtualBox: ~/filesystem_navigation[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/filesystem_navigation[00m$ cp /home/jagmjg/filesystem_nav igation/maze/right/left/right/center/center/led[Kft/right/hidden_treasure /hh[Kome/jag mjg/filesystem_navigation/found_treasure
+]0;jagmjg@jagmjg-VirtualBox: ~/filesystem_navigation[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/filesystem_navigation[00m$ cat found_treasure
+****************************************************
+                  |                  |              
+_______________.=""_;=.______________|______________
+        |  ,-"_,=""     `"=.|                  |
+________|__"=._o`"-._        `"=.______________|____
+               `"=._o`"=._      _`"=._              
+____________________:=._o "=._."_.-="'"=.___________
+        |    __.--" , ; `"=._o." ,-"""-._ ".   |
+________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|____
+          |o`"=._` , "` `; .". ,  "-._"-._; ;       
+__________| ;`-.o`"=._; ." ` '`."\` . "-._ /________
+        | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|____
+______/___|o;._    "      `".o|o_.--"    ;o;____/___
+__/______/_"=._o--._        ; | ;        ; ;/______/
+______/______/__"=._o--._   ;o|o;     _._;o;____/___
+__/______/______/____"=._o._; | ;_.--"o.--"_/______/
+______/______/______/_____"=.o|o_.--""___/______/___
+__/______/______/______/______/______/______/______/
+****************************************************
+]0;jagmjg@jagmjg-VirtualBox: ~/filesystem_navigation[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/filesystem_navigation[00m$ mv /home/jagmjg/filesystem_nav igation/found_treasure /home/jagmjg/filesystem_navigation/bank
+]0;jagmjg@jagmjg-VirtualBox: ~/filesystem_navigation[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/filesystem_navigation[00m$ exit
+exit
+
+Script done on Wed 06 Sep 2017 08:41:37 PM MDT

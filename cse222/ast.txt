@@ -1,0 +1,17 @@
+FINDMAX(A)
+        n <- A.size
+        max = A[1]
+        for j <- 2 to n do
+                comp <- A[j]
+
+                if comp > max do
+                        max <- comp
+        return (max)
+
+MATADD(A,B,C)
+        n <- A.rowsize
+        m <- A.colsize
+        for j <-1 to n do
+                for k <- 1 to m
+                        C[k, j] <- A[k, j] + B[k, j]
+        return(C)

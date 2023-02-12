@@ -1,0 +1,16 @@
+Julian Garcia
+9/10/2018
+Lab 1
+
+Purpose: To solve specific geometric equations given by the user through programming logic.
+
+Conclusions:
+
+Things I learned:
+I learned how to use the scanf function to register user input. This allows me to avoid having to recompile my program to change input values. I also learned how to properly document how my code works using doxygen. This will be useful in the future as I'll be able to easily remember what my code does when I return to it.
+
+Issues Found:
+When initially using scanf, I kept running into a compiler error telling me that a function I was calling had undefined variables. I resolved the issue by calling the function after using scanf to create values for those variables.
+
+Future Improvements:
+I would like to change the program in such a way that the user wouldn't have to recompile it every time they needed to enter new values. It would be better if the program used recursion to loop back to the beginning instead of exiting.

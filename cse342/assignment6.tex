@@ -1,0 +1,160 @@
+\documentclass[10pt]{article}
+\newcommand\Solution[2][\\]{Solution: \Longunderstack[l]{\Question#1#2}}
+
+% TO PROVIDE BLANK SOLUTION
+%\renewcommand\Solution[2][\\]{Solution: \setbox0=\hbox{%
+%  \Longunderstack[l]{\Question#1#2}}\rule[-\dp0]{0pt}{\dimexpr\ht0+\dp0}}
+% TO PROVIDE NO SOLUTION
+\renewcommand\Solution[2][\\]{}
+
+\title{342 Assignment : cfg}
+
+\begin{document}
+\maketitle
+
+Total points: 36\\
+Due Date: Mar  $27$ 2021\\
+
+6 points for eahc question.
+\begin{enumerate}
+    \item
+\begin{itemize}
+    \item Consider the following grammar. \\
+    \begin{itemize}
+        \item Terminals : "a", "b"
+        \item Non-terminals : S
+        \item Start Symbol: S
+        \item Production rules:
+        \begin{itemize}
+            \item $S \rightarrow \epsilon$
+            \item $S \rightarrow aSb$
+        \end{itemize}
+    \end{itemize}
+
+    For each of the strings, state whether the grammar accepts it or not, and whether or not it accepts, try to give a parse tree. if the grammar does not accept it, you wont be able to make a full parse tree - do this till however much you can and show where it fails
+    \begin{enumerate}
+        \item $\epsilon$
+        \item $a$
+        \item $aabb$
+        \item $aaabb$
+        \item $aaabbb$
+    \end{enumerate}
+\end{itemize}
+
+
+\item
+\begin{itemize}
+    \item Consider the following grammar. \\
+    \begin{itemize}
+        \item Terminals : "a", "b"
+        \item Non-terminals : S
+        \item Start Symbol: S
+        \item Production rules:
+        \begin{itemize}
+            \item $S \rightarrow aSb$
+        \end{itemize}
+    \end{itemize}
+
+    For each of the strings, state whether the grammar accepts it or not, and whether or not it accepts, try to give a parse tree. if the grammar does not accept it, you wont be able to make a full parse tree - do this till however much you can and show where it fails
+    \begin{itemize}
+        \item $\epsilon$
+        \item $a$
+        \item $aabb$
+        \item $aaabb$
+        \item $aaabbb$
+    \end{itemize}
+        \item What is the language accepted by this grammar?
+
+\end{itemize}
+
+\item
+\begin{itemize}
+    \item Consider the following grammar. \\
+    \begin{itemize}
+        \item Terminals : "a", "b"
+        \item Non-terminals : S
+        \item Start Symbol: S
+        \item Production rules:
+        \begin{itemize}
+            \item $S \rightarrow \epsilon$
+            \item $S \rightarrow aaSb$
+        \end{itemize}
+    \end{itemize}
+
+    For each of the strings, state whether the grammar accepts it or not, and whether or not it accepts, try to give a parse tree. if the grammar does not accept it, you wont be able to make a full parse tree - do this till however much you can and show where it fails
+    \begin{itemize}
+        \item $\epsilon$
+        \item $aab$
+        \item $aaaabb$
+        \item $aaabb$
+        \item $aaabbb$
+    \end{itemize}
+    \item What is the language accepted by this grammar?
+\end{itemize}
+
+\item
+\begin{itemize}
+    \item Consider the following grammar. \\
+    \begin{itemize}
+        \item Terminals : "a", "b"
+        \item Non-terminals : S, A
+        \item Start Symbol: S
+        \item Production rules:
+        \begin{itemize}
+            \item $S \rightarrow A$
+            \item $S \rightarrow aSb$
+            \item $A \rightarrow a$
+            \item $A \rightarrow Aa$
+        \end{itemize}
+    \end{itemize}
+
+    For each of the strings, state whether the grammar accepts it or not, and whether or not it accepts, try to give a parse tree. if the grammar does not accept it, you wont be able to make a full parse tree - do this till however much you can and show where it fails
+    \begin{itemize}
+        \item $\epsilon$
+        \item $a$
+        \item $aabb$
+        \item $aaabb$
+        \item $aaaaabbb$
+    \end{itemize}
+        \item What is the language accepted by this grammar?
+
+\end{itemize}
+
+
+
+\item
+\begin{itemize}
+    \item Consider the following grammar. \\
+    \begin{itemize}
+        \item Terminals : "a", "b"
+        \item Non-terminals : S, A
+        \item Start Symbol: S
+        \item Production rules:
+        \begin{itemize}
+            \item $S \rightarrow \epsilon$
+            \item $S \rightarrow aSa$
+            \item $S \rightarrow bSb$
+        \end{itemize}
+    \end{itemize}
+
+    For each of the strings, state whether the grammar accepts it or not, and whether or not it accepts, try to give a parse tree. if the grammar does not accept it, you wont be able to make a full parse tree - do this till however much you can and show where it fails
+    \begin{itemize}
+        \item $\epsilon$
+        \item $a$
+        \item $abba$
+        \item $ababa$
+        \item $abbaabba$
+    \end{itemize}
+        \item What is the language accepted by this grammar?
+
+\end{itemize}
+
+\item Give a grammar for the following languages. You only need to attempt this. For all of these the alphabets (terminals) are \{a, b\} and the start state is S.
+\begin{enumerate}
+    \item $L = \{s~|~ s $ number of a's in s > number of b's in s   $\}$
+    \item $L = \{s~|~ s $ s is odd-lengthed palindromes  $\} $
+    \item $L = \{s~|~ s $ number of a's in s is three times number of b's in s and all the a's come before b's  $\}$
+\end{enumerate}
+
+\end{enumerate}
+\end{document}

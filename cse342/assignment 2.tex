@@ -1,0 +1,232 @@
+
+
+\documentclass[10pt]{article}
+\newcommand\Solution[2][\\]{Solution: \Longunderstack[l]{\Question#1#2}}
+
+% TO PROVIDE BLANK SOLUTION
+%\renewcommand\Solution[2][\\]{Solution: \setbox0=\hbox{%
+%  \Longunderstack[l]{\Question#1#2}}\rule[-\dp0]{0pt}{\dimexpr\ht0+\dp0}}
+% TO PROVIDE NO SOLUTION
+\renewcommand\Solution[2][\\]{}
+
+\title{342 Assignment 2: DFA 1}
+\begin{document}
+\maketitle
+
+Total points: 25\\
+Due Date: Feb $13$ 2021\\
+
+The formal definition of a DFA specifies the following:\\
+\begin{enumerate}
+    \item Alphabet $\Sigma$
+    \item the set of states $Q$
+    \item the start state $S \in Q$
+    \item the accepting states $A \subseteq  Q$
+    \item the transition table $\delta$: a function from $Q \times \Sigma$ to $Q$.
+    \item reject state: this is usually unspecified, but understood to be included; similar to a return statement at the end of a function.
+\end{enumerate}
+
+For every problem in this assignment, 
+\begin{enumerate}
+    \item $\Sigma = \{a,b,c\}$
+    \item $Q = \{S_0,S_1,S_2,S_3,S_4,S_5,S_6,S_7,S_8,S_9\}$
+    \item Start state = $S_0$ 
+\end{enumerate}
+If I am giving the DFA, I will give the accepting states $A$, and the transition table. If you are asked to give the DFA, you need to give $A$ and the transition table.\\ 
+For this assignment, give this as a table isntead of a diagram. I will give an example in Q1.
+
+I will present the questions, and ask for answers in the tabular form. Usually, I will encourage diagrams because diagrams will have less mistakes, but this semester, we may have to communicate a lot via email etc - so it is good practice to get used to tables; it will also make some algorithms easier in future. I will also add a link to make DFAs in latex - you are welcome to add a diagram as well.
+
+NOTE: it is important that you draw and work with diagrams - just translate them when you submit. diagrams give you an insight into  the machine that tables do not.
+
+\begin{enumerate}
+    \item (10 points) Let $M$ be the DFA with alphabet, set of states and start state as given above. The transition table of $M$ is :
+   \begin{center}
+      \begin{tabular}{ |c|c|c|c| } 
+        \hline
+ .  & `a' & `b' & `c' \\\hline \hline
+ $S_0$ & $S_1$ & $S_3$ & -\\ \hline
+ $S_1$ & $S_2$ & $S_4$ & - \\ \hline
+ $S_2$ & $S_0$ & $S_5$ & - \\ \hline
+ $S_3$ & $S_4$ & $S_0$ & - \\ \hline
+ $S_4$ & $S_5$ & $S_1$ & - \\ \hline
+ $S_5$ & $S_6$ & $S_2$ & - \\ \hline
+ $S_6$ & - & - & - \\ \hline
+ $S_7$ & - & - & - \\ \hline
+ $S_8$ & - & - & - \\ \hline
+ $S_9$ & - & - & - \\ \hline
+\end{tabular}
+\end{center}
+Accepting states $A = \{S_0\}$
+
+For each of the following strings, state whether or not they are accepted:
+\begin{enumerate}
+    \item $\epsilon$
+    \item `a'
+    \item `b'
+    \item  'aa'
+    \item `bb
+    \item `aaa'
+    \item `ababa'
+    \item `aaabaaab'
+    \item `aabaabaab'
+    \item `abababababab'
+\end{enumerate}
+
+\newpage 
+\item (2 points) What is the language of the DFA $M$ from the previous question?, i.e., describe the set of strings accepted by it.
+Specifically, 
+\begin{center}
+L(M) = \{x $\|$ number of a's in x is BLANK1\\ BOOLCONNECTIVE1 \\  number of b's in x is BLANK2\\ BOOLCONNECTIVE2\\ number of c's in x is BLANK3\}
+\end{center}
+
+What are :
+\begin{enumerate}
+    \item BLANK1
+    \item BOOLCONNECTIVE1
+    \item BLANK2
+    \item BOOLCONNECTIVE2
+    \item BLANK3
+\end{enumerate} 
+Boolean connectives can be OR, AND, IMPLIES etc.
+
+
+\item (3 points)(Extra credit) Rename the states to have meaningful names of DFA $M$ from Q1
+
+ \newpage 
+ 
+\item (1+1+1+2+2+2+4) Give the DFAs for the following languages. (rewrite "?" )
+\begin{enumerate}
+    \item L = \{\};  ~~~
+Accepting states $A = \{???\}$
+
+       \begin{center}
+      \begin{tabular}{ |c|c|c|c| } 
+        \hline
+ .  & `a' & `b' & `c' \\\hline \hline
+ $S_0$ & ? & ? & ?\\ \hline
+ $S_1$ & ? & ? & ? \\ \hline
+ $S_2$ & ? & ? & ? \\ \hline
+ $S_3$ & ? & ? & ? \\ \hline
+ $S_4$ & ? & ? & ? \\ \hline
+ $S_5$ & ? & ? & ? \\ \hline
+ $S_6$ & ? & ? & ? \\ \hline
+ $S_7$ & ? & ? & ? \\ \hline
+ $S_8$ & ? & ? & ? \\ \hline
+ $S_9$ & ? & ? & ? \\ \hline
+\end{tabular}
+\end{center}
+    
+    
+\item L = $\{\epsilon\}$; ~~~Accepting states $A =\{???\}$
+     \begin{center}
+      \begin{tabular}{ |c|c|c|c| } 
+        \hline
+ .  & `a' & `b' & `c' \\\hline \hline
+ $S_0$ & ? & ? & ?\\ \hline
+ $S_1$ & ? & ? & ? \\ \hline
+ $S_2$ & ? & ? & ? \\ \hline
+ $S_3$ & ? & ? & ? \\ \hline
+ $S_4$ & ? & ? & ? \\ \hline
+ $S_5$ & ? & ? & ? \\ \hline
+ $S_6$ & ? & ? & ? \\ \hline
+ $S_7$ & ? & ? & ? \\ \hline
+ $S_8$ & ? & ? & ? \\ \hline
+ $S_9$ & ? & ? & ? \\ \hline
+\end{tabular}
+\end{center}
+
+\item L = $\{`abc'\}$~~~~Accepting states $A = \{???\}$
+     \begin{center}
+      \begin{tabular}{ |c|c|c|c| } 
+        \hline
+ .  & `a' & `b' & `c' \\\hline \hline
+ $S_0$ & ? & ? & ?\\ \hline
+ $S_1$ & ? & ? & ? \\ \hline
+ $S_2$ & ? & ? & ? \\ \hline
+ $S_3$ & ? & ? & ? \\ \hline
+ $S_4$ & ? & ? & ? \\ \hline
+ $S_5$ & ? & ? & ? \\ \hline
+ $S_6$ & ? & ? & ? \\ \hline
+ $S_7$ & ? & ? & ? \\ \hline
+ $S_8$ & ? & ? & ? \\ \hline
+ $S_9$ & ? & ? & ? \\ \hline
+\end{tabular}
+\end{center}
+
+\newpage
+\item L = $\{`abc', `acb','aba'\}$ ~~~~Accepting states $A = \{???\}$
+     \begin{center}
+      \begin{tabular}{ |c|c|c|c| } 
+        \hline
+ .  & `a' & `b' & `c' \\\hline \hline
+ $S_0$ & ? & ? & ?\\ \hline
+ $S_1$ & ? & ? & ? \\ \hline
+ $S_2$ & ? & ? & ? \\ \hline
+ $S_3$ & ? & ? & ? \\ \hline
+ $S_4$ & ? & ? & ? \\ \hline
+ $S_5$ & ? & ? & ? \\ \hline
+ $S_6$ & ? & ? & ? \\ \hline
+ $S_7$ & ? & ? & ? \\ \hline
+ $S_8$ & ? & ? & ? \\ \hline
+ $S_9$ & ? & ? & ? \\ \hline
+\end{tabular}
+\end{center}
+
+\item L = \{z $\|$ z is X followed by any number of Y's \} where X = `aba' and Y = `bc'; ~~~~Accepting states $A = \{???\}$
+     \begin{center}
+      \begin{tabular}{ |c|c|c|c| } 
+        \hline
+ .  & `a' & `b' & `c' \\\hline \hline
+ $S_0$ & ? & ? & ?\\ \hline
+ $S_1$ & ? & ? & ? \\ \hline
+ $S_2$ & ? & ? & ? \\ \hline
+ $S_3$ & ? & ? & ? \\ \hline
+ $S_4$ & ? & ? & ? \\ \hline
+ $S_5$ & ? & ? & ? \\ \hline
+ $S_6$ & ? & ? & ? \\ \hline
+ $S_7$ & ? & ? & ? \\ \hline
+ $S_8$ & ? & ? & ? \\ \hline
+ $S_9$ & ? & ? & ? \\ \hline
+\end{tabular}
+\end{center}
+
+\item L is the set of strings with prefix `aabaa'; ~~~~Accepting states $A = \{???\}$
+     \begin{center}
+      \begin{tabular}{ |c|c|c|c| } 
+        \hline
+ .  & `a' & `b' & `c' \\\hline \hline
+ $S_0$ & ? & ? & ?\\ \hline
+ $S_1$ & ? & ? & ? \\ \hline
+ $S_2$ & ? & ? & ? \\ \hline
+ $S_3$ & ? & ? & ? \\ \hline
+ $S_4$ & ? & ? & ? \\ \hline
+ $S_5$ & ? & ? & ? \\ \hline
+ $S_6$ & ? & ? & ? \\ \hline
+ $S_7$ & ? & ? & ? \\ \hline
+ $S_8$ & ? & ? & ? \\ \hline
+ $S_9$ & ? & ? & ? \\ \hline
+\end{tabular}
+\end{center}
+
+\newpage
+\item L is the set of strings with suffix `aabaa'; ~~~~Accepting states $A = \{???\}$
+     \begin{center}
+      \begin{tabular}{ |c|c|c|c| } 
+        \hline
+ .  & `a' & `b' & `c' \\\hline \hline
+ $S_0$ & ? & ? & ?\\ \hline
+ $S_1$ & ? & ? & ? \\ \hline
+ $S_2$ & ? & ? & ? \\ \hline
+ $S_3$ & ? & ? & ? \\ \hline
+ $S_4$ & ? & ? & ? \\ \hline
+ $S_5$ & ? & ? & ? \\ \hline
+ $S_6$ & ? & ? & ? \\ \hline
+ $S_7$ & ? & ? & ? \\ \hline
+ $S_8$ & ? & ? & ? \\ \hline
+ $S_9$ & ? & ? & ? \\ \hline
+\end{tabular}
+\end{center}
+\end{enumerate}
+\end{enumerate}
+\end{document}

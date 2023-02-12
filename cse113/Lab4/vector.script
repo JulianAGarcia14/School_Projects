@@ -1,0 +1,122 @@
+Julian Garcia
+10/12/18
+Lab4
+Script started on Fri 12 Oct 2018 10:02:05 AM MDT
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/Lab4[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/Lab4[00m$ gcc -g -Wall -c vector.c
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/Lab4[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/Lab4[00m$ gcc -g -Wall vector_main.c vector.o -o v ector_main
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/Lab4[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/Lab4[00m$ ./vector_main
+Original Array;
+a[0] = 1
+a[1] = 2
+a[2] = 3
+a[3] = 4
+a[4] = 5
+a[5] = 6
+a[6] = 7
+a[7] = 8
+a[8] = 9
+a[9] = 3
+
+Multiply array
+a[0] = 5
+a[1] = 10
+a[2] = 15
+a[3] = 20
+a[4] = 25
+a[5] = 30
+a[6] = 35
+a[7] = 40
+a[8] = 45
+a[9] = 15
+
+Add array
+a[0] = 4
+a[1] = 5
+a[2] = 6
+a[3] = 7
+a[4] = 8
+a[5] = 9
+a[6] = 10
+a[7] = 11
+a[8] = 12
+a[9] = 6
+
+Copy array
+Original Array:
+a[0] = 1
+a[1] = 2
+a[2] = 3
+a[3] = 4
+a[4] = 5
+a[5] = 6
+a[6] = 7
+a[7] = 8
+a[8] = 9
+a[9] = 3
+
+Copied Array:
+a[0] = 1
+a[1] = 2
+a[2] = 3
+a[3] = 4
+a[4] = 5
+a[5] = 6
+a[6] = 7
+a[7] = 8
+a[8] = 9
+a[9] = 3
+
+Add array
+a[0] = 11
+a[1] = 12
+a[2] = 13
+a[3] = 14
+a[4] = 15
+a[5] = 16
+a[6] = 17
+a[7] = 18
+a[8] = 19
+a[9] = 13
+
+Multiply two arrays
+a[0] = 10
+a[1] = 20
+a[2] = 30
+a[3] = 40
+a[4] = 50
+a[5] = 60
+a[6] = 70
+a[7] = 80
+a[8] = 90
+a[9] = 30
+
+Inverse multiply two arrays
+a[0] = 10
+a[1] = 18
+a[2] = 24
+a[3] = 28
+a[4] = 30
+
+Reverse order of array
+a[0] = 5
+a[1] = 4
+a[2] = 3
+a[3] = 2
+a[4] = 1
+
+Array of random numbers
+a[0] = 39
+a[1] = 34
+a[2] = 49
+a[3] = 20
+a[4] = 17
+a[5] = 48
+a[6] = 2
+a[7] = 3
+a[8] = 31
+a[9] = 19
+
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/Lab4[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/Lab4[00m$ exit
+exit
+
+Script done on Fri 12 Oct 2018 10:02:41 AM MDT

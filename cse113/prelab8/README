@@ -1,0 +1,172 @@
+Julian Garcia
+Prelab8
+11/6/2018
+Question 1:
+
+List before addition of H:
+head -> D
+D-> next = C
+C-> next = B
+B-> next = G
+G-> next = NULL
+tail -> G
+
+To add H:
+//create the node and then add it to the list
+//create and initialize the node
+malloc H
+H-> next = NULL
+//now add the node to the existing list, and set tail to the new end of the list
+tail -> G
+G-> next = H
+
+New list after the addition of H:
+head -> D
+D-> next = C
+C-> next = B
+B-> next = G
+G-> next = H
+H-> next = NULL
+tail -> H
+
+Question 2:
+
+List before addition of E:
+head -> A
+A-> next = B
+B-> next = C
+C-> next = D
+D-> next = NULL
+tail -> D
+
+To add E:
+//create the node and then add it to the list
+//create and initialize the node
+malloc E
+E-> next = NULL
+//now add the node to the existing list, and set head to the new end of the list
+head -> E
+E-> next = A
+
+New list after the addition of E:
+head -> E
+E-> next = A
+A-> next = B
+B-> next = C
+C-> next = D
+D-> next = NULL
+tail -> D
+
+Question 3:
+
+List before addition of Z:
+head -> A
+A-> next = D
+D-> next = C
+C-> next = H
+H-> next = E
+E-> next = F
+F-> next = NULL
+tail -> F
+
+To add Z:
+//create the node and then add it to the list
+//create and initialize the node
+malloc Z
+Z-> next = NULL
+//now add the node to the existing list
+Z-> next = D
+A-> next = Z
+
+New list after the addition of Z:
+head -> A
+A-> next = Z
+Z-> next = D
+D-> next = C
+C-> next = H
+H-> next = E
+E-> next = F
+F-> next = NULL
+tail -> F
+
+Question 4:
+
+List before deletion of G:
+head -> D
+D-> next = E
+E-> next = F
+F-> next = G
+G-> next = H
+H-> next = I
+I-> next = J
+J-> next = K
+K-> next = NULL
+tail -> K
+
+To delete G:
+//remove the node from the existing list by directing list past it
+//remove value assigned to node
+F-> next = H
+G-> next = NULL
+//now free the memory allocated to the node
+free(G);
+
+New list after the deletion of G:
+head -> D
+D-> next = E
+E-> next = F
+F-> next = H
+H-> next = I
+I-> next = J
+J-> next = K
+K-> next = NULL
+tail -> K
+
+Question 5:
+
+List before deletion of A:
+head -> A
+A-> next = B
+B-> next = C
+C-> next = D
+D-> next = NULL
+tail -> D
+
+To delete A:
+//remove the node from the existing list by assigning new head
+//remove value assigned to node
+head -> B
+A-> next = NULL
+//now free the memory allocated to the node
+free(A);
+
+New list after the deletion of A:
+head -> B
+B-> next = C
+C-> next = D
+D-> next = NULL
+tail -> D
+
+Question 6:
+
+List before deletion of D:
+head -> A
+A-> next = B
+B-> next = C
+C-> next = D
+D-> next = NULL
+tail -> D
+
+To delete D:
+//remove the node from the existing list by changing the tail pointer and assigning the new tail to NULL
+tail -> C
+C-> next = NULL
+//now free the memory allocated to the node
+free(D);
+
+New list after the deletion of D:
+A-> next = B
+B-> next = C
+C-> next = NULL
+tail -> C
+

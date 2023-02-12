@@ -1,0 +1,19 @@
+
+Julian Garcia
+12/1/2018
+Lab 9
+
+USED 3 Late days for this lab
+(Never managed to find the time to fix it, which is why its mostly incomplete)
+
+Purpose: To emulate the binary calculator of a cup using a doubly linked list to store values
+
+Conclusions:
+
+Things I learned:
+Even though I didn't finish this assignment, I gained a pretty good grasp on how to implement linked lists in asssignments.
+
+Issues Found:
+The biggest problem I faced really just had to do with simply understanding how to manage user input as well as how to define functions for the binary calculator operations.
+Future Improvements:
+Since I didn't finish this, I'll try and look back to complete it after I spend some time trying to get a better understanding of how to create the necessary functions for this program.

@@ -1,0 +1,97 @@
+Julian Garcia
+Lab5
+10/22/18
+Script started on Mon 22 Oct 2018 11:29:27 PM MDT
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/lab5[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/lab5[00m$ ./lab5
+1) Enter new zombie info
+2) Display zombie info
+3) Get back at it (leave)
+
+1
+Is the zombie dead (y/n)
+y
+Choose the day this zombie was found
+1)Monday
+2)Tuesday
+3)Wednesday
+4)Thursday
+5)Friday
+6)Saturday
+7)Sunday
+1
+Enter the time of the event
+Separate hours, minutes, and seconds by colons.
+HH:MM:SS
+11:11:11
+Enter the amount of toes found on the body
+4
+1) Enter new zombie info
+2) Display zombie info
+3) Get back at it (leave)
+
+1
+Is the zombie dead (y/n)
+n
+Choose the day this zombie was found
+1)Monday
+2)Tuesday
+3)Wednesday
+4)Thursday
+5)Friday
+6)Saturday
+7)Sunday
+4
+Enter the time of the event
+Separate hours, minutes, and seconds by colons.
+HH:MM:SS
+12:04:22
+Enter the amount of blood the zombie lost
+32
+1) Enter new zombie info
+2) Display zombie info
+3) Get back at it (leave)
+
+1
+Is the zombie dead (y/n)
+n
+Choose the day this zombie was found
+1)Monday
+2)Tuesday
+3)Wednesday
+4)Thursday
+5)Friday
+6)Saturday
+7)Sunday
+7
+Enter the time of the event
+Separate hours, minutes, and seconds by colons.
+HH:MM:SS
+12:11:10
+Enter the amount of blood the zombie lost
+40
+1) Enter new zombie info
+2) Display zombie info
+3) Get back at it (leave)
+
+2
+This zombie was found dead
+This zombie had 4 toes
+This zombie was sighted Monday at 11:11:11
+
+This zombie was found alive
+It lost 32.000000mL of blood when killed
+This zombie was sighted Thursday at 12:4:22
+
+This zombie was found alive
+It lost 40.000000mL of blood when killed
+This zombie was sighted Sunday at 12:11:10
+
+1) Enter new zombie info
+2) Display zombie info
+3) Get back at it (leave)
+
+3
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/lab5[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/lab5[00m$ exit
+exit
+
+Script done on Mon 22 Oct 2018 11:30:45 PM MDT

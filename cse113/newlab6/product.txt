@@ -1,0 +1,9 @@
+(gdb) bt full
+#0  product (a=8, b=10) at product.c:17
+        mid = 9
+#1  0x0000000000400583 in product (a=7, b=10) at product.c:17
+        mid = 8
+#2  0x0000000000400583 in product (a=5, b=10) at product.c:17
+        mid = 7
+#3  0x00000000004005a3 in main () at product.c:24
+        p = 0

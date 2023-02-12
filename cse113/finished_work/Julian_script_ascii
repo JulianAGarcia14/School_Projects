@@ -1,0 +1,59 @@
+Script started on Mon 29 Jan 2018 09:14:55 AM MST
+]0;jagmjg@jagmjg-VirtualBox: ~[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~[00m$ gcc-[K -g -Wall ascii.n -o ascii[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1@.[C[1P[1@c[C[C[C[C[C[C[C[C[C
+]0;jagmjg@jagmjg-VirtualBox: ~[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~[00m$ ./ascii
+                                 @@@@@@@@@@@@@@                                
+                  l          @@@@@@@@@@@@@@@@@@@@@@@         l                 
+                 ll      @@@@@   ___________     @@@@@      ll                 
+                 ll    @@@@    ~`   :::#::: `~      @@@@    ll                 
+                lll   @@@    ~`    :::###:::  `~     @@@    lll                
+                 ll  @@@@  ~`    ::::#####::::  `~   @@@@   ll                 
+                lll  @@@  ``    ::::#######::::  ``   @@@   lll                
+                 ll    @@@ ``   ::::#######::::  `' @@@     lllll              
+                lll    @@@@ `~   ::::#####::::  ~` @@@@     ll                 
+                 ll     @@@@  `~  ::::###:::: ~`  @@@@      llll               
+                 ll       @@@@  `~  :::#::: ~`  @@@@        lll                
+                lll         @@@@@@  ------  @@@@@@          llll               
+                llll           @@@@@@@@@@@@@@@@            llll                
+                 lll               @@@@@@@@               lllll                
+                lllll                                    lllll                 
+                  lllllllllllllllllllllllllllllllllllllllllllll                
+                  lllllllllllllllllllllllllllllllllllllllllllll                
+                llllllllllllllllllllllllllllllllllllllllllllllllll             
+                 llllllllllllllllllllllllllllllllllllllllllllll                
+                   llllllllllllllllllllllllllllllllllllllllllll                
+                  llllllllllllllllllllllllllllllllllllllllllllll               
+                   llllllllllllllllllllllllllllllllllllllllllllll              
+                  llllllllllllllllllllllllllllllllllllllllllllllll             
+                 llllllllllllllllllllllllllllllllllllllllllllllllll            
+                llllllllllllllllllllllllllllllllllllllllllllllllllll           
+]0;jagmjg@jagmjg-VirtualBox: ~[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~[00m$ gcc -g -Wall name.c -o name
+]0;jagmjg@jagmjg-VirtualBox: ~[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~[00m$ ./name
+
+
+
+
+
+
+
+
+
+
+
+
+
+@@@@@@@@@@@@@@@@@
+        @
+        @                                        
+        @                              @                      @    @@@@@@@@
+        @                        @                            @  @          @
+        @                        @            @@@@@@          @ @             @
+        @        @          @    @     @    @        @        @                @
+        @        @          @    @     @  @            @@     @                @
+        @        @          @    @     @  @            @ @    @                @
+ @     @         @          @    @     @  @            @ @    @                @
+ @    @           @        @     @     @    @        @    @   @                @
+  @@@               @@@@@@       @     @      @@@@@@       @  @                @
+]0;jagmjg@jagmjg-VirtualBox: ~[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~[00m$ exit
+exit
+
+Script done on Mon 29 Jan 2018 09:17:46 AM MST

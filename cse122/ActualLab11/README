@@ -1,0 +1,19 @@
+
+Julian Garcia
+1/24/2019
+Lab 11
+
+Used first late day.
+
+Purpose: To evaluate coordinate systems using structures and by evaluating an input file and writing to an output
+
+Conclusions:
+
+Things I learned:
+I learned how to use strtok and strchr to parse a file (among other string functions), I also learned how to use two structures to dynamically allocate memory.
+
+Issues Found:
+For about a third of the time I was working on this I would run into either seg faults or the output would be completely NULL.
+
+Future Improvements:
+I would like to make my coordinate system more accurate in the kml document.

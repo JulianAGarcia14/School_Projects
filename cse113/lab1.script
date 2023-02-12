@@ -1,0 +1,140 @@
+Julian Garcia
+Lab1
+February 5th 2018
+Script started on Mon 05 Feb 2018 03:22:23 PM MST
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./Final_Mathgcc -g -Wall ULTIMATE_MATH.c -o Final_Mat
+th -lm[A
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./Final_Math[K
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K./Final_Mathgcc -g -Wall ULTIMATE_MATH.c -o Final_Mat
+th -lm[A
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./Final_Math[K
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -g -Wall ULTIMATE_MATH.c -o Final_Mat
+th -lm[A
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./Final_Math[K
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -g -Wall ULTIMATE_MATH.c -o Final_Mat
+th -lm
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.c -o Final_Math[1P -lm[A
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.c -o Final_Math [1P-lm[A
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.c -o Final_Math -[1Plm[A
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.c -o Final_Math -l[1Pm[A
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.c -o Final_Math -lm[K[A
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.c -o Final_Math -lm 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@l[1@a[1@b[1@1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P -lm[1P -lm[1P -lm[1P -lm[1P -lm[1P -lm[1P -lm[1P -lm[1P -lm[1P -lml -lma -lmb -lm1 -lm[1@W[1@a[C[1@l[C[1@l[1@ 
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ ./lab1
+
+!!!!!!!!!!!!!!!!!!!!!WELCOME TO MY MATH CAVE!!!!!!!!!!!!!!!!!!!!
+
+----------------- Regular Polygon Calculations ------------------
+
+For the area of a regular polygon----------------------
+
+Enter the number of sides of the regular polygon (interger)
+4
+Enter the size of one side of the regular polygon
+5
+The area of a regular polygon 4 sides of 5.000000 length is 25.000004
+-------------------------------------------------------
+
+
+For the interior angle of a regular polygon------------
+
+Enter the number of sides (interger) of the polygon
+4
+
+The interior angle of a regular polygon with 4 sides is 360.000000
+-------------------------------------------------------
+
+For the exterior angle of a regular polygon------------
+
+Enter the number of sides(int) of the polygon
+6
+The eterior angle of a regular polygon with 6 sides is 60.000000
+
+----------------------------------------------------------------
+
+-------------------- Triangle Calculations ----------------------
+
+For the perimeter of a triangle-----------------------
+
+Enter the height of the triangle
+4
+Enter the base of the triangle
+6
+The perimeter of a triangle with 4.000000 height and 6.000000 base is 17.211103
+------------------------------------------------------
+
+For the hypotenuse of a triangle-------------------
+
+Enter the height of the triangle:
+4
+Enter the base of the triangle
+6
+The hypotenuse of a triangle with 4.000000 height and 6.000000 base is 7.211103
+---------------------------------------------------
+
+For the area of a triangle-------------------------
+
+Enter the height of the triangle:
+4
+Enter the size of the base:
+6
+The area of a triangle with 4.000000 height and 6.000000 base is 12.000000
+
+-----------------------------------------------------------------
+
+------------------------ Circle Calculations --------------------
+
+For the circumference of a circle------------------
+
+Enter the radius of the circle:
+5
+The circumference of a circle with 5.000000 radius is 31.415930
+---------------------------------------------------
+
+For the area of a circle---------------------------
+
+Enter the radius of the circle:
+7
+The area of a circle with radius 7.000000 is 153.938057
+
+-----------------------------------------------------------------
+
+-------------------- Rectangle Calculations ---------------------
+
+For the diagonal of a rectangle--------------------
+
+Enter the length of the rectangle:
+3
+Enter the width of the rectangle
+4
+The diagonal of a rectangle of 4.000000 width and 3.000000 length is 5.000000
+---------------------------------------------------
+
+For the perimeter of a rectangle-------------------
+
+Enter the length of the rectangle:
+6
+Enter the width of the rectangle:
+6
+The perimeter of a rectangle of 6.000000 length and 6.000000 width is 24.000000
+----------------------------------------------------
+
+For the area of a rectangle-------------------------
+
+Enter the length of the rectangle:
+4
+Enter the width of the rectangle:
+8
+The area of a rectangle of 4.000000 lenght and 8.000000 with is 32.000000
+
+-----------------------------------------------------------------
+
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labs[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labs[00m$ exit
+exit
+
+Script done on Mon 05 Feb 2018 03:24:42 PM MST

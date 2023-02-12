@@ -1,0 +1,24 @@
+Julian Garcia
+Prelab2
+9/13/18
+Script started on Thu 13 Sep 2018 11:08:21 PM MDT
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/prelab2[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/prelab2[00m$ gcc -g -Wall prelab2_q2[K1.c -o prelab1.[K[K2_q1
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/prelab2[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/prelab2[00m$ /[K./prelab2_q1
+Enter an integer:
+1
+If you're first your first.
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/prelab2[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/prelab2[00m$ ./prelab2_q1
+Enter an integer:
+2
+You aren't first, therefore you are last ]0;jagmjg@jagmjg-VirtualBox: ~/cse113/prelab2[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/prelab2[00m$ ./prelab2_q1
+Enter an integer:
+4 5
+5th just means you're dead to me #dadquotes.
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/prelab2[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/prelab2[00m$ ./prelab2_q1
+Enter an integer:
+4
+4th just means you're dead to me #dadquotes.
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/prelab2[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/prelab2[00m$ exit
+exit
+
+Script done on Thu 13 Sep 2018 11:09:24 PM MDT

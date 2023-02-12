@@ -1,0 +1,48 @@
+Julian Garcia
+Lab3
+February 20th 2018
+Script started on Tue 20 Feb 2018 07:30:36 PM MST
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/lab3[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/lab3[00m$ exit./rock-spock[K[K[K[K[K[K[K[K[K[Kcredit
+
+Original series
+card[0] = 4
+card[1] = 0
+card[2] = 1
+card[3] = 2
+card[4] = 8
+card[5] = 8
+card[6] = 8
+card[7] = 8
+card[8] = 8
+card[9] = 8
+card[10] = 8
+card[11] = 8
+card[12] = 1
+card[13] = 8
+card[14] = 8
+card[15] = 1
+
+ Series after doubling is
+card[0] = 8
+card[1] = 0
+card[2] = 2
+card[3] = 2
+card[4] = 16
+card[5] = 8
+card[6] = 16
+card[7] = 8
+card[8] = 16
+card[9] = 8
+card[10] = 16
+card[11] = 8
+card[12] = 2
+card[13] = 8
+card[14] = 16
+card[15] = 1
+
+sum is 90
+Card is valid
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/lab3[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/lab3[00m$ exit
+exit
+
+Script done on Tue 20 Feb 2018 07:30:55 PM MST

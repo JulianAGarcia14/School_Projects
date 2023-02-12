@@ -1,0 +1,17 @@
+
+Julian Garcia
+1/23/2019
+Lab 11
+
+Purpose: To evaluate arrays and solve other problems using structures and enumerations.
+
+Conclusions:
+
+Things I learned:
+I learned how to use enumerations and structure arrays. Writing functions which required arrays with multiple values per index allowed me to get a grasp on how structures can be used as arrays. Solving problems which required multiple pre-defined values allowed me to understand how to use enumerations and allowed me to learn their usefulness.
+
+Issues Found:
+Again I can't say I ran into any specific issues other than just getting a grasp on the new structure concepts.
+
+Future Improvements:
+I would like to change the program to allow the user to define the arrays without having to look at the source code.

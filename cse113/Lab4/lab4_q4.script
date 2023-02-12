@@ -1,0 +1,24 @@
+Julian Garcia
+10/12/18
+Lab4
+Script started on Fri 12 Oct 2018 10:15:42 AM MDT
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/Lab4[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/Lab4[00m$ exit./lab4_q4gcc -g -Wall lab4_q2.c -o lab4_q4[1P[1@4[C[C[C[C[C[C[C[C[C[C[C[C[C
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/Lab4[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/Lab4[00m$ ./lab4_qe[K4
+
+
+Enter the number of the month (1-12):
+Enter 13 to exit
+Month: 4
+Enter the year:
+Year: 1999
+Enter the day:
+Day: 14
+Your sign is Aries
+
+Enter the number of the month (1-12):
+Enter 13 to exit
+Month: 13
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/Lab4[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/Lab4[00m$ exit
+exit
+
+Script done on Fri 12 Oct 2018 10:16:12 AM MDT

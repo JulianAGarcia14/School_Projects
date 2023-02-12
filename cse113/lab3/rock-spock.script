@@ -1,0 +1,185 @@
+Julian Garcia
+Lab3
+February 20th 2018
+Script started on Tue 20 Feb 2018 06:34:26 PM MST
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/lab3[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/lab3[00m$ ./rock-spock
+Enter a move:
+0 for ROCK
+1 for PAPER
+2 for SCISSORS
+3 for LIZARD
+4 for SPOCK
+5 to have SPOCK eat a ROCK while chasing a LIZARD and quit
+Move: 0
+Player's play is ROCK
+Computer's play is LIZARD
+Player Wins!
+Rock crushes lizard
+
+
+Enter a move:
+0 for ROCK
+1 for PAPER
+2 for SCISSORS
+3 for LIZARD
+4 for SPOCK
+5 to have SPOCK eat a ROCK while chasing a LIZARD and quit
+Move: 1
+Player's play is PAPER
+Computer's play is SCISSORS
+Computer Wins!
+Scissors cuts paper
+
+
+Enter a move:
+0 for ROCK
+1 for PAPER
+2 for SCISSORS
+3 for LIZARD
+4 for SPOCK
+5 to have SPOCK eat a ROCK while chasing a LIZARD and quit
+Move: 2
+Player's play is SCISSORS
+Computer's play is PAPER
+Player Wins!
+Scissors Cuts Paper
+
+
+Enter a move:
+0 for ROCK
+1 for PAPER
+2 for SCISSORS
+3 for LIZARD
+4 for SPOCK
+5 to have SPOCK eat a ROCK while chasing a LIZARD and quit
+Move: 3
+Player's play is LIZARD
+Computer's play is ROCK
+Computer Wins!
+Rock crushes lizard
+
+
+Enter a move:
+0 for ROCK
+1 for PAPER
+2 for SCISSORS
+3 for LIZARD
+4 for SPOCK
+5 to have SPOCK eat a ROCK while chasing a LIZARD and quit
+Move: 4
+Player's play is SPOCK
+Computer's play is SCISSORS
+Player Wins!
+Spock smashes scissors
+
+
+Enter a move:
+0 for ROCK
+1 for PAPER
+2 for SCISSORS
+3 for LIZARD
+4 for SPOCK
+5 to have SPOCK eat a ROCK while chasing a LIZARD and quit
+Move: 2
+Player's play is SCISSORS
+Computer's play is SPOCK
+Computer Wins!
+Spock Smashes scissors
+
+
+Enter a move:
+0 for ROCK
+1 for PAPER
+2 for SCISSORS
+3 for LIZARD
+4 for SPOCK
+5 to have SPOCK eat a ROCK while chasing a LIZARD and quit
+Move: 1
+Player's play is PAPER
+Computer's play is LIZARD
+Computer Wins!
+Lizard eats Paper
+
+
+Enter a move:
+0 for ROCK
+1 for PAPER
+2 for SCISSORS
+3 for LIZARD
+4 for SPOCK
+5 to have SPOCK eat a ROCK while chasing a LIZARD and quit
+Move: 3
+Player's play is LIZARD
+Computer's play is SCISSORS
+Computer Wins!
+Scissors Decapitates Lizard
+
+
+Enter a move:
+0 for ROCK
+1 for PAPER
+2 for SCISSORS
+3 for LIZARD
+4 for SPOCK
+5 to have SPOCK eat a ROCK while chasing a LIZARD and quit
+Move: 2
+Player's play is SCISSORS
+Computer's play is ROCK
+Computer Wins!
+Rock crusches scissors
+
+
+Enter a move:
+0 for ROCK
+1 for PAPER
+2 for SCISSORS
+3 for LIZARD
+4 for SPOCK
+5 to have SPOCK eat a ROCK while chasing a LIZARD and quit
+Move: 4
+Player's play is SPOCK
+Computer's play is SCISSORS
+Player Wins!
+Spock smashes scissors
+
+
+Enter a move:
+0 for ROCK
+1 for PAPER
+2 for SCISSORS
+3 for LIZARD
+4 for SPOCK
+5 to have SPOCK eat a ROCK while chasing a LIZARD and quit
+Move: 2
+Player's play is SCISSORS
+Computer's play is SCISSORS
+It's a Tie!
+Scissors can't beat scissors
+
+
+Enter a move:
+0 for ROCK
+1 for PAPER
+2 for SCISSORS
+3 for LIZARD
+4 for SPOCK
+5 to have SPOCK eat a ROCK while chasing a LIZARD and quit
+Move: 1
+Player's play is PAPER
+Computer's play is SPOCK
+Player Wins!
+Paper disproves spock
+
+
+Enter a move:
+0 for ROCK
+1 for PAPER
+2 for SCISSORS
+3 for LIZARD
+4 for SPOCK
+5 to have SPOCK eat a ROCK while chasing a LIZARD and quit
+Move: 5
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/lab3[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/lab3[00m$ exit
+exit
+
+Script done on Tue 20 Feb 2018 06:35:20 PM MST

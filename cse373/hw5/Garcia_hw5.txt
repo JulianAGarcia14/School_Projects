@@ -1,0 +1,36 @@
+LOAD CSV WITH HEADERS FROM "file:///employee.csv" AS
+row
+CREATE (e:Employee)
+SET e = row
+
+LOAD CSV WITH HEADERS FROM "file:///salary.csv"
+AS row
+CREATE (s:Salary)
+SET s = row
+
+LOAD CSV WITH HEADERS FROM "file:///department.csv" AS
+row
+CREATE (d:Department)
+SET d = row
+
+MATCH (e:Employee),(d:Department)
+WHERE e.dept_no = d.dept_no
+CREATE (e)-[:Working_For]->(d)
+
+MATCH (e:Employee),(s:Salary)
+WHERE e.emp_no = s.emp_no
+CREATE (e)-[:Earning]->(s)
+
+MATCH e=()-[r:Working_For]->() 
+RETURN e
+LIMIT 100 
+
+MATCH e=()-[r:Earning]->() 
+RETURN e
+LIMIT 100 
+
+MATCH e=()-->() 
+RETURN e 
+LIMIT 200 
+
+MATCH (d:Department {dept_name:'Development'})<-[:Working_For]-(e:Employee), (e:Employee)-[:Earning]->(s:Salary) return d,e,s

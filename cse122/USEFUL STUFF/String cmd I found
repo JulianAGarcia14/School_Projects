@@ -1,0 +1,4 @@
+inword[strcspn(inword, "\n")] = 0;
+
+Cuts \n off of string named "inword"
+strcspn gives location of certain letter

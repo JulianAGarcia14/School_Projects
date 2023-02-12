@@ -1,0 +1,16 @@
+Julian Garcia
+9/19/2018
+Lab 2
+
+Purpose: To give the user the ability to specify which geometric equation they want to solve.
+
+Conclusions:
+
+Things I learned:
+I learned how to use the switch statement to allow for user input to specify specific functions to run. This allows me to avoid having to go through every single operation to get to the desired operation. I also learned how to get character input with getchar as opposed to using scanf for intergers. Again, this is useful for creating a greater variety of ways to register user input. I also learned how to use the if function to report errors in user input.
+
+Issues Found:
+When initially using the switch, I kept running into a compiler error reporting that I couldn't declare variables inside of the switch statement. I resolved the issue by calling the variables before the switch statement.
+
+Future Improvements:
+I would like to change the program to allow the user to go back to the beginning of the program after finding their answer, or getting an error, rather than having to run the program again. I would also like to implement an exit feature and a restart feature.

@@ -1,0 +1,97 @@
+; QUESTION 1
+(defun insert-atom-lst (x L) 
+    (cond   ((atom x)    (cons x L))
+            ((listp x)    (append L x)))
+    
+    
+)
+
+(write(insert-atom-lst '(10 2) '(1 2 3 4 5)))
+
+
+; QUESTION 2
+(defun insert-special (x y z L)
+    (cond
+        ((null L) L)
+        ((null (cdr L)) L)
+        ((and (eq (car L) y) 
+            (eq (cadr L) z)) 
+            (cons y (cons x (cdr L))) )
+        (t (cons (car L) (insert-special x y z (cdr L))) )
+    )
+)
+(write(insert-special 'x '3 '4 '(1 2 3 4)))
+
+
+; QUESTION 3
+(defun remove-duplicate-item (L)
+  (cond ((null L) L)
+        ((member (car L) (cdr L))   (remove-duplicate-item (cdr L)))
+        (t (cons (car L) (remove-duplicate-item (cdr L))))))
+    
+(write(remove-duplicate-item '(1 2 2 3 4 4 5)))
+
+
+
+; QUESTION 4
+(defun remove-lists (l)
+  (cond
+    ((null l) nil)   
+    ((and (listp (car l)) (> (length (car l)) 0)) (remove-lists (cdr l)))   
+    ((atom (car l)) (cons (car l) (remove-lists (cdr l))))
+    (T (cons (remove-lists (car l)) (remove-lists (cdr l))))   
+))
+    
+(write(remove-lists '(1 (2 3) 3 (4 5 6) 4 5 5)))
+
+
+; QUESTION 5
+(defun count-match-items (L1 L2)
+  (cond
+   ((null L1) 0)
+   ((equal (car L1) (car L2)) (+ 1 (count-match-items (cdr L1) (cdr L2))))
+   (t (count-match-items (cdr L1) (cdr L2)))))
+
+(write (count-match-items '((a  b) (c  4) s (t) y ) '((a  b) (c  4) s t s) ) )
+
+
+
+; QUESTION 6
+(defun filter (pred lst)
+  (cond
+   ((null pred) nil)
+   ((null lst) nil)
+   ((atom lst) nil)
+   ((funcall pred (car lst)) (cons (car lst) (filter pred (cdr lst))))
+   (T (filter pred (cdr lst))
+   )
+  )
+)
+
+(write(filter 'listp '(a (b c) d (e f g))))
+
+
+; QUESTION 7
+(defun my-reverse (lst)
+  (if (null lst)
+      lst
+    (append (rreverser (cdr lst)) (list (car lst))))
+)
+
+(write(my-reverse '(1 2 3 4 5)))
+
+
+; QUESTION 8
+(defun z-following-x (L x z)
+    (cond
+        ((null L) 'NO)
+        ((and (eq (car L) x) 
+            (eq (cadr L) z)) 
+            'YES)
+        (t  (z-following-x (cdr L) x z) )
+    )
+)
+
+(write (z-following-x '(1  2  3  56  7  8  9  10  11)  '8 '10) )
+
+

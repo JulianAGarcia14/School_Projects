@@ -1,0 +1,10 @@
+Julian Garcia
+CSE122
+1/29/19
+
+The largest k which you should be able to use in sum_no_for.c is 2,479,700,524.5, by plugging
+in the largest sum possible which is 2^64-1 on a 64bit machine. This number would be different
+in sum.c, the max sum would be would be (2^64-1) - 1 to account for the extra check added
+by the for loop, I couldn't find this specific value because my calculator would do some automatic
+rounding. The sum program without the for loop is the preferred program because it calculates
+the sum in one operation, rather than the dozens or thousands of operations it would take with a for loop

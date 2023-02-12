@@ -1,0 +1,21 @@
+
+Julian Garcia
+2/11/2019
+Hw2
+
+USED 1 LATE DAY
+
+Purpose: To time, compare, and evaluate various mathematical sums using for loops.
+
+Conclusions:
+
+Things I learned:
+I learned about time differentials between certain methods of using for loops. I also gained some experience in relating mathematical sums in programming language.
+
+Issues Found:
+The fibonacci sequence gave me a little bit of trouble in getting the output to match the one provided on the pdf. I fixed it by just messing with the indexing of the array.
+
+Future Improvements:
+Honestly there isn't much I can think of in the way of improvement for this lab.
+
+Extra note: fib10.c is the code I used for part d of the 3rd question.

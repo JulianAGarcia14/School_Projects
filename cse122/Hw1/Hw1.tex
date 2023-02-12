@@ -1,0 +1,662 @@
+%==========================================================
+% DO NOT MODIFY THIS FILE <================================
+%==========================================================
+%
+% This is a LATEX template for the Homework in MATH 352
+% Just add your name in the space provided
+% and type your solutions to each problem in the space below
+%
+%==========================================================
+% DO NOT CHANGE ANYTHING ELSE <============================
+%==========================================================
+
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsfonts,amssymb,txfonts}
+
+\textwidth=17truecm
+\textheight=20truecm
+\oddsidemargin=0pt
+\evensidemargin=0pt
+\parindent=0pt
+
+\pagestyle{myheadings}
+\markboth{\small\it
+HW1 for CSE122 Spring 2019}
+{\small\it
+HW1 for CSE122 Spring 2019}
+
+\makeatletter
+\renewcommand{\@evenhead}{\raisebox{0pt}[\headheight][0pt]{\vbox{\hbox
+to \textwidth{\thepage\hfil\strut\leftmark}\hrule}}}
+\renewcommand{\@oddhead}{\raisebox{0pt}[\headheight][0pt]{\vbox{\hbox
+to \textwidth{\rightmark\hfil\strut\thepage}\hrule}}}
+\makeatother
+
+\begin{document}
+
+{\bf Name:
+%================================================================
+% INSERT YOUR NAME ON THE LINE BELOW <============================
+%================================================================
+Julian Garcia
+%================================================================
+%================================================================
+}
+\par
+Date:
+%================================================================
+% INSERT THE DATE ON THE LINE BELOW <============================
+%================================================================
+2/3/19
+%================================================================
+%================================================================
+\par
+Exercises:
+%================================================================
+% INSERT THE EXERCISE NUMBERS ON THE LINE BELOW <========
+%================================================================
+1-8
+%================================================================
+%================================================================
+% COPY THE FOLLOWING AS MANY TIMES AS NEEDED <===================
+%================================================================
+
+
+%================================================================
+\par
+\bigskip
+{\bf Problem
+%================================================================
+% INSERT PROBLEM NUMBER ON THE LINE BELOW <=====================
+%================================================================
+1
+}
+%================================================================
+% INSERT THE FULL TEXT OF THE PROBLEM HERE <=====================
+%================================================================
+Show $1^{2}$ + $2^{2}$ + ... + $n^{2}$ = n(n + 1)(2n + 1)/6, where n is any positive integer.
+
+%================================================================
+%================================================================
+\par
+\bigskip
+{\bf Proof By Induction:}
+%==================================================================
+% INSERT YOUR SOLUTION HERE
+%==================================================================
+% write your solution in the space below <=========================
+% you may add as many lines as needed =============================
+%==================================================================
+\par
+Base Case : \\
+\\
+	Let i = 1 \\
+	Plug i into LHS to get \\
+	$1^{2}$ = 1 \\
+	Plug i into RHS to get \\
+	1(1 + 1)(2(1) + 1)/6 \\
+	= 2*3/6 = 6/6\\
+	= 1 \\
+	\\
+Since LHS and RHS are equal, base case is established. \\
+\\
+
+Assumption : $1^{2}$ + $2^{2}$ + ... + $n^{2}$ = k(k + 1)(2k + 1)/6 \\
+\\
+Show : $1^{2}$ + $2^{2}$ + ... + $n^{2}$ + $(k + 1)^{2}$ = (k + 1)(k + 2)(2(k + 1) + 1)/6 \\
+\\
+
+Proof: \\
+	Add $(k + 1)^{2}$ to both sides \\
+	\\
+	 $1^{2}$ + $2^{2}$ + ... + $n^{2}$ + $(k + 1)^{2}$ = k(k + 1)(2k + 1)/6 + $(k + 1)^{2}$ \\
+\\
+	 Use common denominator to merge RHS \\
+	 \\
+	 =$\frac{k(k+1)(2k+1)+6(k + 1)^{2}}{6}$ \\
+	 \\
+	 Pull out (k + 1)\\
+	 \\
+	 =$\frac{(k+1)[k(2k+1)+6(k+1)]}{6}$ \\
+	 \\
+	 Multiply through brackets \\
+	 \\
+	 =$\frac{(k+1)[2k^{2}+k+6k+6]}{6}$ \\
+	 \\
+	 Simplify and factor \\
+	 \\
+	 =$\frac{(k+1)(k+2)(2[k+1]+1)}{6}$ \\
+	 \\
+	 Therefore, after adding $(k + 1)^{2}$ to both sides, our assumption statement is: \\
+	 \\
+	 $1^{2}$ + $2^{2}$ + ... + $n^{2}$ + $(k + 1)^{2}$ = (k + 1)(k + 2)(2(k + 1) + 1)/6 \\
+	 \\
+	 This is the same as the show statement, so it can be stated that for any n that's an integer
+	 and for $n\geq1$, then \\
+	 $1^{2}$ + $2^{2}$ + ... + $n^{2}$ = n(n + 1)(2n + 1)/6
+
+
+
+
+%==================================================================
+\par
+%==================================================================
+
+%================================================================
+\par
+\bigskip
+{\bf Problem
+%================================================================
+% INSERT PROBLEM NUMBER ON THE LINE BELOW <=====================
+%================================================================
+2
+}
+%================================================================
+% INSERT THE FULL TEXT OF THE PROBLEM HERE <=====================
+%================================================================
+Show $1^{3}$ + $2^{3}$ + ... + $n^{3}$ = [n(n + 1)/2]$^{2}$, where n is any positive integer.
+
+
+
+%================================================================
+%================================================================
+\par
+\bigskip
+{\bf Proof:}
+%==================================================================
+% INSERT YOUR SOLUTION HERE
+%==================================================================
+% write your solution in the space below <=========================
+% you may add as many lines as needed =============================
+%==================================================================
+\par
+Base Case : \\
+\\
+	Let i = 1 \\
+	Plug i into LHS to get \\
+	$1^{3}$ = 1 \\
+	Plug i into RHS to get \\
+	$[1(1 + 1)/2]^{2}$ \\
+	= $1^{2}$\\
+	= 1 \\
+	\\
+Since LHS and RHS are equal, base case is established. \\
+\\
+
+Assumption : $1^{3}$ + $2^{3}$ + ... + $n^{3}$ = [k(k + 1)/2]$^{2}$ \\
+Show : $1^{3}$ + $2^{3}$ + ... + $n^{3}$ + $(k+1)^{3}$ = [(k+1)((k+1) + 1)/2]$^{2}$ \\
+
+Proof: \\
+	Add $(k + 1)^{3}$ to both sides \\
+	\\
+	 $1^{3}$ + $2^{3}$ + ... + $n^{3}$ + $(k + 1)^{3}$ = [k(k + 1)/2]$^{2}$ + $(k + 1)^{3}$ \\
+	 \\
+	 Distribute square to get\\
+	 \\
+	 $\frac{k^{2}(k+1)^{2}}{4}$ + $(k+1)^{3}$\\
+	 \\
+	 Use common denominator to merge \\
+	 \\
+	 = $\frac{k^{2}(k+1)^{2} + 4(k+1)^{3}}{4}$
+	 \\
+	 Pull out $(k + 1)^{2}$\\
+	 \\
+	 =$\frac{(k+1)^{2}(k^{2}+4k+4)}{4}$ \\
+	 \\
+	 Simplify and factor \\
+	 \\
+	 =$\frac{(k+1)^{2}(k+2)^{2}}{4}$ \\
+	 \\
+	 = [(k+1)((k+1) + 1)/2]$^{2}$ \\
+	 \\
+	 Therefore, after adding $(k + 1)^{3}$ to both sides, our assumption statement is: \\
+	 $1^{3}$ + $2^{3}$ + ... + $n^{3}$ + $(k+1)^{3}$ = [(k+1)((k+1) + 1)/2]$^{2}$  \\
+	 This is the same as the show statement, so it can be stated that for any n that's an integer
+	 and for $n\geq1$, then \\
+	 $1^{3}$ + $2^{3}$ + ... + $n^{3}$ + $(k+1)^{3}$ = [(k+1)((k+1) + 1)/2]$^{2}$
+
+
+%==================================================================
+\par
+%==================================================================
+
+%================================================================
+\par
+\bigskip
+{\bf Problem
+%================================================================
+% INSERT PROBLEM NUMBER ON THE LINE BELOW <=====================
+%================================================================
+3
+}
+%================================================================
+% INSERT THE FULL TEXT OF THE PROBLEM HERE <=====================
+%================================================================
+Show $1\cdot1$! + 2$\cdot$2! + ... + n$\cdot$n! = (n + 1)! - 1, where n is any positive integer.
+
+
+
+%================================================================
+%================================================================
+\par
+\bigskip
+{\bf Proof:}
+%==================================================================
+% INSERT YOUR SOLUTION HERE
+%==================================================================
+% write your solution in the space below <=========================
+% you may add as many lines as needed =============================
+%==================================================================
+\par
+
+
+Base Case : \\
+\\
+	Let i = 1 \\
+	Plug i into LHS to get \\
+	$1\cdot$1! = 1 \\
+	Plug i into RHS to get \\
+	(1 + 1)! - 1 \\
+	= 2 - 1\\
+	= 1 \\
+	\\
+Since LHS and RHS are equal, base case is established. \\
+\\
+
+Assumption : $1\cdot1$! + 2$\cdot$2! + ... + n$\cdot$n! = (k + 1)! - 1 \\
+Show : $1\cdot1$! + 2$\cdot$2! + ... + n$\cdot$n! + (k + 1)$\cdot$(k + 1)!  = ((k + 1) + 1)! - 1 \\
+
+Proof: \\
+	Add (k + 1)$\cdot$(k + 1)! to both sides \\
+	\\
+	 $1\cdot1$! + 2$\cdot$2! + ... + n$\cdot$n! + (k + 1)$\cdot$(k + 1)! = (k + 1)! - 1 + (k + 1)$\cdot$(k + 1)!\\
+	 \\
+	 Factor out (k + 1)! to get\\
+	 \\
+	 =(k + 1)!((k + 1) + 1) - 1\\
+	 \\
+	 Simplify \\
+	 \\
+	 =(k + 1)!(k + 2) - 1 \\
+	 \\
+	 Use what we know about factorials to get\\
+	 \\
+	 =(k + 2)! - 1 \\
+	 =((k + 1) + 1)! - 1 \\
+	 \\
+	 \\
+	 Therefore, after adding (k + 1)$\cdot$(k + 1)! to both sides, our assumption statement is: \\
+	 $1\cdot1$! + 2$\cdot$2! + ... + n$\cdot$n! + (k + 1)$\cdot$(k + 1)!  = ((k + 1) + 1)! - 1 \\
+	 This is the same as the show statement, so it can be stated that for any n that's an integer
+	 and for $n\geq1$, then \\
+	 $1\cdot1$! + 2$\cdot$2! + ... + n$\cdot$n! = (n + 1)! - 1 \\
+
+
+%==================================================================
+\par
+%==================================================================
+
+%================================================================
+\par
+\bigskip
+{\bf Problem
+%================================================================
+% INSERT PROBLEM NUMBER ON THE LINE BELOW <=====================
+%================================================================
+4
+}
+%================================================================
+% INSERT THE FULL TEXT OF THE PROBLEM HERE <=====================
+%================================================================
+Show $2^{n}$ $>$ $n^{2}$ when n $>$ 4
+
+
+
+%================================================================
+%================================================================
+\par
+\bigskip
+{\bf Proof:}
+%==================================================================
+% INSERT YOUR SOLUTION HERE
+%==================================================================
+% write your solution in the space below <=========================
+% you may add as many lines as needed =============================
+%==================================================================
+\par
+
+Base Case : \\
+\\
+	Let n = 5 \\
+	Plug 5 into equation to get \\
+	\\
+	$2^{5} > 5^{2}$ = 32 $>$ 25 \\
+	\\
+Since 32 is greater than 25, base case is established. \\
+\\
+
+Assumption : $2^{n}$ $>$ $n^{2}$ when n $>$ 4 \\
+Show :  $2^{k + 1}$ $>$ $2k^{2}$ $>$ $(k + 1)^{2}$ when n $\geq$ 5 \\
+
+Proof: \\
+	Since k $\geq$ 5 \\
+	\\
+	$(k - 1)^{2} \geq 4^{2} > 2$
+	\\
+	Then we expand the inequality $(k - 1)^{2} > 2$
+	$k^{2} - 2k + 1 > 2$ \\
+	$k^{2} - 2k - 1 > 0$ \\
+	$2k^{2} - 2k - 1 > k^{2}$ \\
+	$2k^{2} > k^{2} + 2k + 1 = (k + 1)^{2}$ \\
+	 \\
+	 Therefore, after evaluating the inequality $(k - 1)^{2} \geq 4^{2} > 2$, our assumption statement is: \\
+	 $2k^{2} > k^{2} + 2k + 1 = (k + 1)^{2}$  \\
+	 This is the same as the show statement, so it can be stated that for any n $>$ 4 that's an integer
+	 then \\
+	 $2n^{2} > n^{2} + 2n + 1 = (n + 1)^{2}$  \\
+
+
+
+%==================================================================
+\par
+%==================================================================
+
+%================================================================
+\par
+\bigskip
+{\bf Problem
+%================================================================
+% INSERT PROBLEM NUMBER ON THE LINE BELOW <=====================
+%================================================================
+5
+}
+%================================================================
+% INSERT THE FULL TEXT OF THE PROBLEM HERE <=====================
+%================================================================
+Show $1^{3}$ + $3^{3}$ + $5^{3}$ + ... + (2n - 1)$^{3}$ = $n^{2}$($2n^{2}$ - 1)
+
+
+
+%================================================================
+%================================================================
+\par
+\bigskip
+{\bf Proof:}
+%==================================================================
+% INSERT YOUR SOLUTION HERE
+%==================================================================
+% write your solution in the space below <=========================
+% you may add as many lines as needed =============================
+%==================================================================
+\par
+Base Case : \\
+\\
+	Let n = 1 \\
+	Plug n into LHS to get \\
+	$(2(1) - 1)^{3}$ \\
+	$1^{3}$ = 1 \\
+	Plug n into RHS to get \\
+	$1^{2}$($2(1)^{2}$ - 1) \\
+	= 1*1\\
+	= 1 \\
+	\\
+Since LHS and RHS are equal, base case is established. \\
+\\
+
+Assumption : $1^{3}$ + $3^{3}$ + $5^{3}$ + ... + (2n - 1)$^{3}$ = $n^{2}$($2n^{2}$ - 1) \\
+Show : $1^{3}$ + $3^{3}$ + $5^{3}$ + ... + (2n - 1)$^{3}$ + (2(k + 1) - 1)$^{3}$ = $(k + 1)^{2}$($2(k + 1)^{2}$ - 1) \\
+
+Proof: \\
+	Add (2(k + 1) - 1)$^{3}$ to both sides \\
+	\\
+	 $1^{3}$ + $3^{3}$ + $5^{3}$ + ... + (2n - 1)$^{3}$ + (2(n + 1) - 1)$^{3}$ = $n^{2}$($2n^{2}$ - 1) + ((2(n + 1) - 1)$^{3}$\\
+	 \\
+	 Expand out RHS to get\\
+	 \\
+	 =$2k^{4} - k^{2} + 8k^{3} + 12k^{2} + 6k + 1  \\
+	 = $2k^{4} + 8k^{3} + 11k^{2} + 6k + 1$ \\
+	 \\
+	 Now show that $(k + 1)^{2}$($2(k + 1)^{2}$ - 1) is equivalent to RHS by expanding it out\\
+	 \\
+	 =$(k + 1)^{2}$($2(k + 1)^{2}$ - 1) \\
+	 \\
+	 =$(k^{2} + 2k + 1)(2k^{2} + 4k + 1) \\
+	 \\
+	 = $2k^{4} + 8k^{3} + 11k^{2} + 6k + 1$ \\
+	 \\
+	 Therefore, after adding (2(k + 1) - 1)$^{3}$ to both sides, we can see that our assumption statement is equivalent to: \\
+	 $1^{3}$ + $3^{3}$ + $5^{3}$ + ... + (2n - 1)$^{3}$ + (2(k + 1) - 1)$^{3}$ = $(k + 1)^{2}$($2(k + 1)^{2}$ - 1) \\ \\
+	 This is the same as the show statement, so it can be stated that for any n that's an integer, then \\
+	 $1^{3}$ + $3^{3}$ + $5^{3}$ + ... + (2n - 1)$^{3}$ = $n^{2}$($2n^{2}$ - 1) \\
+
+
+%==================================================================
+\par
+%==================================================================
+
+%================================================================
+\par
+\bigskip
+{\bf Problem
+%================================================================
+% INSERT PROBLEM NUMBER ON THE LINE BELOW <=====================
+%================================================================
+6
+}
+%================================================================
+% INSERT THE FULL TEXT OF THE PROBLEM HERE <=====================
+%================================================================
+Show $\frac{1}{(1)(2)}$ + $\frac{1}{(2)(3)}$ + ... + $\frac{1}{(n)(n+1)}$ = $\frac{n}{n+1}$
+
+
+
+%================================================================
+%================================================================
+\par
+\bigskip
+{\bf Proof:}
+%==================================================================
+% INSERT YOUR SOLUTION HERE
+%==================================================================
+% write your solution in the space below <=========================
+% you may add as many lines as needed =============================
+%==================================================================
+\par
+Base Case : \\
+\\
+	Let n = 1 \\
+	Plug n into LHS to get \\
+	$\frac{1}{(1)(1+1)}$ \\
+	= $\frac{1}{2}$ \\
+	Plug n into RHS to get \\
+	$\frac{1}{1+1}$ \\
+	= $\frac{1}{2}$\\
+	\\
+Since LHS and RHS are equal, base case is established. \\
+\\
+
+Assumption : $\frac{1}{(1)(2)}$ + $\frac{1}{(2)(3)}$ + ... + $\frac{1}{(n)(n+1)}$ = $\frac{n}{n+1}$ \\
+Show : $\frac{1}{(1)(2)}$ + $\frac{1}{(2)(3)}$ + ... + $\frac{1}{(n)(n+1)}$ + $\frac{1}{(k + 1)(k+2)}$ = $\frac{k + 1}{k + 2}$ \\
+
+Proof: \\
+	Add $\frac{1}{(n + 1)(n+2)}$ to both sides \\
+	\\
+	 $\frac{1}{(1)(2)}$ + $\frac{1}{(2)(3)}$ + ... + $\frac{1}{(n)(n+1)}$ + $\frac{1}{(k + 1)(k+2)}$ = $\frac{n}{n+1}$ + $\frac{1}{(k + 1)(k+2)}$\\
+	 \\
+	 Use common denominator to get\\
+	 \\
+	 =$\frac{k(k+2)}{(k + 1)(k+2)}$\\
+	 \\
+	 Simplify \\
+	 \\
+	 =$\frac{k}{(k + 1)}$\\
+	 \\
+	 Add $\frac{1}{1}$\\
+	 \\
+	 =$\frac{k + 1}{(k + 2)}$ \\
+	 \\
+	 Therefore, after adding $\frac{1}{(n + 1)(n+2)}$ to both sides, our assumption statement is: \\
+	 $\frac{1}{(1)(2)}$ + $\frac{1}{(2)(3)}$ + ... + $\frac{1}{(n)(n+1)}$ + $\frac{1}{(k + 1)(k+2)}$ = $\frac{k + 1}{k + 2}$ \\
+	 This is the same as the show statement, so it can be stated that for any n that's an integer, then \\
+	 $\frac{1}{(1)(2)}$ + $\frac{1}{(2)(3)}$ + ... + $\frac{1}{(n)(n+1)}$ = $\frac{n}{n+1}$ \\
+
+
+
+%==================================================================
+\par
+%==================================================================
+
+%================================================================
+\par
+\bigskip
+{\bf Problem
+%================================================================
+% INSERT PROBLEM NUMBER ON THE LINE BELOW <=====================
+%================================================================
+7
+}
+%================================================================
+% INSERT THE FULL TEXT OF THE PROBLEM HERE <=====================
+%================================================================
+Show S = $\sum\limits_{i = 0}^n ar^{i}$ = $\frac{ar^{n+1} - a}{r - 1}$, r $\neq$ 1
+
+
+
+%================================================================
+%================================================================
+\par
+\bigskip
+{\bf Proof:}
+%==================================================================
+% INSERT YOUR SOLUTION HERE
+%==================================================================
+% write your solution in the space below <=========================
+% you may add as many lines as needed =============================
+%==================================================================
+\par
+Base Case : \\
+\\
+	Let n = 1 \\
+	Let r = 2 \\
+	Plug n and r into LHS to get \\
+	$\sum\limits_{i = 0}^1 a(2)^{i}$ \\
+	= 2a + a = 3a \\
+	Plug n and r into RHS to get \\
+	$\frac{a(2)^{1+1} - a}{2 - 1}$ \\
+	= $\frac{4a - a}{1}$ \\
+	= 3a \\
+	\\
+Since LHS and RHS are equal, base case is established. \\
+\\
+
+Assumption : S = $\sum\limits_{i = 0}^n ar^{i}$ = $\frac{ar^{n+1} - a}{r - 1}$, r $\neq$ 1 \\
+Show : S = $ar^{k + 1}$ + $\sum\limits_{i = 0}^n ar^{i}$ = $\frac{ar^{k+2} - a}{r - 1}$, r $\neq$ 1 \\
+
+Proof: \\
+	Add $ar^{k + 1}$ to both sides \\
+	\\
+	 S = $ar^{k + 1}$ + $\sum\limits_{i = 0}^n ar^{i}$ = $\frac{ar^{k+1} - a}{r - 1}$ + $ar^{k + 1}$\\
+	 \\
+	 Use common denominator for RHS to get\\
+	 \\
+	 =$\frac{ar^{k+1} - a + (r-1)(ar^{k + 1})}{r - 1}$\\
+	 \\
+	 Simplify \\
+	 \\
+	 =$\frac{ar^{k+1} - a + -(ar^{k + 1}) + ar^{k + 2}}{r - 1}$ \\
+	 \\
+	 =$\frac{ar^{k+2} - a}{r - 1}$ \\
+	 \\
+	 Therefore, after adding $ar^{k + 1}$ to both sides, our assumption statement is: \\
+	 S = $ar^{k + 1}$ + $\sum\limits_{i = 0}^n ar^{i}$ = $\frac{ar^{k+2} - a}{r - 1}$, r $\neq$ 1 \\
+	 This is the same as the show statement, so it can be stated that for any n that's an integer
+	 and for $r\neq1$, then \\
+	 S = $\sum\limits_{i = 0}^n ar^{i}$ = $\frac{ar^{n+1} - a}{r - 1}$, r $\neq$ 1 \\
+
+
+
+
+%==================================================================
+\par
+%==================================================================
+
+%================================================================
+\par
+\bigskip
+{\bf Problem
+%================================================================
+% INSERT PROBLEM NUMBER ON THE LINE BELOW <=====================
+%================================================================
+8
+}
+%================================================================
+% INSERT THE FULL TEXT OF THE PROBLEM HERE <=====================
+%================================================================
+Show S = $\sum\limits_{i=1}^{n+1} i\cdot 2^{i}$ = $n\cdot 2^{n + 2}$ + 2, for all integers n $\geq$ 0.
+
+
+
+%================================================================
+%================================================================
+\par
+\bigskip
+{\bf Proof:}
+%==================================================================
+% INSERT YOUR SOLUTION HERE
+%==================================================================
+% write your solution in the space below <=========================
+% you may add as many lines as needed =============================
+%==================================================================
+\par
+Base Case : \\
+\\
+	Let n = 1 \\
+	Plug n into LHS to get \\
+	$\sum\limits_{i=1}^{2} i\cdot 2^{i}$  \\
+	= 1*2 + $2\cdot2^{2}$ \\
+	= 2 + 8 \\
+	= 10 \\
+	Plug n into RHS to get \\
+	$1\cdot 2^{1 + 2}$ + 2 \\
+	= $1\cdot8$ + 2\\
+	= 10 \\
+	\\
+Since LHS and RHS are equal, base case is established. \\
+\\
+
+Assumption :  S = $\sum\limits_{i=1}^{n+1} i\cdot 2^{i}$ = $n\cdot 2^{n + 2}$ + 2 \\
+Show :  S = $(k + 1)\cdot 2^{k + 1}$ + $\sum\limits_{i=1}^{n+1} i\cdot 2^{i}$ = $(k + 1)\cdot 2^{k + 3}$ + 2 \\
+
+Proof: \\
+	Add $(k + 1)\cdot 2^{k + 1}$ to both sides \\
+	\\
+	  $(k + 1)\cdot 2^{k + 1}$ + $\sum\limits_{i=1}^{n+1} i\cdot 2^{i}$ = $k\cdot 2^{k + 2}$ + 2 + $(k + 1)\cdot 2^{k + 1}$\\
+	 \\
+	 Rewrite and expand RHS to get\\
+	 \\
+	 =(k + 1)$\cdot$($2^{k+1}$) + 4$\cdot2^{k}\cdotk$ + 2\\
+	 \\
+	 =k$\cdot$($2^{k+1}$) + $2^{k+1}$ + 4$\cdot2^{k}\cdotk$ + 2\\
+	 \\
+	 Combine like numbers and simplify to get \\
+	 \\
+	 =$(k + 1)\cdot 2^{k + 3}$ + 2 \\
+	 \\
+	 Therefore, after adding $(k + 1)\cdot 2^{k + 1}$ to both sides, our assumption statement is: \\
+	 S = $(k + 1)\cdot 2^{k + 1}$ + $\sum\limits_{i=1}^{n+1} i\cdot 2^{i}$ = $(k + 1)\cdot 2^{k + 3}$ + 2 \\
+	 This is the same as the show statement, so it can be stated that for any n that's an integer, then \\
+	 S = $\sum\limits_{i=1}^{n+1} i\cdot 2^{i}$ = $n\cdot 2^{n + 2}$ + 2 \\
+
+
+
+
+
+%==================================================================
+\par
+%==================================================================
+
+
+
+%==========================================================
+\end{document}
+%==========================================================

@@ -1,0 +1,126 @@
+\hypertarget{life_8c}{}\section{life.\+c File Reference}
+\label{life_8c}\index{life.\+c@{life.\+c}}
+
+
+functions for game of life program  
+
+
+{\ttfamily \#include \char`\"{}life.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$errno.\+h$>$}\\*
+Include dependency graph for life.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{life_8c_abc21d58c592162be02b4b065bd191840}{get\+\_\+data} (char $\ast$s)
+\item 
+void \hyperlink{life_8c_ad2ff5f66e7e4cecd07bc820704ee15c5}{end\+\_\+prog} (int err)
+\item 
+unsigned char $\ast$$\ast$ \hyperlink{life_8c_a6ec790568db50837c9bca273440e585d}{init\+\_\+matrix} (int rows, int cols)
+\item 
+void \hyperlink{life_8c_aef598dc2445a2e565e24573700e343f8}{free\+\_\+matrix} (unsigned char $\ast$$\ast$a, int rows)
+\item 
+int \hyperlink{life_8c_a37a2fff57fe61212c4b64cf82aee12ef}{find\+\_\+size} (int dimension, int sprite)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+functions for game of life program 
+
+\begin{DoxyAuthor}{Author}
+Julian Garcia
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+12/04/2018
+\end{DoxyDate}
+Assignment\+: Game of Life
+
+Contains functions which
+
+none
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]Finish flag functions, fix capturing user input. \end{DoxyRefDesc}
+
+
+\subsection{Function Documentation}
+\index{life.\+c@{life.\+c}!end\+\_\+prog@{end\+\_\+prog}}
+\index{end\+\_\+prog@{end\+\_\+prog}!life.\+c@{life.\+c}}
+\subsubsection[{\texorpdfstring{end\+\_\+prog(int err)}{end_prog(int err)}}]{\setlength{\rightskip}{0pt plus 5cm}void end\+\_\+prog (
+\begin{DoxyParamCaption}
+\item[{int}]{err}
+\end{DoxyParamCaption}
+)}\hypertarget{life_8c_ad2ff5f66e7e4cecd07bc820704ee15c5}{}\label{life_8c_ad2ff5f66e7e4cecd07bc820704ee15c5}
+Handles errors in mem allocation \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{life.\+c@{life.\+c}!find\+\_\+size@{find\+\_\+size}}
+\index{find\+\_\+size@{find\+\_\+size}!life.\+c@{life.\+c}}
+\subsubsection[{\texorpdfstring{find\+\_\+size(int dimension, int sprite)}{find_size(int dimension, int sprite)}}]{\setlength{\rightskip}{0pt plus 5cm}int find\+\_\+size (
+\begin{DoxyParamCaption}
+\item[{int}]{dimension, }
+\item[{int}]{sprite}
+\end{DoxyParamCaption}
+)}\hypertarget{life_8c_a37a2fff57fe61212c4b64cf82aee12ef}{}\label{life_8c_a37a2fff57fe61212c4b64cf82aee12ef}
+Finds size of column/row 
+\begin{DoxyParams}{Parameters}
+{\em dimension} & size of height or width of screen \\
+\hline
+{\em sprite} & size of sprite \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+size amount of columns/rows 
+\end{DoxyReturn}
+\index{life.\+c@{life.\+c}!free\+\_\+matrix@{free\+\_\+matrix}}
+\index{free\+\_\+matrix@{free\+\_\+matrix}!life.\+c@{life.\+c}}
+\subsubsection[{\texorpdfstring{free\+\_\+matrix(unsigned char $\ast$$\ast$a, int rows)}{free_matrix(unsigned char **a, int rows)}}]{\setlength{\rightskip}{0pt plus 5cm}void free\+\_\+matrix (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$$\ast$}]{a, }
+\item[{int}]{rows}
+\end{DoxyParamCaption}
+)}\hypertarget{life_8c_aef598dc2445a2e565e24573700e343f8}{}\label{life_8c_aef598dc2445a2e565e24573700e343f8}
+Frees created matrix 
+\begin{DoxyParams}{Parameters}
+{\em a} & matrix to be removed \\
+\hline
+{\em rows} & num of rows of matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{life.\+c@{life.\+c}!get\+\_\+data@{get\+\_\+data}}
+\index{get\+\_\+data@{get\+\_\+data}!life.\+c@{life.\+c}}
+\subsubsection[{\texorpdfstring{get\+\_\+data(char $\ast$s)}{get_data(char *s)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ get\+\_\+data (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{life_8c_abc21d58c592162be02b4b065bd191840}{}\label{life_8c_abc21d58c592162be02b4b065bd191840}
+Copys segmented strings t individual strings 
+\begin{DoxyParams}{Parameters}
+{\em s} & string to be parsed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\index{life.\+c@{life.\+c}!init\+\_\+matrix@{init\+\_\+matrix}}
+\index{init\+\_\+matrix@{init\+\_\+matrix}!life.\+c@{life.\+c}}
+\subsubsection[{\texorpdfstring{init\+\_\+matrix(int rows, int cols)}{init_matrix(int rows, int cols)}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char$\ast$$\ast$ init\+\_\+matrix (
+\begin{DoxyParamCaption}
+\item[{int}]{rows, }
+\item[{int}]{cols}
+\end{DoxyParamCaption}
+)}\hypertarget{life_8c_a6ec790568db50837c9bca273440e585d}{}\label{life_8c_a6ec790568db50837c9bca273440e585d}
+create a multi-\/dimensional array 
+\begin{DoxyParams}{Parameters}
+{\em rows} & rows based on height \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}

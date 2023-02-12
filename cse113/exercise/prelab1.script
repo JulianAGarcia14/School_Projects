@@ -1,0 +1,17 @@
+Script started on Wed 05 Sep 2018 03:26:59 PM MDT
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/exercise[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/exercise[00m$ exit./asciigcc ascii.c -o ascii[13P./ascii[3Pexit[Kgcc -g _[K-Wall bigmath.c -lm -o bigmath
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/exercise[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/exercise[00m$ ./bigmath
+
+70.000000 degrees fahrenheit converts to 21.111111 celcius
+23.000000 degrees celcius converts to 73.400002 degrees fahrenheit
+
+24.200001 dollars converts to 13.444445 euros.
+7.400000 euros converts to 13.320000 dollars.
+
+area of circle with radius 1.000000 = 3.140000
+area of washer with outer radius 4.000000, and inner radius 3.000000 is 21.980000
+
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/exercise[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/exercise[00m$ exit
+exit
+
+Script done on Wed 05 Sep 2018 03:27:42 PM MDT

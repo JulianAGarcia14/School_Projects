@@ -1,0 +1,57 @@
+Julian Garcia
+11/4/2018
+Lab7
+Script started on Sun 11 Nov 2018 02:01:05 PM MDT
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/lab7[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/lab7[00m$ gcc -Wa[K[K[K[K[K[K[K./badgcc -g -Wall bad.c -o bad./bad[K[K./badgcc -g -Wall bad.c -o bad./bad[Kgcc -g -Wall bad.c -o bad[1P[1P[1P[1@s[1@t[1@r[1@i[1@n[1@g[1@_[1@e[1@r[1@r[1@o[1@r[C[C[C[C[C[C[C[C[C[K[K[Kstring_er ror
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/lab7[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/lab7[00m$ ./string_error
+the original string:
+c run, run c run
+Segmentation fault (core dumped)
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/lab7[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/lab7[00m$ gdb string_error
+GNU gdb (Ubuntu 7.11.1-0ubuntu1~16.5) 7.11.1
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from string_error...done.
+(gdb) run
+Starting program: /home/jagmjg/cse113/lab7/string_error
+the original string:
+c run, run c run
+
+Program received signal SIGSEGV, Segmentation fault.
+0x0000000000400565 in main () at string_error.c:15
+15				*p = 'f'; /* change the value */
+(gdb) bt
+#0  0x0000000000400565 in main () at string_error.c:15
+(gdb) bt full
+#0  0x0000000000400565 in main () at string_error.c:15
+        s = 0x400624 "c run, run c run"
+        p = 0x400626 "run, run c run"
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 3910] will be killed.
+
+Quit anyway? (y or n) y
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/lab7[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/lab7[00m$ quit
+No command 'quit' found, did you mean:
+ Command 'quot' from package 'quota' (main)
+ Command 'luit' from package 'x11-utils' (main)
+ Command 'qgit' from package 'qgit' (universe)
+ Command 'quilt' from package 'quilt' (universe)
+ Command 'quiz' from package 'bsdgames' (universe)
+quit: command not found
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/lab7[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/lab7[00m$ exit
+exit
+
+Script done on Sun 11 Nov 2018 02:02:08 PM MDT

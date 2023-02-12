@@ -1,0 +1,42 @@
+Julian Garcia
+Lab6
+#1
+1st print: x = 2, y = 1, z = 1
+2nd print: x = 2, y = 2, z = 1
+3rd print: x = 2, y = 2, z = 2
+4th print: x = 0, y = -1, z = 0
+5th print: x = 0, y = 0, z = -1
+6th print: x = 0, y = -1, z = -1
+
+#2
+The error in this code is the - sign in the OS_HP-UX_print function since it is treated as an operator and will mess with the declaration of the function.
+
+#3
+The program will only output 1 since FALSE is enumerated as 0 and the while loop is dependent on FALSE being true or not 0
+
+#4
+The program will print "f is NOT 1.0" because f is initialized as 0.0f meaning its value is zero so the loop will only add 0 to 0 ten times.
+
+#5
+The mistake here is that two values were assigned to int a as if it were an array.
+
+#6
+It should essentially print out the size of a pointer (8) since the sizeof(arr) part will produce the byte value of arr.
+
+#7
+The second scanf is accounting for the null character left at the end of the previous scanf, without that space the program skips over the second input due to the leftover null character.
+
+#8
+The program will print out i: 10, then sizeof(i++) is: 4, then i: 10, since the sizeof operator will produce the size of an integer without actually incrementing i.
+
+#9
+The printf statement needs to be changed to say printf("The date you have entered is %02d-%02d-%04d\n", day,month,year), which pads each number with zeroes on the left if they are less than 2 for month and date and less than 4 for year.
+
+#10
+Change i-- in the for statement to i++, so the statement should look like for( i = 0; i < n; i++ )
+
+#11
+This code shouldn't work, it should return an error because a doesn't have a declared value and the code is dependent on a being divided by cnt.
+
+#12
+This will print out eight because the program increments one during the first check, skips over the second increment because the first condition wasn't true, then increment again while checking the last condition, and will still print because it's less than 9.

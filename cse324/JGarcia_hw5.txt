@@ -1,0 +1,27 @@
+|a1 a2 s1 s2 s3 oddSum quad j|
+a1 _ OrderedCollection new: 100.
+a2 _ OrderedCollection new: 100.
+
+s1 _ SortedCollection new: 100.
+s2 _ SortedCollection new: 100.
+
+a1 := #(8 1 2 3 4 5 77 99 33 10 11 22 33 44 55 66 7 2 3 4 7 8 0) .
+
+quad:=[v:=0.].
+quad value.
+"Collect values that are odd at indexes above 13, then add them to a2"
+a1 collect:[:j|(j odd and:[(a1 indexOf: j) > 13])ifTrue: [a2 add:j. v:=v+j]].
+
+"Use asSortedCollection to sort the array"
+a1 := #(8 1 2 3 4 5 77 99 33 10 11 22 33 44 55 66 7 2 3 4 7 8 0) asSortedCollection.
+"Add sorted collection a1 to s1"
+s1 add: a1.
+
+"Add sorted collection a1 to s2"
+s2 add: a1.
+
+"Multiply s1 and s2"
+s3 := s1 * s2.
+
+"Print Out all values of a1"
+a1 do: [:object | Transcript show: 'The object name: ' , object printString; cr]

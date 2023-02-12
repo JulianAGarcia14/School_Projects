@@ -1,0 +1,37 @@
+Julian Garcia
+10/12/2018
+Lab4
+Script started on Fri 12 Oct 2018 09:54:32 AM MDT
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/Lab4[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/Lab4[00m$ gcc -g -Wall array_stu[Kruct.c -o array)[K_str uct
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/Lab4[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/Lab4[00m$ ./array_struct
+For height
+index 0 = 74
+index 1 = 64
+index 2 = 68
+index 3 = 76
+index 4 = 62
+
+For age
+index 0 = 23
+index 1 = 22
+index 2 = 19
+index 3 = 20
+index 4 = 22
+
+For subject
+index 0 = A
+index 1 = B
+index 2 = C
+index 3 = D
+index 4 = E
+
+index for max age = 0
+index for max height = 3
+index for min age = 2
+index for min height = 23
+Average height is 68
+Average age is 21
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/Lab4[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/Lab4[00m$ exit
+exit
+
+Script done on Fri 12 Oct 2018 09:54:57 AM MDT

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7a5ed52c-b244-4ebf-8256-5fbb495ef008" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1WUrjxjmOKLnhbFM4zMQ0jvzYTO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Homework 5" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="tests.oop.jgarcia.hw6.testing.two" />
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.RPN">
+    <configuration name="Alice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="oop.jgarcia.hw6.four.Alice" />
+      <module name="homework 6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="oop.jgarcia.hw6.four.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="oop.jgarcia.hw6.three.Calculator" />
+      <module name="homework 6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="oop.jgarcia.hw6.three.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Guess" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="oop.jgarcia.hw6.three.Guess" />
+      <module name="homework 6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="oop.jgarcia.hw6.three.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Library" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="oop.jgarcia.hw6.one.Library" />
+      <module name="homework 6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="oop.jgarcia.hw6.one.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RPN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="oop.jgarcia.hw6.two.RPN" />
+      <module name="homework 6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="oop.jgarcia.hw6.two.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.RPN" />
+        <item itemvalue="Application.Calculator" />
+        <item itemvalue="Application.Library" />
+        <item itemvalue="Application.Alice" />
+        <item itemvalue="Application.Guess" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7a5ed52c-b244-4ebf-8256-5fbb495ef008" name="Default Changelist" comment="" />
+      <created>1579215152107</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579215152107</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="101" key="FileChooserDialogImpl" timestamp="1617669259454">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state x="421" y="101" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1617669259454" />
+    <state width="1238" height="57" key="GridCell.Tab.0.bottom" timestamp="1617137511026">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state width="1238" height="57" key="GridCell.Tab.0.bottom/0.0.1280.690@0.0.1280.690" timestamp="1617137511026" />
+    <state width="1238" height="57" key="GridCell.Tab.0.center" timestamp="1617137511026">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state width="1238" height="57" key="GridCell.Tab.0.center/0.0.1280.690@0.0.1280.690" timestamp="1617137511026" />
+    <state width="1238" height="57" key="GridCell.Tab.0.left" timestamp="1617137511026">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state width="1238" height="57" key="GridCell.Tab.0.left/0.0.1280.690@0.0.1280.690" timestamp="1617137511026" />
+    <state width="1238" height="57" key="GridCell.Tab.0.right" timestamp="1617137511026">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state width="1238" height="57" key="GridCell.Tab.0.right/0.0.1280.690@0.0.1280.690" timestamp="1617137511026" />
+    <state x="336" y="170" key="com.intellij.ide.util.TipDialog" timestamp="1617668330732">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state x="336" y="170" key="com.intellij.ide.util.TipDialog/0.0.1280.690@0.0.1280.690" timestamp="1617668330732" />
+    <state x="412" y="49" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1617082245996">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state x="412" y="49" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.690@0.0.1280.690" timestamp="1617082245996" />
+    <state x="65" y="0" key="new project wizard" timestamp="1617668548692">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state x="65" y="0" key="new project wizard/0.0.1280.690@0.0.1280.690" timestamp="1617668548692" />
+    <state x="671" y="13" width="672" height="678" key="search.everywhere.popup" timestamp="1617070493060">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state x="671" y="13" width="672" height="678" key="search.everywhere.popup/0.0.1280.690@0.0.1280.690" timestamp="1617070493060" />
+  </component>
+</project>

@@ -1,0 +1,49 @@
+Julian Garcia
+Lab3
+10/1/2018
+Script started on Mon 01 Oct 2018 10:17:31 AM MDT
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/newlab3[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/newlab3[00m$ ./cred[K[K[K[K[K[Kgcc -g - Walll [K[K[K[K[K[K[KWall credit.c -o credit-creditlcreditmcredit credit[1Pcredit[1Pcredit[1Pcredit[1Pcredit[1Pcredit[1Pcredit[1Pcredit[1Pcredit credit-creditlcreditmcredit credit-creditocredit credit
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/newlab3[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/newlab3[00m$ ./credit
+
+Original series
+card[0] = 4
+card[1] = 0
+card[2] = 1
+card[3] = 2
+card[4] = 8
+card[5] = 8
+card[6] = 8
+card[7] = 8
+card[8] = 8
+card[9] = 8
+card[10] = 8
+card[11] = 8
+card[12] = 1
+card[13] = 8
+card[14] = 8
+card[15] = 1
+
+ Series after doubling is
+card[0] = 8
+card[1] = 0
+card[2] = 2
+card[3] = 2
+card[4] = 16
+card[5] = 8
+card[6] = 16
+card[7] = 8
+card[8] = 16
+card[9] = 8
+card[10] = 16
+card[11] = 8
+card[12] = 2
+card[13] = 8
+card[14] = 16
+card[15] = 1
+
+sum is 90
+Card is valid
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/newlab3[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/newlab3[00m$ exit
+exit
+
+Script done on Mon 01 Oct 2018 10:18:28 AM MDT

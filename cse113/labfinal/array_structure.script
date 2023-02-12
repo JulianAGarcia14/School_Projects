@@ -1,0 +1,46 @@
+Script started on Wed 05 Dec 2018 10:37:41 AM MST
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labfinal[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labfinal[00m$ gcc-[K -g -Wall array_structure.c -o ar ray_structure
+[01m[Kgcc:[m[K [01;31m[Kerror: [m[Karray_structure.c: No such file or directory
+[01m[Kgcc:[m[K [01;31m[Kfatal error: [m[Kno input files
+compilation terminated.
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labfinal[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labfinal[00m$ gcc -g -Wall array_structure.c -o arrray_structure[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs.c -o array_structure[A]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labfinal[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labfinal[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs
+[01m[Karray_structures.c:14:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’, identifier or ‘[01m[K([m[K’ before ‘[01m[Kvoid[m[K’
+ void printmovie(struct info_t info[]);
+[01;32m[K ^[m[K
+[01m[Karray_structures.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Karray_structures.c:29:4:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Krstrip[m[K’ [-Wimplicit-function-declaration]
+    rstrip(buf);
+[01;32m[K    ^[m[K
+[01m[Karray_structures.c:29:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kbuf[m[K’ undeclared (first use in this function)
+    rstrip(buf);
+[01;32m[K           ^[m[K
+[01m[Karray_structures.c:29:11:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Karray_structures.c:33:12:[m[K [01;31m[Kerror: [m[Kinvalid type argument of ‘[01m[K->[m[K’ (have ‘[01m[Kstruct info_t[m[K’)
+    info[i] -> name = movie;
+[01;32m[K            ^[m[K
+[01m[Karray_structures.c:48:13:[m[K [01;31m[Kerror: [m[Kincompatible type for argument 1 of ‘[01m[Kprintmovie[m[K’
+  printmovie(info[i]);
+[01;32m[K             ^[m[K
+[01m[Karray_structures.c:14:6:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kstruct info_t *[m[K’ but argument is of type ‘[01m[Kstruct info_t[m[K’
+ void printmovie(struct info_t info[]);
+[01;32m[K      ^[m[K
+[01m[Karray_structures.c:[m[K At top level:
+[01m[Karray_structures.c:54:6:[m[K [01;31m[Kerror: [m[Kconflicting types for ‘[01m[Kprintmovie[m[K’
+ void printmovie(struct info_t info)
+[01;32m[K      ^[m[K
+[01m[Karray_structures.c:14:6:[m[K [01;36m[Knote: [m[Kprevious declaration of ‘[01m[Kprintmovie[m[K’ was here
+ void printmovie(struct info_t info[]);
+[01;32m[K      ^[m[K
+[01m[Karray_structures.c:[m[K In function ‘[01m[Kprintmovie[m[K’:
+[01m[Karray_structures.c:56:30:[m[K [01;31m[Kerror: [m[Kinvalid type argument of ‘[01m[K->[m[K’ (have ‘[01m[Kstruct info_t[m[K’)
+  printf("%c (%d): %d\n", info->name, info.date, info.t);
+[01;32m[K                              ^[m[K
+[01m[Karray_structures.c:[m[K In function ‘[01m[Kget_data[m[K’:
+[01m[Karray_structures.c:63:3:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kend_prog[m[K’ [-Wimplicit-function-declaration]
+   end_prog(ENOMEM);
+[01;32m[K   ^[m[K
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labfinal[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labfinal[00m$ exit
+exit
+
+Script done on Wed 05 Dec 2018 10:38:14 AM MST

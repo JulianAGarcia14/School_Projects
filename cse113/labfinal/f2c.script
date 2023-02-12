@@ -1,0 +1,14 @@
+Script started on Wed 05 Dec 2018 09:18:31 AM MST
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labfinal[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labfinal[00m$ gcc -g -Wall f2.[K[K2c.c -o f2c
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labfinal[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labfinal[00m$ ./f2c 55.5
+F = 55.500000C = 13.055555
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labfinal[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labfinal[00m$ ./f2c
+usage: F2c F
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labfinal[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labfinal[00m$ ./f2c 32 2112[K[K2
+usage: F2c F
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labfinal[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labfinal[00m$ ./f2c 0
+F = 0.000000C = -17.777779
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labfinal[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labfinal[00m$ exit
+exit
+
+Script done on Wed 05 Dec 2018 09:19:41 AM MST

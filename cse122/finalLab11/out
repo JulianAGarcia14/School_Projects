@@ -1,0 +1,470 @@
+==11545== Memcheck, a memory error detector
+==11545== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==11545== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==11545== Command: ./lab11 locations.txt
+==11545== Parent PID: 3563
+==11545== 
+--11545-- 
+--11545-- Valgrind options:
+--11545--    --show-reachable=yes
+--11545--    --leak-check=full
+--11545--    --log-file=out
+--11545--    -v
+--11545-- Contents of /proc/version:
+--11545--   Linux version 4.13.0-32-generic (buildd@lgw01-amd64-004) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.5)) #35~16.04.1-Ubuntu SMP Thu Jan 25 10:13:43 UTC 2018
+--11545-- 
+--11545-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-lzcnt-rdtscp-sse3-avx
+--11545-- Page sizes: currently 4096, max supported 4096
+--11545-- Valgrind library directory: /usr/lib/valgrind
+--11545-- Reading syms from /home/jagmjg/Dropbox/Cs/cse122/finalLab11/lab11
+--11545-- Reading syms from /lib/x86_64-linux-gnu/ld-2.23.so
+--11545--   Considering /lib/x86_64-linux-gnu/ld-2.23.so ..
+--11545--   .. CRC mismatch (computed aa979a42 wanted 9019bbb7)
+--11545--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/ld-2.23.so ..
+--11545--   .. CRC is valid
+--11545-- Reading syms from /usr/lib/valgrind/memcheck-amd64-linux
+--11545--   Considering /usr/lib/valgrind/memcheck-amd64-linux ..
+--11545--   .. CRC mismatch (computed eea41ea9 wanted 2009db78)
+--11545--    object doesn't have a symbol table
+--11545--    object doesn't have a dynamic symbol table
+--11545-- Scheduler: using generic scheduler lock implementation.
+--11545-- Reading suppressions file: /usr/lib/valgrind/default.supp
+==11545== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-11545-by-jagmjg-on-???
+==11545== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-11545-by-jagmjg-on-???
+==11545== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-11545-by-jagmjg-on-???
+==11545== 
+==11545== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==11545== don't want to do, unless you know exactly what you're doing,
+==11545== or are doing some strange experiment):
+==11545==   /usr/lib/valgrind/../../bin/vgdb --pid=11545 ...command...
+==11545== 
+==11545== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==11545==   /path/to/gdb ./lab11
+==11545== and then give GDB the following command
+==11545==   target remote | /usr/lib/valgrind/../../bin/vgdb --pid=11545
+==11545== --pid is optional if only one valgrind process is running
+==11545== 
+--11545-- REDIR: 0x401cfd0 (ld-linux-x86-64.so.2:strlen) redirected to 0x3809e181 (???)
+--11545-- Reading syms from /usr/lib/valgrind/vgpreload_core-amd64-linux.so
+--11545--   Considering /usr/lib/valgrind/vgpreload_core-amd64-linux.so ..
+--11545--   .. CRC mismatch (computed 2567ccf6 wanted 49420590)
+--11545--    object doesn't have a symbol table
+--11545-- Reading syms from /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so
+--11545--   Considering /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so ..
+--11545--   .. CRC mismatch (computed 0e27c9a8 wanted ac585421)
+--11545--    object doesn't have a symbol table
+==11545== WARNING: new redirection conflicts with existing -- ignoring it
+--11545--     old: 0x0401cfd0 (strlen              ) R-> (0000.0) 0x3809e181 ???
+--11545--     new: 0x0401cfd0 (strlen              ) R-> (2007.0) 0x04c31020 strlen
+--11545-- REDIR: 0x401b920 (ld-linux-x86-64.so.2:index) redirected to 0x4c30bc0 (index)
+--11545-- REDIR: 0x401bb40 (ld-linux-x86-64.so.2:strcmp) redirected to 0x4c320d0 (strcmp)
+--11545-- REDIR: 0x401dd30 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4c35270 (mempcpy)
+--11545-- Reading syms from /lib/x86_64-linux-gnu/libc-2.23.so
+--11545--   Considering /lib/x86_64-linux-gnu/libc-2.23.so ..
+--11545--   .. CRC mismatch (computed 7a8ee3e4 wanted a5190ac4)
+--11545--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libc-2.23.so ..
+--11545--   .. CRC is valid
+--11545-- REDIR: 0x4ec9a00 (libc.so.6:strcasecmp) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--11545-- REDIR: 0x4ec5280 (libc.so.6:strcspn) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--11545-- REDIR: 0x4ecbcf0 (libc.so.6:strncasecmp) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--11545-- REDIR: 0x4ec76f0 (libc.so.6:strpbrk) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--11545-- REDIR: 0x4ec7a80 (libc.so.6:strspn) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--11545-- REDIR: 0x4ec914b (libc.so.6:memcpy@GLIBC_2.2.5) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--11545-- REDIR: 0x4ec7400 (libc.so.6:rindex) redirected to 0x4c308a0 (rindex)
+--11545-- REDIR: 0x4ebe130 (libc.so.6:malloc) redirected to 0x4c2db20 (malloc)
+--11545-- REDIR: 0x4ec8060 (libc.so.6:__GI_strstr) redirected to 0x4c354d0 (__strstr_sse2)
+--11545-- REDIR: 0x4ec8860 (libc.so.6:memchr) redirected to 0x4c32170 (memchr)
+--11545-- REDIR: 0x4ece470 (libc.so.6:__GI_memcpy) redirected to 0x4c32b00 (__GI_memcpy)
+--11545-- REDIR: 0x4ec5720 (libc.so.6:strlen) redirected to 0x4c30f60 (strlen)
+--11545-- REDIR: 0x4ebe4f0 (libc.so.6:free) redirected to 0x4c2ed80 (free)
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4C2EDA1: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==11545==    by 0x401063: setcitystatecountry (kml.c:96)
+==11545==    by 0x400A35: main (lab11.c:32)
+==11545== 
+==11545== Invalid free() / delete / delete[] / realloc()
+==11545==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==11545==    by 0x401063: setcitystatecountry (kml.c:96)
+==11545==    by 0x400A35: main (lab11.c:32)
+==11545==  Address 0xffefffe50 is on thread 1's stack
+==11545== 
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4C2EDA1: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==11545==    by 0x40106F: setcitystatecountry (kml.c:97)
+==11545==    by 0x400A35: main (lab11.c:32)
+==11545== 
+--11545-- REDIR: 0x4ebe6c0 (libc.so.6:realloc) redirected to 0x4c2fce0 (realloc)
+--11545-- REDIR: 0x4ec3a80 (libc.so.6:index) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--11545-- REDIR: 0x4ec3ab0 (libc.so.6:__GI_strchr) redirected to 0x4c30a00 (__GI_strchr)
+--11545-- REDIR: 0x4ed0760 (libc.so.6:strchrnul) redirected to 0x4c34da0 (strchrnul)
+--11545-- REDIR: 0x4ec93b0 (libc.so.6:__GI_mempcpy) redirected to 0x4c34fa0 (__GI_mempcpy)
+--11545-- REDIR: 0x4ec73c0 (libc.so.6:strncpy) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--11545-- REDIR: 0x4ee0000 (libc.so.6:__strncpy_sse2_unaligned) redirected to 0x4c31570 (__strncpy_sse2_unaligned)
+==11545== Invalid free() / delete / delete[] / realloc()
+==11545==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==11545==    by 0x40106F: setcitystatecountry (kml.c:97)
+==11545==    by 0x400A35: main (lab11.c:32)
+==11545==  Address 0xffefffce0 is on thread 1's stack
+==11545==  in frame #2, created by main (lab11.c:9)
+==11545== 
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4E88CC0: vfprintf (vfprintf.c:1632)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4E892DB: vfprintf (vfprintf.c:1632)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4E8A6C8: __printf_fp_l (printf_fp.c:381)
+==11545==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4E8A6E2: __printf_fp_l (printf_fp.c:395)
+==11545==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4E84060: __mpn_extract_double (dbl2mpn.c:56)
+==11545==    by 0x4E8A711: __printf_fp_l (printf_fp.c:411)
+==11545==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4E84065: __mpn_extract_double (dbl2mpn.c:60)
+==11545==    by 0x4E8A711: __printf_fp_l (printf_fp.c:411)
+==11545==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4E8B3B8: __printf_fp_l (printf_fp.c:959)
+==11545==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4E8B3DB: __printf_fp_l (printf_fp.c:962)
+==11545==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4E8B80A: __printf_fp_l (printf_fp.c:972)
+==11545==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4E8B81E: __printf_fp_l (printf_fp.c:972)
+==11545==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4E8BA8B: round_away (rounding-mode.h:52)
+==11545==    by 0x4E8BA8B: __printf_fp_l (printf_fp.c:979)
+==11545==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4E8B55F: __printf_fp_l (printf_fp.c:1147)
+==11545==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4E8B836: __printf_fp_l (printf_fp.c:1154)
+==11545==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4E8B9F1: __printf_fp_l (printf_fp.c:1210)
+==11545==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4E8B9D3: __printf_fp_l (printf_fp.c:1212)
+==11545==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== Syscall param write(buf) points to uninitialised byte(s)
+==11545==    at 0x4F312C0: __write_nocancel (syscall-template.S:84)
+==11545==    by 0x4EB2BFE: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1263)
+==11545==    by 0x4EB4408: new_do_write (fileops.c:518)
+==11545==    by 0x4EB4408: _IO_do_write@@GLIBC_2.2.5 (fileops.c:494)
+==11545==    by 0x4EB347C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==11545==    by 0x4E8792C: vfprintf (vfprintf.c:1663)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545==  Address 0x52117b8 is 1,000 bytes inside a block of size 4,096 alloc'd
+==11545==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==11545==    by 0x4EA71D4: _IO_file_doallocate (filedoalloc.c:127)
+==11545==    by 0x4EB5593: _IO_doallocbuf (genops.c:398)
+==11545==    by 0x4EB48F7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+==11545==    by 0x4EB328C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==11545==    by 0x4E87240: vfprintf (vfprintf.c:1320)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4C2EDA1: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==11545==    by 0x400C41: main (lab11.c:51)
+==11545== 
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4C2EDA1: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==11545==    by 0x400C72: main (lab11.c:52)
+==11545== 
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4C2EDA1: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==11545==    by 0x400CA3: main (lab11.c:53)
+==11545== 
+==11545== Syscall param write(buf) points to uninitialised byte(s)
+==11545==    at 0x4F312C0: __write_nocancel (syscall-template.S:84)
+==11545==    by 0x4EB2BFE: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1263)
+==11545==    by 0x4EB4408: new_do_write (fileops.c:518)
+==11545==    by 0x4EB4408: _IO_do_write@@GLIBC_2.2.5 (fileops.c:494)
+==11545==    by 0x4EB39AF: _IO_file_close_it@@GLIBC_2.2.5 (fileops.c:165)
+==11545==    by 0x4EA73EE: fclose@@GLIBC_2.2.5 (iofclose.c:58)
+==11545==    by 0x400CFC: main (lab11.c:58)
+==11545==  Address 0x52113fd is 45 bytes inside a block of size 4,096 alloc'd
+==11545==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==11545==    by 0x4EA71D4: _IO_file_doallocate (filedoalloc.c:127)
+==11545==    by 0x4EB5593: _IO_doallocbuf (genops.c:398)
+==11545==    by 0x4EB48F7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+==11545==    by 0x4EB328C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==11545==    by 0x4E87240: vfprintf (vfprintf.c:1320)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== 
+==11545== HEAP SUMMARY:
+==11545==     in use at exit: 0 bytes in 0 blocks
+==11545==   total heap usage: 190 allocs, 319 frees, 45,416 bytes allocated
+==11545== 
+==11545== All heap blocks were freed -- no leaks are possible
+==11545== 
+==11545== Use --track-origins=yes to see where uninitialised values come from
+==11545== ERROR SUMMARY: 1586 errors from 24 contexts (suppressed: 0 from 0)
+==11545== 
+==11545== 1 errors in context 1 of 24:
+==11545== Syscall param write(buf) points to uninitialised byte(s)
+==11545==    at 0x4F312C0: __write_nocancel (syscall-template.S:84)
+==11545==    by 0x4EB2BFE: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1263)
+==11545==    by 0x4EB4408: new_do_write (fileops.c:518)
+==11545==    by 0x4EB4408: _IO_do_write@@GLIBC_2.2.5 (fileops.c:494)
+==11545==    by 0x4EB39AF: _IO_file_close_it@@GLIBC_2.2.5 (fileops.c:165)
+==11545==    by 0x4EA73EE: fclose@@GLIBC_2.2.5 (iofclose.c:58)
+==11545==    by 0x400CFC: main (lab11.c:58)
+==11545==  Address 0x52113fd is 45 bytes inside a block of size 4,096 alloc'd
+==11545==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==11545==    by 0x4EA71D4: _IO_file_doallocate (filedoalloc.c:127)
+==11545==    by 0x4EB5593: _IO_doallocbuf (genops.c:398)
+==11545==    by 0x4EB48F7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+==11545==    by 0x4EB328C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==11545==    by 0x4E87240: vfprintf (vfprintf.c:1320)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== 
+==11545== 1 errors in context 2 of 24:
+==11545== Syscall param write(buf) points to uninitialised byte(s)
+==11545==    at 0x4F312C0: __write_nocancel (syscall-template.S:84)
+==11545==    by 0x4EB2BFE: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1263)
+==11545==    by 0x4EB4408: new_do_write (fileops.c:518)
+==11545==    by 0x4EB4408: _IO_do_write@@GLIBC_2.2.5 (fileops.c:494)
+==11545==    by 0x4EB347C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==11545==    by 0x4E8792C: vfprintf (vfprintf.c:1663)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545==  Address 0x52117b8 is 1,000 bytes inside a block of size 4,096 alloc'd
+==11545==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==11545==    by 0x4EA71D4: _IO_file_doallocate (filedoalloc.c:127)
+==11545==    by 0x4EB5593: _IO_doallocbuf (genops.c:398)
+==11545==    by 0x4EB48F7: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+==11545==    by 0x4EB328C: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+==11545==    by 0x4E87240: vfprintf (vfprintf.c:1320)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== 
+==11545== 1 errors in context 3 of 24:
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4C2EDA1: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==11545==    by 0x401063: setcitystatecountry (kml.c:96)
+==11545==    by 0x400A35: main (lab11.c:32)
+==11545== 
+==11545== 
+==11545== 17 errors in context 4 of 24:
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4E892DB: vfprintf (vfprintf.c:1632)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== 
+==11545== 34 errors in context 5 of 24:
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4E8B836: __printf_fp_l (printf_fp.c:1154)
+==11545==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== 
+==11545== 34 errors in context 6 of 24:
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4E8B55F: __printf_fp_l (printf_fp.c:1147)
+==11545==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== 
+==11545== 34 errors in context 7 of 24:
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4E8BA8B: round_away (rounding-mode.h:52)
+==11545==    by 0x4E8BA8B: __printf_fp_l (printf_fp.c:979)
+==11545==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== 
+==11545== 34 errors in context 8 of 24:
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4E8B81E: __printf_fp_l (printf_fp.c:972)
+==11545==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== 
+==11545== 34 errors in context 9 of 24:
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4E8B80A: __printf_fp_l (printf_fp.c:972)
+==11545==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== 
+==11545== 34 errors in context 10 of 24:
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4E8B3DB: __printf_fp_l (printf_fp.c:962)
+==11545==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== 
+==11545== 34 errors in context 11 of 24:
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4E8B3B8: __printf_fp_l (printf_fp.c:959)
+==11545==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== 
+==11545== 34 errors in context 12 of 24:
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4E84065: __mpn_extract_double (dbl2mpn.c:60)
+==11545==    by 0x4E8A711: __printf_fp_l (printf_fp.c:411)
+==11545==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== 
+==11545== 34 errors in context 13 of 24:
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4E84060: __mpn_extract_double (dbl2mpn.c:56)
+==11545==    by 0x4E8A711: __printf_fp_l (printf_fp.c:411)
+==11545==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== 
+==11545== 34 errors in context 14 of 24:
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4E8A6E2: __printf_fp_l (printf_fp.c:395)
+==11545==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== 
+==11545== 34 errors in context 15 of 24:
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4E8A6C8: __printf_fp_l (printf_fp.c:381)
+==11545==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== 
+==11545== 64 errors in context 16 of 24:
+==11545== Invalid free() / delete / delete[] / realloc()
+==11545==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==11545==    by 0x40106F: setcitystatecountry (kml.c:97)
+==11545==    by 0x400A35: main (lab11.c:32)
+==11545==  Address 0xffefffce0 is on thread 1's stack
+==11545==  in frame #2, created by main (lab11.c:9)
+==11545== 
+==11545== 
+==11545== 65 errors in context 17 of 24:
+==11545== Invalid free() / delete / delete[] / realloc()
+==11545==    at 0x4C2EDEB: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==11545==    by 0x401063: setcitystatecountry (kml.c:96)
+==11545==    by 0x400A35: main (lab11.c:32)
+==11545==  Address 0xffefffe50 is on thread 1's stack
+==11545== 
+==11545== 
+==11545== 111 errors in context 18 of 24:
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4E88CC0: vfprintf (vfprintf.c:1632)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== 
+==11545== 131 errors in context 19 of 24:
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4C2EDA1: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==11545==    by 0x40106F: setcitystatecountry (kml.c:97)
+==11545==    by 0x400A35: main (lab11.c:32)
+==11545== 
+==11545== 
+==11545== 132 errors in context 20 of 24:
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4C2EDA1: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==11545==    by 0x400CA3: main (lab11.c:53)
+==11545== 
+==11545== 
+==11545== 132 errors in context 21 of 24:
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4C2EDA1: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==11545==    by 0x400C41: main (lab11.c:51)
+==11545== 
+==11545== 
+==11545== 149 errors in context 22 of 24:
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4C2EDA1: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==11545==    by 0x400C72: main (lab11.c:52)
+==11545== 
+==11545== 
+==11545== 204 errors in context 23 of 24:
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4E8B9D3: __printf_fp_l (printf_fp.c:1212)
+==11545==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== 
+==11545== 204 errors in context 24 of 24:
+==11545== Conditional jump or move depends on uninitialised value(s)
+==11545==    at 0x4E8B9F1: __printf_fp_l (printf_fp.c:1210)
+==11545==    by 0x4E890B8: vfprintf (vfprintf.c:1631)
+==11545==    by 0x4E8F7F6: fprintf (fprintf.c:32)
+==11545==    by 0x400BDC: main (lab11.c:40)
+==11545== 
+==11545== ERROR SUMMARY: 1586 errors from 24 contexts (suppressed: 0 from 0)

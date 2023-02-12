@@ -1,0 +1,142 @@
+==7763== Memcheck, a memory error detector
+==7763== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==7763== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==7763== Command: ./lab11 test.txt
+==7763== Parent PID: 3563
+==7763== 
+--7763-- 
+--7763-- Valgrind options:
+--7763--    --show-reachable=yes
+--7763--    --leak-check=full
+--7763--    --log-file=out
+--7763--    -v
+--7763-- Contents of /proc/version:
+--7763--   Linux version 4.13.0-32-generic (buildd@lgw01-amd64-004) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.5)) #35~16.04.1-Ubuntu SMP Thu Jan 25 10:13:43 UTC 2018
+--7763-- 
+--7763-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-lzcnt-rdtscp-sse3-avx
+--7763-- Page sizes: currently 4096, max supported 4096
+--7763-- Valgrind library directory: /usr/lib/valgrind
+--7763-- Reading syms from /home/jagmjg/Dropbox/Cs/cse122/lab11/lab11
+--7763-- Reading syms from /lib/x86_64-linux-gnu/ld-2.23.so
+--7763--   Considering /lib/x86_64-linux-gnu/ld-2.23.so ..
+--7763--   .. CRC mismatch (computed aa979a42 wanted 9019bbb7)
+--7763--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/ld-2.23.so ..
+--7763--   .. CRC is valid
+--7763-- Reading syms from /usr/lib/valgrind/memcheck-amd64-linux
+--7763--   Considering /usr/lib/valgrind/memcheck-amd64-linux ..
+--7763--   .. CRC mismatch (computed eea41ea9 wanted 2009db78)
+--7763--    object doesn't have a symbol table
+--7763--    object doesn't have a dynamic symbol table
+--7763-- Scheduler: using generic scheduler lock implementation.
+--7763-- Reading suppressions file: /usr/lib/valgrind/default.supp
+==7763== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-7763-by-jagmjg-on-???
+==7763== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-7763-by-jagmjg-on-???
+==7763== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-7763-by-jagmjg-on-???
+==7763== 
+==7763== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==7763== don't want to do, unless you know exactly what you're doing,
+==7763== or are doing some strange experiment):
+==7763==   /usr/lib/valgrind/../../bin/vgdb --pid=7763 ...command...
+==7763== 
+==7763== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==7763==   /path/to/gdb ./lab11
+==7763== and then give GDB the following command
+==7763==   target remote | /usr/lib/valgrind/../../bin/vgdb --pid=7763
+==7763== --pid is optional if only one valgrind process is running
+==7763== 
+--7763-- REDIR: 0x401cfd0 (ld-linux-x86-64.so.2:strlen) redirected to 0x3809e181 (???)
+--7763-- Reading syms from /usr/lib/valgrind/vgpreload_core-amd64-linux.so
+--7763--   Considering /usr/lib/valgrind/vgpreload_core-amd64-linux.so ..
+--7763--   .. CRC mismatch (computed 2567ccf6 wanted 49420590)
+--7763--    object doesn't have a symbol table
+--7763-- Reading syms from /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so
+--7763--   Considering /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so ..
+--7763--   .. CRC mismatch (computed 0e27c9a8 wanted ac585421)
+--7763--    object doesn't have a symbol table
+==7763== WARNING: new redirection conflicts with existing -- ignoring it
+--7763--     old: 0x0401cfd0 (strlen              ) R-> (0000.0) 0x3809e181 ???
+--7763--     new: 0x0401cfd0 (strlen              ) R-> (2007.0) 0x04c31020 strlen
+--7763-- REDIR: 0x401b920 (ld-linux-x86-64.so.2:index) redirected to 0x4c30bc0 (index)
+--7763-- REDIR: 0x401bb40 (ld-linux-x86-64.so.2:strcmp) redirected to 0x4c320d0 (strcmp)
+--7763-- REDIR: 0x401dd30 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4c35270 (mempcpy)
+--7763-- Reading syms from /lib/x86_64-linux-gnu/libc-2.23.so
+--7763--   Considering /lib/x86_64-linux-gnu/libc-2.23.so ..
+--7763--   .. CRC mismatch (computed 7a8ee3e4 wanted a5190ac4)
+--7763--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libc-2.23.so ..
+--7763--   .. CRC is valid
+--7763-- REDIR: 0x4ec9a00 (libc.so.6:strcasecmp) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--7763-- REDIR: 0x4ec5280 (libc.so.6:strcspn) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--7763-- REDIR: 0x4ecbcf0 (libc.so.6:strncasecmp) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--7763-- REDIR: 0x4ec76f0 (libc.so.6:strpbrk) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--7763-- REDIR: 0x4ec7a80 (libc.so.6:strspn) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--7763-- REDIR: 0x4ec914b (libc.so.6:memcpy@GLIBC_2.2.5) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--7763-- REDIR: 0x4ec7400 (libc.so.6:rindex) redirected to 0x4c308a0 (rindex)
+--7763-- REDIR: 0x4ebe130 (libc.so.6:malloc) redirected to 0x4c2db20 (malloc)
+--7763-- REDIR: 0x4ec8060 (libc.so.6:__GI_strstr) redirected to 0x4c354d0 (__strstr_sse2)
+--7763-- REDIR: 0x4ec5720 (libc.so.6:strlen) redirected to 0x4c30f60 (strlen)
+--7763-- REDIR: 0x4ec8860 (libc.so.6:memchr) redirected to 0x4c32170 (memchr)
+--7763-- REDIR: 0x4ece470 (libc.so.6:__GI_memcpy) redirected to 0x4c32b00 (__GI_memcpy)
+==7763== Use of uninitialised value of size 8
+==7763==    at 0x4C30F62: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7763==    by 0x400AE4: main (lab11.c:55)
+==7763== 
+==7763== Invalid read of size 1
+==7763==    at 0x4C30F62: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7763==    by 0x400AE4: main (lab11.c:55)
+==7763==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7763== 
+==7763== 
+==7763== Process terminating with default action of signal 11 (SIGSEGV)
+==7763==  Access not within mapped region at address 0x0
+==7763==    at 0x4C30F62: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7763==    by 0x400AE4: main (lab11.c:55)
+==7763==  If you believe this happened as a result of a stack
+==7763==  overflow in your program's main thread (unlikely but
+==7763==  possible), you can try to increase the size of the
+==7763==  main thread stack using the --main-stacksize= flag.
+==7763==  The main thread stack size used in this run was 8388608.
+--7763-- REDIR: 0x4ebe4f0 (libc.so.6:free) redirected to 0x4c2ed80 (free)
+==7763== 
+==7763== HEAP SUMMARY:
+==7763==     in use at exit: 600 bytes in 3 blocks
+==7763==   total heap usage: 4 allocs, 1 frees, 4,696 bytes allocated
+==7763== 
+==7763== Searching for pointers to 3 not-freed blocks
+==7763== Checked 62,504 bytes
+==7763== 
+==7763== 16 bytes in 1 blocks are still reachable in loss record 1 of 3
+==7763==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7763==    by 0x400A01: main (lab11.c:36)
+==7763== 
+==7763== 32 bytes in 1 blocks are still reachable in loss record 2 of 3
+==7763==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7763==    by 0x400A94: main (lab11.c:46)
+==7763== 
+==7763== 552 bytes in 1 blocks are still reachable in loss record 3 of 3
+==7763==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7763==    by 0x4EA7CDC: __fopen_internal (iofopen.c:69)
+==7763==    by 0x4009DB: main (lab11.c:28)
+==7763== 
+==7763== LEAK SUMMARY:
+==7763==    definitely lost: 0 bytes in 0 blocks
+==7763==    indirectly lost: 0 bytes in 0 blocks
+==7763==      possibly lost: 0 bytes in 0 blocks
+==7763==    still reachable: 600 bytes in 3 blocks
+==7763==         suppressed: 0 bytes in 0 blocks
+==7763== 
+==7763== Use --track-origins=yes to see where uninitialised values come from
+==7763== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+==7763== 
+==7763== 1 errors in context 1 of 2:
+==7763== Invalid read of size 1
+==7763==    at 0x4C30F62: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7763==    by 0x400AE4: main (lab11.c:55)
+==7763==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7763== 
+==7763== 
+==7763== 1 errors in context 2 of 2:
+==7763== Use of uninitialised value of size 8
+==7763==    at 0x4C30F62: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7763==    by 0x400AE4: main (lab11.c:55)
+==7763== 
+==7763== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)

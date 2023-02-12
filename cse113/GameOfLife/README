@@ -1,0 +1,17 @@
+
+Julian Garcia
+12/6/2018
+Game of Life
+
+(Decided to include this to explain what I did and didn't finish)
+
+Purpose: To emulate the game of life using c and sdl2.
+Conclusions:
+
+Things I learned:
+
+Issues Found:
+The biggest problem I faced was with time management. I finished implementing the command line options, as well as creating array matrices, I got the valgrind output, and I even got the matrices plugged into the given sdl function. I also finished the doxygen html part of this assignment but that's about as far as I got, the last piece of this project I was working on was figuring out how to read the 1.06 files and get that information placed into the array matrices.
+
+Future Improvements:
+Since I didn't finish this, I'll try and look back to complete it after I spend some time trying to get a better understanding of how to create the necessary functions for this program.

@@ -1,0 +1,13 @@
+(1) What is your username?
+	jagmjg
+(2) What is your current working directory?
+	/fserv/home/jagmjg/ID_p1
+(3) What is the kernel name?
+	Linux
+(4) What is the kernel release?
+	4.15.0-72-generic
+(5) What is the operating system?
+	GNU/Linux
+(6) What are the functions of the two commands: cal and pwd?
+	cal- Displays a simple calendar
+	pwd- Prints working directory

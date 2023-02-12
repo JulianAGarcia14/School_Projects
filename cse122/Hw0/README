@@ -1,0 +1,17 @@
+
+Julian Garcia
+1/30/2019
+Hw0
+
+Purpose: To calculate various sums with for loops and actual sum formulas.
+
+Conclusions:
+
+Things I learned:
+I learned how why it's more efficient to use written sums rather than use for loops to calculate sums. I also learned how to record the amount of time a function takes to run.
+
+Issues Found:
+Finding a way to make an early approximation for each number in newton's formula took me a while to come up with, I eventually realied that halving the original number until it was less that the square root of that number was the best way to do it.
+
+Future Improvements:
+I would like to see if I can make the code more efficient.

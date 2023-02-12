@@ -1,0 +1,16 @@
+Script started on Wed 05 Dec 2018 09:38:29 AM MST
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labfinal[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labfinal[00m$ gcc -g -Wall palindrome.c -o palindo [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr ome
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labfinal[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labfinal[00m$ ./palindrome
+kayak is a palindrome.
+duck is not a palindrome.
+moon is not a palindrome.
+ada is a palindrome.
+racecar is a palindrome.
+leveled is not a palindrome.
+stats is a palindrome.
+statistics is not a palindrome.
+]0;jagmjg@jagmjg-VirtualBox: ~/cse113/labfinal[01;32mjagmjg@jagmjg-VirtualBox[00m:[01;34m~/cse113/labfinal[00m$ exit
+exit
+
+Script done on Wed 05 Dec 2018 09:39:00 AM MST
